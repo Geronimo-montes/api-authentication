@@ -1,51 +1,49 @@
 import express from 'express';
-import fileUpload from 'express-fileupload';
 import morgan from 'morgan';
 import cors from 'cors';
 import passport from 'passport';
+import path from 'path';
 import config from './config/config';
 
-import { Erol } from './models/model.model';
+
+// MIDDLEWARE DE PROTECCION DE RUTAS MEDIANTE ROLES
 import {
   AuthAuxiliarMiddleware,
   AuthDirectorMiddleware,
   AuthJefaturaMiddleware
 } from './middlewares/auth.middleware';
+import { Erol } from './models/model.model';
 
+// RUTAS
 import authRoutes from './routes/auth.routes';
 import alumnoRoutes from './routes/alumno.routes';
 import unidadRoutes from './routes/unidad.routes';
 import documentoRoutes from './routes/documento.routes';
 import empleadoRoutes from './routes/empleado.routes';
-import fileRoutes from './routes/file.routes';
+import { ErrorHandler } from './errors/error.middleware';
 
-// asignamos el puerto de esucha de la api-rest
 const PORT = process.env.PORT || config.ASI_PORT;
 const app = express();
-app.use(fileUpload());
-
-// configuracion
 app.set('port', PORT);
 
-// middlawares
 app.use(morgan('dev'));
-app.use(cors());
-app.use(express.urlencoded({ extended: false }));
+app.use(cors({ origin: 'http://localhost:4200' }));
 app.use(express.json());
-app.use(passport.initialize());
+app.use(express.urlencoded({ extended: false }));
+// ARCHIVOS ESTATICOS DE CARATER PUBLICO
+app.use('/static', express.static(path.join(__dirname, '/public')));
 
-// Proteccion de rutas mediante privilegios
+// PROTECCION DE RUTAS MEDIANTE ROLES
+app.use(passport.initialize());
 passport.use(Erol.DIRECTOR, AuthDirectorMiddleware);
 passport.use(Erol.JEFATURA, AuthJefaturaMiddleware);
 passport.use(Erol.AUXILIAR, AuthAuxiliarMiddleware);
 
-// ruta de prueba
-app.get('/', (req, res) => {
-  res.send(`La API esta seteada en http://localhost:${PORT}`);
-});
+// MANEJO DE ERRORES
 
-// carpeta public
-app.use('/static', express.static(__dirname + '/public'));
+
+// RUTA DE PRUEBAS
+app.get('/', (req, res) => res.send(`API DISPONIBLE EN http://localhost:${PORT}`));
 
 // rutas
 app.use('/auth', authRoutes);
@@ -53,6 +51,8 @@ app.use('/alumno', alumnoRoutes);
 app.use('/unidad-academica', unidadRoutes);
 app.use('/pack-documento', documentoRoutes);
 app.use('/empleado', empleadoRoutes);
-app.use('/file', fileRoutes);
+
+// MANEJADOR DE ERRORES
+app.use(ErrorHandler);
 
 export default app;

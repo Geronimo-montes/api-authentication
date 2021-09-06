@@ -52,6 +52,51 @@ class EmpleadoModel {
     });
   }
 
+  public getAllEmpleadosByUnidad(idunidad: number): Promise<Iusuario[]> {
+    return new Promise((resolve, reject) => {
+      DB.query(
+        `SELECT
+          idusuario,
+          perfil,
+          email,
+          password,
+          rol,
+          sesion_conectada,
+          idunidad,
+          idjefatura,
+          nombre,
+          ape_1,
+          ape_2,
+          telefono,
+          ultima_conexion,
+          estatus
+        FROM usuario WHERE idunidad = ? ORDER BY estatus, CONCAT(nombre, ' ', ape_1, ' ', ape_2)`,
+        [idunidad],
+        async (err, res, fields) => {
+          if (err) reject(err);
+
+          let empleados: Iusuario[] = [];
+          for (let i = 0; i < res.length; i++) {
+            let jefatura = null;
+
+            if (res[i].idjefatura) {
+              await this.getEmpleadoByid(res[i].idjefatura)
+                .then(data => jefatura = data)
+                .catch(err => console.log(err));
+            }
+
+            empleados.push({
+              ...res[i],
+              dataJefatura: jefatura
+            });
+          }
+          console.log({ empleados });
+
+          resolve(empleados);
+        });
+    });
+  }
+
   public getEmpleadoByid(idempleado: number): Promise<Iusuario> {
     return new Promise((resolve, reject) => {
       DB.query(

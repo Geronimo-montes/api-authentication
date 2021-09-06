@@ -5,7 +5,8 @@ import {
   AllEmpleados,
   EmpleadoById,
   NewEmpleado,
-  UpdateEmpleado
+  UpdateEmpleado,
+  AllEmpleadosByUnidad
 } from '../controllers/empleado.controler';
 
 const router = Router();
@@ -17,6 +18,15 @@ router.get(
     { session: false }
   ),
   AllEmpleados
+);
+
+router.get(
+  '/all/:idunidad',
+  passport.authenticate(
+    [Erol.DIRECTOR],
+    { session: false }
+  ),
+  AllEmpleadosByUnidad
 );
 
 /**

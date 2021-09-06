@@ -6,7 +6,9 @@ import {
   AlumnoByMatricula,
   GetDocEntregadosAlumnoPack,
   NewAlumno,
-  UpdateAlumno
+  UpdateAlumno,
+  UploadPerfil,
+  ValidarMatricula,
 } from '../controllers/alumno.controler';
 
 const router = Router();
@@ -41,11 +43,23 @@ router.get(
 router.put(
   '/update',
   passport.authenticate(
-    [Erol.DIRECTOR, Erol.JEFATURA, Erol.AUXILIAR],
+    [Erol.DIRECTOR],
     { session: false }
   ),
   UpdateAlumno
 );
+
+/**
+ * Verifica si la matricula esta registrada en el sistema
+ */
+router.get(
+  '/validar/:matricula',
+  passport.authenticate(
+    [Erol.DIRECTOR],
+    { session: false }
+  ),
+  ValidarMatricula
+)
 
 /**
  * Registra un alumno nuevo. Se espera el parametro: data.
@@ -53,7 +67,7 @@ router.put(
 router.post(
   '/new',
   passport.authenticate(
-    [Erol.DIRECTOR, Erol.JEFATURA, Erol.AUXILIAR],
+    [Erol.DIRECTOR],
     { session: false }
   ),
   NewAlumno
@@ -65,11 +79,22 @@ router.post(
 router.get(
   '/:matricula/:idpaquete',
   passport.authenticate(
-    [Erol.DIRECTOR, Erol.JEFATURA, Erol.AUXILIAR],
+    [Erol.DIRECTOR],
     { session: false }
   ),
   GetDocEntregadosAlumnoPack
 );
 
+/**
+ * Actualiza la foto de perfil del alumno
+ */
+router.post(
+  '/upload/:matricula/:name',
+  passport.authenticate(
+    [Erol.DIRECTOR],
+    { session: false }
+  ),
+  UploadPerfil
+);
 
 export default router;

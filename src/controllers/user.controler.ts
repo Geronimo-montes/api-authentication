@@ -1,64 +1,36 @@
 import userModel from '../models/user.model';
-import { Request, Response } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import { Iusuario } from '../models/model.model';
 import { ResponseData } from '../config/response';
-import { createToken, getDataOfToken, getToken } from './jwt.controler';
+import { IError } from '../errors/error.middleware';
+import { createToken } from '../middlewares/auth.middleware';
 
 
 /**
  * Inicio de sesión de usuario. Se proporcionan el usuario y la contraseña para la validacion de inicio de sesión.
- * @param req email password
- * @param res 
- * @returns 
  */
-export const signIn = (req: Request, res: Response) => {
-  if (!req.body.email || !req.body.password)
-    return res.status(400)
-      .json(new ResponseData(false, 'Porfavor envia tu correo y contraseña', null));
-  //obtenemos los datos de la cuenta
+export const SignIn = (req: Request, res: Response, next: NextFunction) => {
   userModel.singIn(req.body.email, req.body.password)
-    .then((resSingIn: Iusuario) => {
-      if (resSingIn) {
-        // data del usuario
-        userModel.getUsuarioById(resSingIn.idusuario)
-          .then((usuario) => {
-            if (usuario) {
-              const token = createToken(usuario);
-              //insertamos la bandera de sesion para indicar que el usuario esta conectado
-              userModel.insertSesion(resSingIn.idusuario)
-                .then(() => {
-                  res.status(200)
-                    .json(new ResponseData(true, 'Sesión iniciada con exito', { token }));
-                }).catch((err) => res.status(500).send(err)); // catch inserttoken
-            } else {
-              res.status(200).json(
-                new ResponseData(false, 'No es posible obtener los datos de usuario.', null)); //error if data
-            }
-          }).catch((err) => res.status(500).send(err)); //catch getdata
-      } else {
-        res.status(200).json(
-          new ResponseData(false, 'Correo y/o contraseña incorrectos.', null)); // error if usuario
-      }
-    }).catch((err) => res.status(500).send(err)); //catch getusuario
+    // VALIDAMOS LAS CREDENCIALES, SI SON VALIDAS RETRONAMOS LA SIGUIENTE PROMESA
+    .then((idusuario: number) => userModel.insertSesion(idusuario))
+    // CREAMOS LA SESION DE USUARIO
+    .then((idusuario: number) => userModel.getUsuarioById(idusuario))
+    // SE CREA EL TOKEN
+    .then((usuario: Iusuario) => {
+      const token = createToken(usuario);
+      res.status(200)
+        .json(new ResponseData(true, 'Sesión iniciada con exito.', { token }));
+    }).catch((err: IError) => next(err));
 }
 
 /**
  * Cierre de sesion de usuario. Elimina el token de accceso de la base de datos, marca el usuario como desconectado.
- * @param req 
- * @param res 
  */
-export const signOut = (req: Request, res: Response) => {
-  const token: string = getToken(req.headers);
-  const usuario: Iusuario = getDataOfToken(token).usuario;
+export const signOut = (req: Request, res: Response, next: NextFunction) => {
+  const usuario: Iusuario = <Iusuario>req.user;
 
   userModel.deleteSesion(usuario.idusuario)
-    .then((data) => {
-      if (data)
-        res.status(200)
-          .json(new ResponseData(true, 'Cierre de sesion exitoso.', null));
-      else
-        res.status(200)
-          .json(new ResponseData(false, 'Error al cerrar la sesion', null));
-    })
-    .catch((err) => res.status(500).send(err)); // catch inserttoken
+    // BORRAMOS LA SESIÓN
+    .then(() => res.status(200).json(new ResponseData(true, 'Cierre de sesion exitoso.', null)))
+    .catch((err: IError) => next(err));
 }

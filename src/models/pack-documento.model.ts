@@ -16,7 +16,7 @@ class PackDocumentoModel {
         `SELECT * FROM paquete_documento ORDER BY estatus, idpaquete`,
         [],
         (err, res) => {
-          if (err) reject(err);
+          if (err) { reject(err); throw err; }
 
           if (res.length > 0)
             resolve(res);
@@ -37,7 +37,7 @@ class PackDocumentoModel {
         `SELECT * FROM paquete_documento WHERE idpaquete = ?`,
         [idpaquete],
         (err, res) => {
-          if (err) reject(err);
+          if (err) { reject(err); throw err; }
 
           if (res.length > 0)
             resolve(res[0]);
@@ -58,7 +58,7 @@ class PackDocumentoModel {
         `SELECT * FROM documento WHERE idpaquete = ?;`,
         [idpaquete],
         (err, res) => {
-          if (err) reject(err);
+          if (err) { reject(err); throw err; }
 
           if (res.length > 0)
             resolve(res);
@@ -89,9 +89,9 @@ class PackDocumentoModel {
           data.idpaquete
         ],
         (err, res) => {
-          if (err) reject(err);
+          if (err) { reject(err); throw err; }
 
-          if (res['affectedRows'] > 0)
+          if (res.affectedRows > 0)
             resolve(true);
           else
             resolve(false);
@@ -142,6 +142,23 @@ class PackDocumentoModel {
             });
         });
       });
+    });
+  }
+
+  public insertDocumentoEntregado(name: string, matricula: string, idpaquete: number, iddocumento: number): Promise<boolean> {
+    return new Promise((resolve, reject) => {
+      DB.query(
+        `INSERT INTO documento_alumno (ruta, matricula, idpaquete, iddocumento) VALUES (?,?,?,?);`,
+        [name, matricula, idpaquete, iddocumento],
+        (err, res, fields) => {
+          if (err) { reject(err); throw err; }
+
+          if (res.affectedRows > 0)
+            resolve(true);
+          else
+            resolve(false);
+        }
+      );
     });
   }
 }

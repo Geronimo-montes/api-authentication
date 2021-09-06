@@ -1,4 +1,5 @@
 import DB from '../database';
+import { ERRORS_MODEL } from '../errors/error.controler';
 import { Iunidadacademica } from './model.model';
 
 class UnidadModel {
@@ -8,14 +9,13 @@ class UnidadModel {
    * @returns {Promise<Iunidadacademica[]>}
    */
   public getAllUnidadesAcademicas(): Promise<Iunidadacademica[]> {
+    const qry = `SELECT * FROM unidad ORDER BY estatus, clave`;
+
     return new Promise((resolve, reject) => {
-      DB.query(
-        `SELECT * FROM unidad ORDER BY estatus, nombre`,
-        [],
-        (err, res, fields) => {
-          if (err) reject(err);
-          resolve(res);
-        });
+      DB.query(qry, [], (err, res, fields) => {
+        if (err) reject(err);
+        resolve(res);
+      });
     });
   }
 
@@ -23,16 +23,36 @@ class UnidadModel {
    * Lista los datos de una unidad académica atravez de su idunidad.
    * @param {number} idunidad 
    * @returns {Promise<Iunidadacademica>}
+   * @throws {ERRORS_MODEL.UNIDAD.NOTFOUNT}
    */
   public getUnidadAcademicaById(idunidad: number): Promise<Iunidadacademica> {
+    const qry = `SELECT * FROM unidad WHERE idunidad = ? LIMIT 1`;
+
     return new Promise((resolve, reject) => {
-      DB.query(
-        `SELECT * FROM unidad WHERE idunidad = ?`,
-        [idunidad],
-        (err, res, fields) => {
-          if (err) reject(err);
-          resolve(res[0]);
-        });
+      DB.query(qry, [idunidad], (err, res, fields) => {
+        if (err) reject(err);
+        if (res.length > 0) resolve(res[0]);
+        else reject(ERRORS_MODEL.UNIDAD.NOTFOUNT);
+      });
+    });
+  }
+
+  /**
+   * Valida la existencia de una unidad academica mediante su clave
+   * @param {string} clave 
+   * @returns 
+   * @throws {ERRORS_MODEL.UNIDAD.NOTFOUNT}
+   */
+  public exists(clave: string): Promise<boolean> {
+    const qry = `SELECT COUNT(1) AS exist FROM unidad WHERE clave = ?`;
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [clave], (err, res, fields) => {
+        if (err) reject(err);
+        const exist = Boolean(res[0].exist);
+        if (exist) resolve(exist);
+        else reject(ERRORS_MODEL.UNIDAD.NOTFOUNT);
+      });
     });
   }
 
@@ -40,55 +60,79 @@ class UnidadModel {
    * Actualiza los datos nombre, direccion, correo, telefono, estatus de una unidad academica
    * @param {Iunidadacademica} data datos de la unidad academica 
    * @returns {Promise<boolean>}
+   * @throws {ERRORS_MODEL.UNIDAD.NOTUPDATE}
    */
-  public updateUnidadAcademica(data: Iunidadacademica): Promise<boolean> {
-    return new Promise((resolve, reject) => {
-      DB.query(
-        `UPDATE unidad SET
-          nombre = ?,
-          direccion = ?,
-          correo = ?,
-          telefono = ?,
-          estatus = ?
-        WHERE idunidad = ?`,
-        [data.nombre, data.direccion, data.correo, data.telefono, data.estatus, data.idunidad],
-        (err, res, fields) => {
-          if (err) reject(err);
+  public updateUnidadAcademica(data: Iunidadacademica): Promise<string> {
+    const qry =
+      `UPDATE unidad SET nombre = ?, direccion = ?, correo = ?, telefono = ?, estatus = ? WHERE clave = ?`;
 
-          if (res['affectedRows'] > 0)
-            resolve(true);
-          else
-            resolve(false);
-        });
+    const params = [data.nombre, data.direccion, data.correo, data.telefono, data.estatus, data.clave];
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, params, (err, res, fields) => {
+        if (err) reject(err);
+        if (res.affectedRows > 0)
+          resolve(`Datos de la unidad académica actualizados con exito.`);
+        else reject(ERRORS_MODEL.UNIDAD.NOTUPDATE);
+      });
+    });
+  }
+
+  /**
+   * Valida si una unidad academica esta registrada mediante su clave. Para evitar duplicidad
+   * @param {string} clave 
+   * @returns
+   * @throws {ERRORS_MODEL.UNIDAD.DUPLICATE}
+   */
+  public isRegistrer(clave: string): Promise<boolean> {
+    const qry = `SELECT COUNT(1) AS isRegistrer FROM unidad WHERE clave = ?`;
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [clave], (err, res, fields) => {
+        if (err) reject(err);
+        const isRegistrer = !Boolean(res[0].isRegistrer);
+        if (isRegistrer) resolve(isRegistrer);
+        else reject(ERRORS_MODEL.UNIDAD.DUPLICATE);
+      });
+    });
+  }
+
+  /**
+   * Valida si el correo de la unidad ya esta registrado
+   * @param {string} email 
+   * @returns
+   * @throws {ERRORS_MODEL.UNIDAD.EMAILDUPLICATE}
+   */
+  public emailIsRegistrer(email: string): Promise<boolean> {
+    const qry = `SELECT COUNT(1) AS isRegistrer FROM unidad WHERE correo = ?`;
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [email], (err, res, fields) => {
+        if (err) reject(err);
+        const isRegistrer = !Boolean(res[0].isRegistrer);
+        if (isRegistrer) resolve(isRegistrer);
+        else reject(ERRORS_MODEL.UNIDAD.EMAILDUPLICATE);
+      });
     });
   }
 
   /**
    * Actualiza los campos [clave, nombre, perfil, direccion, correo, telefono ] de la unidad academica proporcionada.
-   * @param {Iunidadacademica} unidad_academica 
+   * @param {Iunidadacademica} data 
    * @returns {Promise<boolean>}
    */
-  public newUnidadAcademica(unidad_academica: Iunidadacademica): Promise<boolean> {
-    return new Promise((resolve, reject) => {
-      DB.query(
-        `INSERT INTO unidad (clave, nombre, perfil, direccion, correo, telefono) 
-        VALUES (?, ?, ?, ?, ?, ?) `,
-        [
-          unidad_academica.clave,
-          unidad_academica.nombre,
-          'http://localhost:3000/static/default.png',
-          unidad_academica.direccion,
-          unidad_academica.correo,
-          unidad_academica.telefono,
-        ],
-        (err, res, fields) => {
-          if (err) reject(err);
+  public newUnidadAcademica(data: Iunidadacademica): Promise<string> {
+    const qry = `INSERT INTO unidad (clave, nombre, perfil, direccion, correo, telefono) VALUES (?, ?, ?, ?, ?, ?) `;
 
-          if (res['affectedRows'] > 0)
-            resolve(true);
-          else
-            resolve(false);
-        });
+    const params = [data.clave, data.nombre, 'http://localhost:3000/static/default.png', data.direccion, data.correo, data.telefono];
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, params, (err, res, fields) => {
+        if (err) reject(err);
+
+        if (res.affectedRows > 0) resolve(`Unidad académica registrada con exito.`);
+        else reject();
+      });
     });
   }
 }

@@ -1,7 +1,14 @@
 import passport from 'passport';
 import { Erol } from '../models/model.model';
 import { Router } from 'express';
-import { AllPaquetesDocumentos, DetallePaqueteDocumentos, NewPaqueteDocumentos, PaqueteDocumentosById, UpdatePaqueteDocumentos } from '../controllers/documento.controler';
+import {
+  AllPaquetesDocumentos,
+  DetallePaqueteDocumentos,
+  NewPaqueteDocumentos,
+  PaqueteDocumentosById,
+  UpdatePaqueteDocumentos,
+  UploadDocumentoAlumno,
+} from '../controllers/documento.controler';
 
 const router = Router();
 
@@ -65,5 +72,14 @@ router.post(
   NewPaqueteDocumentos
 );
 
+
+router.post(
+  '/upload/:name',
+  passport.authenticate(
+    [Erol.DIRECTOR],
+    { session: false }
+  ),
+  UploadDocumentoAlumno
+);
 
 export default router;

@@ -15,6 +15,17 @@ export const AllEmpleados = (req: Request, res: Response) => {
     .catch((err) => res.status(500).send(err));
 }
 
+export const AllEmpleadosByUnidad = (req: Request, res: Response) => {
+  if (!req.params.idunidad)
+    return res.status(400)
+      .json(new ResponseData(false, 'El id proporcionado no esta registrado', null));
+
+  const idunidad = Number(req.params.idunidad);
+  empleadoModel.getAllEmpleadosByUnidad(idunidad) // Obtenemos el listado de empleados
+    .then((data: Iusuario[]) => res.status(200).json(new ResponseData(true, '', data)))
+    .catch((err) => res.status(500).send(err));
+}
+
 /**
  * Lista los datos de un alumno mediante la matricula proporcionada.
   */
