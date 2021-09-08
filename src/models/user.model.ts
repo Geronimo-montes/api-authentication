@@ -14,7 +14,7 @@ class UserModel {
     const qry = `SELECT email FROM usuario WHERE email = ?`;
     return new Promise((resolve, reject) => {
       DB.query(qry, [email], (err, res, fields) => {
-        if (err) reject({ err });
+        if (err) reject(err);
         if (res.length > 0) resolve(true);
         else reject(ERRORS_VALIDATOR.AUTH.EMAIL.NOTFOUNT);
       });
@@ -31,8 +31,8 @@ class UserModel {
     const qry = `SELECT idusuario FROM usuario WHERE email = ? AND password = ? AND estatus = 'a'`;
     return new Promise((resolve, reject) => {
       DB.query(qry, [email, password], (err, res, fields) => {
-        if (err) reject({ err });
-        if (res.length > 0) resolve(res[0]);
+        if (err) reject(err);
+        if (res.length > 0) resolve(res[0].idusuario);
         else reject(ERRORS_MODEL.AUTH.INVALIDAUTH);
       });
     });

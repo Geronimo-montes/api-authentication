@@ -10,10 +10,11 @@ import { createToken } from '../middlewares/auth.middleware';
  * Inicio de sesión de usuario. Se proporcionan el usuario y la contraseña para la validacion de inicio de sesión.
  */
 export const SignIn = (req: Request, res: Response, next: NextFunction) => {
+  // VALIDAMOS LAS CREDENCIALES, SI SON VALIDAS RETRONAMOS LA SIGUIENTE PROMESA
   userModel.singIn(req.body.email, req.body.password)
-    // VALIDAMOS LAS CREDENCIALES, SI SON VALIDAS RETRONAMOS LA SIGUIENTE PROMESA
-    .then((idusuario: number) => userModel.insertSesion(idusuario))
     // CREAMOS LA SESION DE USUARIO
+    .then((idusuario: number) => userModel.insertSesion(idusuario))
+    // OBTENEMOS LA DATA COMPETA DEL USUARIO
     .then((idusuario: number) => userModel.getUsuarioById(idusuario))
     // SE CREA EL TOKEN
     .then((usuario: Iusuario) => {
