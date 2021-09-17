@@ -1,7 +1,16 @@
 import multer from 'multer';
 import path from 'path';
 import util from 'util';
-import { getExtencionFile } from './file.middleware';
+
+/**
+ * Extrae la extenion del archivo.
+ * @param file 
+ * @returns {string} Extension del archivo de la forma '.ext'
+ */
+export const getExtencionFile = (file: Express.Multer.File) => {
+	const name = file.originalname; // capturamos el nombre
+	return name.slice(name.indexOf('.')); // extraemos la extensión del archivo
+}
 
 /**
  * Guarda el archivo en la carpeta publica.

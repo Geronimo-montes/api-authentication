@@ -1,36 +1,26 @@
 import passport from 'passport';
 import { Router } from 'express';
-import { SignIn, signOut } from '../controllers/user.controler';
-import { Erol } from '../models/model.model';
-
-import { validate } from '../validator/validator';
+import { validate } from '../middlewares/validator.middleware';
 import { checkSchema } from 'express-validator';
-import { emailValidator, passwordValidator } from '../validator/auth.validator';
+import { isAuthenticate } from '../middlewares/auth.middleware';
+import { singinSchemaPost } from '../validator/Schemas/auth.schema';
+import {
+  SignIn,
+  signOut,
+} from '../controllers/user.controler';
 
-const router = Router();
-
-/**
- * Iniciar sesión
- */
-router.post(
-  '/sign-in',
-  validate(
-    checkSchema({
-      email: { ...emailValidator },
-      password: { ...passwordValidator }
-    })
-  ),
-  SignIn);
-
-/**
- * Cerrar sesión
- */
-router.delete(
-  '/sign-out',
-  passport.authenticate(
-    [Erol.DIRECTOR, Erol.AUXILIAR, Erol.JEFATURA],
-    { session: false }
-  ),
-  signOut);
+const router = Router()
+  // INICIAR SESION
+  .post(
+    '/sign-in',
+    validate(checkSchema(singinSchemaPost)),
+    SignIn
+  )
+  // CERRAR SESION
+  .use(passport.authenticate(isAuthenticate, { session: false }))
+  .delete(
+    '/sign-out',
+    signOut
+  );
 
 export default router;

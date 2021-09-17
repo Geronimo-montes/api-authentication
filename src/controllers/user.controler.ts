@@ -1,9 +1,19 @@
-import userModel from '../models/user.model';
-import { NextFunction, Request, Response } from 'express';
-import { Iusuario } from '../models/model.model';
-import { ResponseData } from '../config/response';
-import { IError } from '../errors/error.middleware';
-import { createToken } from '../middlewares/auth.middleware';
+import
+userModel from '../models/user.model';
+import {
+  Iusuario
+} from '../models/model.model';
+import {
+  ResponseData
+} from '../config/response';
+import {
+  createToken
+} from '../middlewares/auth.middleware';
+import {
+  NextFunction,
+  Request,
+  Response,
+} from 'express';
 
 
 /**
@@ -21,7 +31,7 @@ export const SignIn = (req: Request, res: Response, next: NextFunction) => {
       const token = createToken(usuario);
       res.status(200)
         .json(new ResponseData(true, 'Sesión iniciada con exito.', { token }));
-    }).catch((err: IError) => next(err));
+    }).catch((err) => next(new Error(err)));
 }
 
 /**
@@ -33,5 +43,5 @@ export const signOut = (req: Request, res: Response, next: NextFunction) => {
   userModel.deleteSesion(usuario.idusuario)
     // BORRAMOS LA SESIÓN
     .then(() => res.status(200).json(new ResponseData(true, 'Cierre de sesion exitoso.', null)))
-    .catch((err: IError) => next(err));
+    .catch((err) => next(new Error(err)));
 }

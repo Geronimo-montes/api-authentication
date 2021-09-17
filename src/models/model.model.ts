@@ -1,5 +1,4 @@
 export interface Iunidadacademica {
-  idunidad: number;
   clave: string;
   nombre: string;
   perfil: string;
@@ -16,7 +15,7 @@ export interface Iusuario {
   password?: string;
   rol: Erol;
   sesion_conectada?: string;
-  idunidad?: number;
+  clave?: string;
   idjefatura?: number;
   dataJefatura?: Iusuario;
   nombre?: string;
@@ -40,7 +39,7 @@ export enum Eestatus {
 
 export interface Ialumno {
   matricula: string;
-  idunidad: number;
+  clave: string;
   perfil: string;
   nombre: string;
   ape_1: string;

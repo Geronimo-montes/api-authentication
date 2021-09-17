@@ -8,175 +8,167 @@ class EmpleadoModel {
    * @returns {Promise<Iusuario[]>}
    */
   public getAllEmpleados(): Promise<Iusuario[]> {
+    const qry = `SELECT 
+    idusuario, perfil, email, password, rol, sesion_conectada, clave, idjefatura, nombre, ape_1, ape_2, telefono, ultima_conexion, estatus 
+    FROM usuario WHERE rol IN (? , ?) ORDER BY estatus, CONCAT(nombre, ' ', ape_1, ' ', ape_2)`;
+
     return new Promise((resolve, reject) => {
-      DB.query(
-        `SELECT
-          idusuario,
-          perfil,
-          email,
-          password,
-          rol,
-          sesion_conectada,
-          idunidad,
-          idjefatura,
-          nombre,
-          ape_1,
-          ape_2,
-          telefono,
-          ultima_conexion,
-          estatus
-        FROM usuario WHERE rol IN (? , ?) ORDER BY estatus, CONCAT(nombre, ' ', ape_1, ' ', ape_2)`,
-        [Erol.AUXILIAR, Erol.JEFATURA],
-        async (err, res, fields) => {
-          if (err) reject(err);
+      DB.query(qry, [Erol.AUXILIAR, Erol.JEFATURA], async (err, res, fields) => {
+        if (err) reject(err);
 
-          let empleados: Iusuario[] = [];
-          for (let i = 0; i < res.length; i++) {
-            let jefatura = null;
+        let empleados: Iusuario[] = [];
+        for (let i = 0; i < res.length; i++) {
+          if (res[i].idjefatura)
+            await this.getEmpleadoByid(res[i].idjefatura)
+              .then(data => empleados.push({ ...res[i], dataJefatura: data }))
+              .catch(err => reject(err));
+        }
 
-            if (res[i].idjefatura) {
-              await this.getEmpleadoByid(res[i].idjefatura)
-                .then(data => jefatura = data)
-                .catch(err => console.log(err));
-            }
-
-            empleados.push({
-              ...res[i],
-              dataJefatura: jefatura
-            });
-          }
-          console.log({ empleados });
-
-          resolve(empleados);
-        });
+        resolve(empleados);
+      });
     });
   }
 
-  public getAllEmpleadosByUnidad(idunidad: number): Promise<Iusuario[]> {
+  public getAllEmpleadosByUnidad(clave: string): Promise<Iusuario[]> {
+    const qry = `SELECT idusuario, perfil, email, password, rol, sesion_conectada, clave, idjefatura, nombre, ape_1, ape_2, telefono, ultima_conexion, estatus FROM usuario WHERE clave = ? ORDER BY estatus, CONCAT(nombre, ' ', ape_1, ' ', ape_2)`;
+
     return new Promise((resolve, reject) => {
-      DB.query(
-        `SELECT
-          idusuario,
-          perfil,
-          email,
-          password,
-          rol,
-          sesion_conectada,
-          idunidad,
-          idjefatura,
-          nombre,
-          ape_1,
-          ape_2,
-          telefono,
-          ultima_conexion,
-          estatus
-        FROM usuario WHERE idunidad = ? ORDER BY estatus, CONCAT(nombre, ' ', ape_1, ' ', ape_2)`,
-        [idunidad],
-        async (err, res, fields) => {
-          if (err) reject(err);
+      DB.query(qry, [clave], async (err, res, fields) => {
+        if (err) reject(err);
 
-          let empleados: Iusuario[] = [];
-          for (let i = 0; i < res.length; i++) {
-            let jefatura = null;
+        let empleados: Iusuario[] = [];
+        for (let i = 0; i < res.length; i++) {
+          if (res[i].idjefatura)
+            await this.getEmpleadoByid(res[i].idjefatura)
+              .then(data => empleados.push({ ...res[i], dataJefatura: data }))
+              .catch(err => reject(err));
+        }
 
-            if (res[i].idjefatura) {
-              await this.getEmpleadoByid(res[i].idjefatura)
-                .then(data => jefatura = data)
-                .catch(err => console.log(err));
-            }
-
-            empleados.push({
-              ...res[i],
-              dataJefatura: jefatura
-            });
-          }
-          console.log({ empleados });
-
-          resolve(empleados);
-        });
+        resolve(empleados);
+      });
     });
   }
 
   public getEmpleadoByid(idempleado: number): Promise<Iusuario> {
-    return new Promise((resolve, reject) => {
-      DB.query(
-        `SELECT * FROM usuario WHERE idusuario = ?`,
-        [idempleado],
-        (err, res, fields) => {
-          if (err) reject(err);
+    const qry = `SELECT * FROM usuario WHERE idusuario = ?`;
 
-          if (res.length > 0)
-            resolve(res[0]);
-          else
-            reject('No existen resultados para mostrar.')
-        });
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [idempleado], (err, res, fields) => {
+        if (err) reject(err);
+        if (res.length > 0) resolve(<Iusuario>res[0]);
+        else reject();
+
+      });
     });
   }
 
-  public updateEmpleado(data: Iusuario): Promise<boolean> {
-    return new Promise((resolve, reject) => {
-      DB.query(
-        `UPDATE usuario SET
-          perfil = ?,
-          email = ?,
-          rol = ?,
-          idunidad = ?,
-          idjefatura = ?,
-          nombre = ?,
-          ape_1 = ?,
-          ape_2 = ?,
-          telefono = ?,
-          estatus = ?
-        WHERE idusuario = ?`,
-        [
-          data.perfil,
-          data.email,
-          data.rol,
-          data.idunidad,
-          data.idjefatura,
-          data.nombre,
-          data.ape_1,
-          data.ape_2,
-          data.telefono,
-          data.estatus,
-          data.idusuario,
-        ],
-        (err, res, fields) => {
-          if (err) reject(err);
+  public updateEmpleado(data: Iusuario): Promise<string> {
+    const
+      qry =
+        `UPDATE usuario SET email = ?, rol = ?, clave = ?, idjefatura = ?, nombre = ?, ape_1 = ?, ape_2 = ?, telefono = ?, estatus = ? WHERE idusuario = ?`,
+      params = [
+        data.email,
+        data.rol,
+        data.clave,
+        data.idjefatura,
+        data.nombre,
+        data.ape_1,
+        data.ape_2,
+        data.telefono,
+        data.estatus,
+        data.idusuario,
+      ];
 
-          if (res['affectedRows'] > 0)
-            resolve(true);
-          else
-            resolve(false);
-        });
+    return new Promise((resolve, reject) => {
+      DB.query(qry, params, (err, res, fields) => {
+        if (err) reject(err);
+        if (res.affectedRows > 0) resolve(`Datos del empleado actualizados.`);
+        else reject();
+      });
     });
   }
 
-  public newEmpleado(empleado: Iusuario): Promise<boolean> {
-    return new Promise((resolve, reject) => {
-      DB.query(
-        `INSERT INTO usuario (
-          perfil, email, password, rol, idunidad, nombre, ape_1, ape_2, telefono
-        ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-        [
-          'http://localhost:3000/static/default.png',
-          empleado.email,
-          empleado.password,
-          empleado.rol,
-          empleado.idunidad,
-          empleado.nombre,
-          empleado.ape_1,
-          empleado.ape_2,
-          empleado.telefono,
-        ],
-        (err, res, fields) => {
-          if (err) reject(err);
+  public newEmpleado(data: Iusuario): Promise<string> {
+    const
+      qry = `INSERT INTO usuario SET ?;`,
+      insertData = {
+        perfil: `http://localhost:3000/static/${data.perfil}`,
+        email: data.email,
+        password: data.password,
+        rol: data.rol,
+        clave: data.clave,
+        nombre: data.nombre,
+        ape_1: data.ape_1,
+        ape_2: data.ape_2,
+        telefono: data.telefono,
+      };
 
-          if (res['affectedRows'] > 0)
-            resolve(true);
-          else
-            resolve(false);
-        });
+    return new Promise((resolve, reject) => {
+      DB.query(qry, insertData, (err, res, fields) => {
+        if (err) reject(err);
+        if (res['affectedRows'] > 0) resolve(`Empleado registado con exito.`);
+        else reject();
+      });
+    });
+  }
+
+  /**
+ * Valida si la matricula ya esta registrada en la base de datos. 
+ * @param {string} idempleado 
+ * @returns {Promise<boolean>} 
+ * @throws {ERRORS_MODEL.UNIDAD.NOTFOUNT}
+ */
+  public exists(idempleado: string): Promise<boolean> {
+    const qry = `SELECT COUNT(1) AS exist FROM usuario WHERE idusuario = ?; `;
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [idempleado], (err, res, fields) => {
+        if (err) reject(err);
+
+        const exist = Boolean(res[0].exist)
+        if (exist) resolve(exist);
+        else reject();
+      });
+    });
+  }
+
+  /**
+   * Valida si la matricula ya esta registrada en la base de datos. Para evitar duplicidad en los registros.
+   * @param {string} idempleado 
+   * @returns {Promise<boolean>} 
+   * @throws {ERRORS_MODEL.UNIDAD.DUPLICATE}
+   */
+  public isRegistrer(idempleado: string): Promise<boolean> {
+    const qry = `SELECT COUNT(1) AS isRegistrer FROM usuario WHERE idusuario = ?; `;
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [idempleado], (err, res, fields) => {
+        if (err) reject(err);
+
+        const isRegistrer = !Boolean(res[0].isRegistrer)
+        if (isRegistrer) resolve(isRegistrer);
+        else reject();
+      });
+    });
+  }
+
+  /**
+   * Valida si el email ya esta registrado en la base de datos. Para evitar duplicidad en los registros.
+   * @param {string} email 
+   * @returns {Promise<boolean>} 
+   * @throws {ERRORS_MODEL.UNIDAD.EMAILDUPLICATE}
+   */
+  public emailIsRegistrer(email: string): Promise<boolean> {
+    const qry = `SELECT COUNT(1) AS isRegistrer FROM usuario WHERE email = ?; `;
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [email], (err, res, fields) => {
+        if (err) reject(err);
+
+        const isRegistrer = !Boolean(res[0].isRegistrer)
+        if (isRegistrer) resolve(isRegistrer);
+        else reject();
+      });
     });
   }
 }

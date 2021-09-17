@@ -1,7 +1,7 @@
 import empleadoModel from "../models/empleado.model"
 import { ResponseData } from "../config/response";
-import { Iusuario } from "../models/model.model";
 import {
+  NextFunction,
   Request,
   Response
 } from 'express';
@@ -9,79 +9,49 @@ import {
 /**
  * Lista los empleados registrados en el sistema con rol auxiliar o jefatura.
  */
-export const AllEmpleados = (req: Request, res: Response) => {
-  empleadoModel.getAllEmpleados() // Obtenemos el listado de empleados
-    .then((data: Iusuario[]) => res.status(200).json(new ResponseData(true, '', data)))
-    .catch((err) => res.status(500).send(err));
-}
+export const AllEmpleados =
+  (req: Request, res: Response, next: NextFunction) => {
+    empleadoModel.getAllEmpleados()
+      .then((data) => res.status(200).json(new ResponseData(true, '', data)))
+      .catch((err) => next(new Error(err)));
+  }
 
-export const AllEmpleadosByUnidad = (req: Request, res: Response) => {
-  if (!req.params.idunidad)
-    return res.status(400)
-      .json(new ResponseData(false, 'El id proporcionado no esta registrado', null));
-
-  const idunidad = Number(req.params.idunidad);
-  empleadoModel.getAllEmpleadosByUnidad(idunidad) // Obtenemos el listado de empleados
-    .then((data: Iusuario[]) => res.status(200).json(new ResponseData(true, '', data)))
-    .catch((err) => res.status(500).send(err));
-}
+export const AllEmpleadosByUnidad =
+  (req: Request, res: Response, next: NextFunction) => {
+    empleadoModel.getAllEmpleadosByUnidad(req.params.clave)
+      .then((data) => res.status(200).json(new ResponseData(true, '', data)))
+      .catch((err) => next(new Error(err)));
+  }
 
 /**
  * Lista los datos de un alumno mediante la matricula proporcionada.
   */
-export const EmpleadoById = (req: Request, res: Response) => {
-  if (!req.params.idempleado)
-    return res.status(400)
-      .json(new ResponseData(false, 'No se puede consultar el id proporcionado', null))
-
-  const idempleado: number = Number(req.params.idempleado);
-  empleadoModel.getEmpleadoByid(idempleado)
-    .then((data: Iusuario) => {
-      res.status(200)
-        .json(new ResponseData(true, '', data));
-    }).catch((err) => res.status(500).send(err));
-}
+export const EmpleadoById =
+  (req: Request, res: Response, next: NextFunction) => {
+    empleadoModel.getEmpleadoByid(Number(req.params.idempleado))
+      .then((data) => res.status(200).json(new ResponseData(true, '', data)))
+      .catch((err) => next(new Error(err)));
+  }
 
 /**
  * Se proporciona los datos de un alumno y se actualizan en la base de datos.
  * Parametro esperado [body.data]
  */
-export const UpdateEmpleado = (req: Request, res: Response) => {
-  if (!req.body.data)
-    return res.status(400)
-      .json(new ResponseData(false, 'No se puede actualizar el alumno, matricula no valida.', null))
+export const UpdateEmpleado =
+  (req: Request, res: Response, next: NextFunction) => {
+    empleadoModel.updateEmpleado({ ...req.body, perfil: req.file?.filename })
+      .then((repons: string) =>
+        res.status(200).json(new ResponseData(true, repons, null)))
+      .catch((err) => next(new Error(err)));
+  }
 
-  const empleado: Iusuario = req.body.data;
-
-  empleadoModel.updateEmpleado(empleado)
-    .then((data: boolean) => {
-      res.status(200).json(
-        new ResponseData(
-          data,
-          (data) ?
-            `Información del empleado ${empleado.nombre} ${empleado.ape_1} ${empleado.ape_2} actualizados con exito.` :
-            `Error al actualizar la información del empleado ${empleado.nombre} ${empleado.ape_1} ${empleado.ape_2}.`,
-          null
-        ));
-    }).catch((err) => res.status(500).send(err));
-}
-
-export const NewEmpleado = (req: Request, res: Response) => {
-  if (!req.body.data)
-    return res.status(400).json(
-      new ResponseData(false, 'No se puede registrar la información proporcionada.', null));
-
-  const empleado: Iusuario = req.body.data;
-
-  empleadoModel.newEmpleado(empleado)
-    .then((data: boolean) => {
-      res.status(200).json(
-        new ResponseData(
-          data,
-          (data) ?
-            `Empleado ${empleado.nombre} ${empleado.ape_1} ${empleado.ape_2} registrada con exito.` :
-            `Error al registrar los datos del empleado ${empleado.nombre} ${empleado.ape_1} ${empleado.ape_2}`,
-          null
-        ));
-    }).catch((err) => res.status(500).send(err));
-}
+/**
+ * Registra un nuevo empleado en el sistema 
+ */
+export const NewEmpleado =
+  (req: Request, res: Response, next: NextFunction) => {
+    empleadoModel.newEmpleado({ ...req.body, perfil: req.file?.filename })
+      .then((repons: string) =>
+        res.status(200).json(new ResponseData(true, repons, null)))
+      .catch((err) => next(new Error(err)));
+  }

@@ -1,100 +1,68 @@
-import { Router } from 'express';
+import uploadPerfil from '../middlewares/file-perfil.middleware';
 import passport from 'passport';
-import { Erol } from '../models/model.model';
+import { Router } from 'express';
+import { validate } from '../middlewares/validator.middleware';
+import { checkSchema } from 'express-validator';
+import {
+  isAdmin,
+  isAuthenticate
+} from '../middlewares/auth.middleware';
 import {
   AllAlumnosByUnidadAcademica,
   AlumnoByMatricula,
   GetDocEntregadosAlumnoPack,
   NewAlumno,
   UpdateAlumno,
-  UploadPerfil,
   ValidarMatricula,
 } from '../controllers/alumno.controler';
+import {
+  AlumnoSchemaGet,
+  AlumnoSchemaGetAll,
+  AlumnoSchemaGetDoc,
+  AlumnoSchemaPost,
+  AlumnoSchemaPut,
+} from '../validator/Schemas/alumno.schema';
 
-const router = Router();
-
-/**
- * Lista de alumnos por unidad academica
- */
-router.get(
-  '/all/:idunidad',
-  passport.authenticate(
-    [Erol.DIRECTOR, Erol.JEFATURA, Erol.AUXILIAR],
-    { session: false }
-  ),
-  AllAlumnosByUnidadAcademica
-);
-
-/**
- * get data alumno by matricula
- */
-router.get(
-  '/:matricula',
-  passport.authenticate(
-    [Erol.DIRECTOR, Erol.JEFATURA, Erol.AUXILIAR],
-    { session: false }
-  ),
-  AlumnoByMatricula
-);
-
-/**
- * update data alumno by matricula. Se espera el parametro: data.
- */
-router.put(
-  '/update',
-  passport.authenticate(
-    [Erol.DIRECTOR],
-    { session: false }
-  ),
-  UpdateAlumno
-);
-
-/**
- * Verifica si la matricula esta registrada en el sistema
- */
-router.get(
-  '/validar/:matricula',
-  passport.authenticate(
-    [Erol.DIRECTOR],
-    { session: false }
-  ),
-  ValidarMatricula
-)
-
-/**
- * Registra un alumno nuevo. Se espera el parametro: data.
- */
-router.post(
-  '/new',
-  passport.authenticate(
-    [Erol.DIRECTOR],
-    { session: false }
-  ),
-  NewAlumno
-);
-
-/**
- * update data alumno by matricula. Se espera el parametro: data.
- */
-router.get(
-  '/:matricula/:idpaquete',
-  passport.authenticate(
-    [Erol.DIRECTOR],
-    { session: false }
-  ),
-  GetDocEntregadosAlumnoPack
-);
-
-/**
- * Actualiza la foto de perfil del alumno
- */
-router.post(
-  '/upload/:matricula/:name',
-  passport.authenticate(
-    [Erol.DIRECTOR],
-    { session: false }
-  ),
-  UploadPerfil
-);
+const router = Router()
+  .use(passport.authenticate(isAdmin, { session: false }))
+  // LISTAR ALUMNOS POR UNIDAD ACADEMICA
+  .get(
+    '/all/:clave',
+    validate(checkSchema(AlumnoSchemaGetAll)),
+    AllAlumnosByUnidadAcademica
+  )
+  // VALIDAR EXISTENCIA DE LA MATRICULA EN EL SISTEMA
+  .get(
+    '/validar/:matricula',
+    validate(checkSchema(AlumnoSchemaGet)),
+    ValidarMatricula,
+  )
+  // REGISTRAR NUEVO ALUMNO
+  .post(
+    '/new',
+    uploadPerfil.single('perfil'),
+    validate(checkSchema(AlumnoSchemaPost)),
+    NewAlumno
+  )
+  // ACTUALIZAR INFORMACION DEL ALUMNO MEDIANTE SU MATRICULA
+  .put(
+    '/update',
+    uploadPerfil.none(),
+    validate(checkSchema(AlumnoSchemaPut)),
+    UpdateAlumno
+  )
+  .use(passport.authenticate(isAuthenticate, { session: false }))
+  // LISTAR DATOS DEL ALUMNO MEDIANTE SU MATRICULA
+  .get(
+    '/:matricula',
+    validate(checkSchema(AlumnoSchemaGet)),
+    AlumnoByMatricula
+  )
+  // 
+  .get( //docs
+    '/:matricula/:idpaquete',
+    validate(checkSchema(AlumnoSchemaGetDoc)),
+    GetDocEntregadosAlumnoPack
+  );
 
 export default router;

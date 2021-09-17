@@ -1,25 +1,22 @@
-import { resolve } from 'path';
 import DB from '../database';
-import { Ialumno, Idocumento, IdocumentoEntregado } from './model.model';
+import { Ialumno, IdocumentoEntregado } from './model.model';
 
 class AlumnoModel {
-  private defaultError: string =
-    `Se ha producido un error en el servidor. Trabajamos en una solución.`;
 
   /**
    * Lista la informacion de los alumnos de una unidad académica. ordenados por estatus
-   * @param {number} idunidad 
+   * @param {number} claveUnidad 
    * @returns {Promise<Ialumno[]>}
    */
-  public getAllAlumnosByUnidadAcademica(idunidad: number): Promise<Ialumno[]> {
+  public getAllAlumnosByUnidadAcademica(claveUnidad: string): Promise<Ialumno[]> {
+    const qry =
+      `SELECT * FROM alumno WHERE clave = ? ORDER BY estatus, matricula;`;
+
     return new Promise((resolve, reject) => {
-      DB.query(
-        `SELECT * FROM alumno WHERE idunidad = ? ORDER BY estatus, matricula;`,
-        [idunidad],
-        (err, res, fields) => {
-          if (err) { reject(err); throw err; };
-          resolve(res);
-        });
+      DB.query(qry, [claveUnidad], (err, res, fields) => {
+        if (err) reject(err);
+        resolve(res);
+      });
     });
   }
 
@@ -27,90 +24,48 @@ class AlumnoModel {
    * Lista los datos de un alumno mediante la matricula.
    * @param {string} matricula 
    * @returns {Promise<Ialumno>}
+   * @throws {ERRORS_MODEL.ALUMNO.NOTFOUNT}
    */
   public getAlumnoByMatricula(matricula: string): Promise<Ialumno> {
-    return new Promise((resolve, reject) => {
-      DB.query(
-        `SELECT * FROM alumno WHERE matricula = ?`,
-        [matricula],
-        (err, res, fields) => {
-          if (err) { reject(err); throw err; };
+    const qry = `SELECT * FROM alumno WHERE matricula = ?`;
 
-          if (res.length > 0) resolve(res[0]);
-          else reject('No existen resultados para mostrar.');
-        });
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [matricula], (err, res, fields) => {
+        if (err) reject(err);
+        if (res.length > 0) resolve(res[0]);
+        else reject();
+      });
     });
   }
 
   /**
    * Actualiza la informacion general de un alumno
    * @param {Ialumno} data
-   * @returns {Promise<boolean>}
+   * @returns {Promise<string>}
+   * @throws {ERRORS_MODEL.ALUMNO.NOTUPDATE}
    */
-  public updateAlumno(data: Ialumno): Promise<boolean> {
-    return new Promise((resolve, reject) => {
-      DB.query(
-        `UPDATE alumno SET
-          nombre = ?,
-          ape_1 = ?,
-          ape_2 = ?,
-          genero = ?,
-          direccion = ?,
-          telefono = ?,
-          email = ?, 
-          estatus = ?
-        WHERE matricula = ?`,
-        [data.nombre, data.ape_1, data.ape_2, data.genero, data.direccion, data.telefono, data.email, data.estatus, data.matricula],
-        (err, res, fields) => {
-          if (err) { reject(err); throw err; };
+  public updateAlumno(data: Ialumno): Promise<string> {
+    const qry =
+      `UPDATE alumno SET perfil = ?,nombre = ?, ape_1 = ?, ape_2 = ?, genero = ?, direccion = ?, telefono = ?, email = ?,  estatus = ? WHERE matricula = ?;`;
 
-          if (res.affectedRows > 0) resolve(true);
-          else reject(this.defaultError);
-        });
-    });
-  }
-
-  /**
-   * Valida si la matricula ya esta registrada en la base de datos. 
-   * @param {string} matricula 
-   * @returns {Promise<boolean>} TRUE: si encuentra una coincidencia; FALSE: si no encuentra nada.
-   */
-  public validarMatricula(matricula: string): Promise<boolean> {
-    return new Promise((resolve, reject) => {
-      DB.query(`SELECT matricula FROM alumno WHERE matricula = ?;`,
-        [matricula],
-        (err, res, fields) => {
-          if (err) { reject(err); throw err; };
-
-          if (res.length === 0) resolve(false);
-          else reject('La matricula ya esta registrada en el sistema.');
-        })
-    })
-  }
-
-  /**
-   * Registra un alumno en la base de datos
-   * @param {Ialumno} data
-   * @returns {Promise<boolean>}
-   */
-  public newAlumno(alumno: Ialumno): Promise<boolean> {
-    const insertData = {
-      matricula: alumno.matricula,
-      idunidad: alumno.idunidad,
-      nombre: alumno.nombre,
-      ape_1: alumno.ape_1,
-      ape_2: alumno.ape_2,
-      genero: alumno.genero,
-      direccion: alumno.direccion,
-      telefono: alumno.telefono,
-      email: alumno.email,
-    };
+    const params = [
+      `http://localhost:3000/static/${data.perfil}`,
+      data.nombre,
+      data.ape_1,
+      data.ape_2,
+      data.genero,
+      data.direccion,
+      data.telefono,
+      data.email,
+      data.estatus,
+      data.matricula,
+    ];
 
     return new Promise((resolve, reject) => {
-      DB.query(`INSERT INTO alumno SET ?`, insertData, (err, res, fields) => {
-        if (err) { reject(err); throw err; };
-        if (res.affectedRows > 0) resolve(true);
-        else reject(this.defaultError);
+      DB.query(qry, params, (err, res, fields) => {
+        if (err) reject(err);
+        if (res.affectedRows > 0) resolve(`Datos del alumno actualizados con exito`);
+        else reject();
       });
     });
   }
@@ -120,17 +75,28 @@ class AlumnoModel {
    * @param {Ialumno} data
    * @returns {Promise<boolean>}
    */
-  public updateRutaPerfil(matricula: string, name: string, ext: string): Promise<boolean> {
-    return new Promise((resolve, reject) => {
-      DB.query(
-        `UPDATE alumno SET perfil = ? WHERE matricula = ?`,
-        [`http://localhost:3000/static/${name}${ext}`, matricula],
-        (err, res, fields) => {
-          if (err) { reject(err); throw err; };
+  public newAlumno(data: Ialumno): Promise<string> {
+    const
+      qry = `INSERT INTO alumno SET ?;`,
+      insertData = {
+        perfil: `http://localhost:3000/static/${data.perfil}`,
+        matricula: data.matricula,
+        clave: data.clave,
+        nombre: data.nombre,
+        ape_1: data.ape_1,
+        ape_2: data.ape_2,
+        genero: data.genero,
+        direccion: data.direccion,
+        telefono: data.telefono,
+        email: data.email,
+      };
 
-          if (res.affectedRows > 0) resolve(true);
-          else reject('No se actualizo ningun registro.');
-        });
+    return new Promise((resolve, reject) => {
+      DB.query(qry, insertData, (err, res, fields) => {
+        if (err) return reject(err);
+        if (res.affectedRows > 0) resolve(`Alumno registrado con exito.`);
+        else reject();
+      });
     });
   }
 
@@ -141,14 +107,75 @@ class AlumnoModel {
    * @returns {IdocumentoEntregado[]}
    */
   public getDocsEntregadosAlumnoPack(matricula: string, idpaquete: number): Promise<IdocumentoEntregado[]> {
+    const qry =
+      `SELECT * FROM documento_alumno WHERE matricula = ? AND idpaquete = ?;`;
+
     return new Promise((resolve, reject) => {
-      DB.query(
-        `SELECT * FROM documento_alumno WHERE matricula = ? AND idpaquete = ?`,
-        [matricula, idpaquete],
-        (err, res, fields) => {
-          if (err) { reject(err); throw err; };
-          resolve(res);
-        });
+      DB.query(qry, [matricula, idpaquete], (err, res, fields) => {
+        if (err) reject(err);
+        resolve(res);
+      });
+    });
+  }
+
+  /**
+   * Valida si la matricula ya esta registrada en la base de datos. 
+   * @param {string} matricula 
+   * @returns {Promise<boolean>} 
+   * @throws {ERRORS_MODEL.UNIDAD.NOTFOUNT}
+   */
+  public exists(matricula: string): Promise<boolean> {
+    const qry = `SELECT COUNT(1) AS exist FROM alumno WHERE matricula = ?; `;
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [matricula], (err, res, fields) => {
+        if (err) reject(err);
+
+        const exist = Boolean(res[0].exist)
+        if (exist) resolve(exist);
+        else reject();
+      });
+    });
+  }
+
+  /**
+   * Valida si la matricula ya esta registrada en la base de datos. Para evitar duplicidad en los registros.
+   * @param {string} matricula 
+   * @returns {Promise<boolean>} 
+   * @throws {ERRORS_MODEL.UNIDAD.DUPLICATE}
+   */
+  public isRegistrer(matricula: string): Promise<boolean> {
+    const qry = `SELECT COUNT(1) AS isRegistrer FROM alumno WHERE matricula = ?; `;
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [matricula], (err, res, fields) => {
+        if (err) reject(err);
+
+        const isRegistrer = !Boolean(res[0].isRegistrer)
+        if (isRegistrer) resolve(isRegistrer);
+        else reject();
+      });
+    });
+  }
+
+
+  /**
+   * Valida si el email ya esta registrado en la base de datos. Para evitar duplicidad en los registros.
+   * @param {string} email 
+   * @returns {Promise<boolean>} 
+   * @throws {ERRORS_MODEL.UNIDAD.EMAILDUPLICATE}
+   */
+  public emailIsRegistrer(email: string): Promise<boolean> {
+    const qry = `SELECT COUNT(1) AS isRegistrer FROM alumno WHERE email = ?; `;
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [email], (err, res, fields) => {
+        if (err) reject(err);
+
+        const isRegistrer = !Boolean(res[0].isRegistrer)
+        if (isRegistrer) resolve(isRegistrer);
+        else reject();
+      });
     });
   }
 }
