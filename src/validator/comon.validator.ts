@@ -26,7 +26,7 @@ export const isAlphaValidator: ParamSchema = {
 	},
 	// VERIFICAMOS LA EXISTENCIA DE SOLO LETRAS Y ESPACIOS
 	isAlpha: {
-		options: ['es-ES', { ignore: ' ' }],
+		options: ['es-ES', { ignore: ' .,:;-_!¡¿?()' }],
 		errorMessage: `El parametro {{param}} debe contener unicamente letras.`,
 		bail: true,
 	},
@@ -44,7 +44,7 @@ export const direccionValidator: ParamSchema = {
 	},
 	// VERIFICAMOS EL TIPO DE DATO
 	isAlphanumeric: {
-		options: ['es-ES', { ignore: ' ' }],
+		options: ['es-ES', { ignore: ' .,:;-_!¡¿?()', }],
 		errorMessage: `El parametro {{param}} debe contener unicamente letras.`,
 		bail: true,
 	},

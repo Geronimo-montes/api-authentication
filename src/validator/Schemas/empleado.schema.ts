@@ -83,5 +83,16 @@ export const EmpleadoSchemaPut: Schema = {
 	ape_1: { ...isAlphaValidator },
 	ape_2: { ...isAlphaValidator },
 	telefono: { ...telefonoValidator },
+};
+
+
+export const EmpleadoEstatusSchemaPut: Schema = {
+	idempleado: {
+		...idempleadoValidator,
+		custom: {
+			options: empleadoExistValidator,
+			bail: true,
+		}
+	},
 	estatus: { ...estatusValidator },
 };

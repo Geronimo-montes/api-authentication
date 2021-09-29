@@ -1,5 +1,5 @@
 import DB from '../database';
-import { Ialumno, IdocumentoEntregado } from './model.model';
+import { Ialumno } from './model.model';
 
 class AlumnoModel {
 
@@ -46,10 +46,9 @@ class AlumnoModel {
    */
   public updateAlumno(data: Ialumno): Promise<string> {
     const qry =
-      `UPDATE alumno SET perfil = ?,nombre = ?, ape_1 = ?, ape_2 = ?, genero = ?, direccion = ?, telefono = ?, email = ?,  estatus = ? WHERE matricula = ?;`;
+      `UPDATE alumno SET nombre = ?, ape_1 = ?, ape_2 = ?, genero = ?, direccion = ?, telefono = ?, email = ? WHERE matricula = ?;`;
 
     const params = [
-      `http://localhost:3000/static/${data.perfil}`,
       data.nombre,
       data.ape_1,
       data.ape_2,
@@ -57,7 +56,6 @@ class AlumnoModel {
       data.direccion,
       data.telefono,
       data.email,
-      data.estatus,
       data.matricula,
     ];
 
@@ -65,6 +63,20 @@ class AlumnoModel {
       DB.query(qry, params, (err, res, fields) => {
         if (err) reject(err);
         if (res.affectedRows > 0) resolve(`Datos del alumno actualizados con exito`);
+        else reject();
+      });
+    });
+  }
+
+  public putAlumnoEstatus(matricula: string, estatus: string): Promise<string> {
+    const qry =
+      `UPDATE alumno SET estatus = ? WHERE matricula = ?;`;
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, [estatus, matricula], (err, res, fields) => {
+        if (err) reject(err);
+        if (res.affectedRows > 0)
+          resolve(`Alumno con matricula ${matricula} dado de ${(estatus === 'a') ? 'alta' : 'baja'} del sistema.`);
         else reject();
       });
     });
@@ -96,24 +108,6 @@ class AlumnoModel {
         if (err) return reject(err);
         if (res.affectedRows > 0) resolve(`Alumno registrado con exito.`);
         else reject();
-      });
-    });
-  }
-
-  /**
-   * Obtiene los datos de los documentos entregados por el alumno de un paquete en especifico
-   * @param {string} matricula 
-   * @param {number} idpaquete 
-   * @returns {IdocumentoEntregado[]}
-   */
-  public getDocsEntregadosAlumnoPack(matricula: string, idpaquete: number): Promise<IdocumentoEntregado[]> {
-    const qry =
-      `SELECT * FROM documento_alumno WHERE matricula = ? AND idpaquete = ?;`;
-
-    return new Promise((resolve, reject) => {
-      DB.query(qry, [matricula, idpaquete], (err, res, fields) => {
-        if (err) reject(err);
-        resolve(res);
       });
     });
   }

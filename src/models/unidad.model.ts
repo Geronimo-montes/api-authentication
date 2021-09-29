@@ -44,15 +44,13 @@ class UnidadModel {
    */
   public updateUnidadAcademica(data: Iunidadacademica): Promise<string> {
     const qry =
-      `UPDATE unidad SET perfil = ?,nombre = ?, direccion = ?, correo = ?, telefono = ?, estatus = ? WHERE clave = ?`;
+      `UPDATE unidad SET nombre = ?, direccion = ?, correo = ?, telefono = ? WHERE clave = ?`;
 
     const params = [
-      `http://localhost:3000/static/${data.perfil}`,
       data.nombre,
       data.direccion,
       data.correo,
       data.telefono,
-      data.estatus,
       data.clave
     ];
 
@@ -60,6 +58,21 @@ class UnidadModel {
       DB.query(qry, params, (err, res, fields) => {
         if (err) reject(err);
         if (res.affectedRows > 0) resolve(`Datos de la unidad académica actualizados con exito.`);
+        else reject();
+      });
+    });
+  }
+
+  public putUnidadEstatus(clave: string, estatus: string): Promise<string> {
+    const
+      qry = `UPDATE unidad SET estatus = ? WHERE clave = ?;`,
+      params = [estatus, clave];
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, params, (err, res, fields) => {
+        if (err) reject(err);
+        if (res.affectedRows > 0)
+          resolve(`Unidad Academica ${clave} dada de  ${(estatus === 'a') ? 'alta' : 'baja'} del sistema.`);
         else reject();
       });
     });

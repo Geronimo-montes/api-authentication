@@ -1,59 +1,83 @@
-import passport from 'passport';
-import { Erol } from '../models/model.model';
-import { Router } from 'express';
-import { isAdmin, isAuthenticate } from '../middlewares/auth.middleware';
 import { validate } from '../middlewares/validator.middleware';
 import { checkSchema } from 'express-validator';
+import uploadFile from '../middlewares/documento.middleware';
+import passport from 'passport';
+import { Router } from 'express';
 import {
-  AllPaquetesDocumentos,
-  DetallePaqueteDocumentos,
-  NewPaqueteDocumentos,
-  PaqueteDocumentosById,
-  UpdatePaqueteDocumentos,
-  UploadDocumentoAlumno,
+  isAdmin,
+  isAuthenticate,
+} from '../middlewares/auth.middleware';
+import {
+  DonwloadAllFilesByPaquete,
+  DonwloadFileDocumentoById,
+  GetAllDocumentosByIdpaquete,
+  GetDocumentoById,
+  GetEntregasByPaqueteMatricula,
+  GetFileDocumentoById,
+  PostFileDocumento,
+  PutFileDocumento,
 } from '../controllers/documento.controler';
+import {
+  documentoSchemaGetAll,
+  documentoSchemaGetById,
+  documentoSchemaGetFile,
+  documentoSchemaGetZip,
+  documentoSchemaPost,
+  documentoSchemaPut,
+} from '../validator/Schemas/documento.schema';
 
 const router = Router()
   .use(passport.authenticate(isAuthenticate, { session: false }))
-  // LISTADO DE LOS PAQUETES DE DOCUMENTOS REGISTRADOS
+  // LISTADO DE LOS DOCUMENTOS DE UNA PAQUETE
   .get(
-    '/all',
-    validate(checkSchema({})),
-    AllPaquetesDocumentos
+    '/:idpaquete/all',
+    validate(checkSchema(documentoSchemaGetAll)),
+    GetAllDocumentosByIdpaquete
   )
-  // LISTADO DE DATOS DEL PAQUETE DE DOCUMENTACION
+  // LISTADO DE INFORMACION TECNICA DE UN DOCUMENTO
   .get(
-    '/:idpaquetedocumentos',
-    validate(checkSchema({})),
-    PaqueteDocumentosById
+    '/:idpaquete/:iddocumento',
+    validate(checkSchema(documentoSchemaGetById)),
+    GetDocumentoById
   )
-  // LISTA DE DOCUMENTOS QUE PERTENECEN AL PAQUETE DE DOCUMENTOS
+  // LISTADO DE DE DOCUMENTOS ENTREGADOS
   .get(
-    '/detalle-paquete/:idpaquetedocumentos',
-    validate(checkSchema({})),
-    DetallePaqueteDocumentos
+    '/entregas/:idpaquete/:matricula',
+    validate(checkSchema(documentoSchemaGetZip)),
+    GetEntregasByPaqueteMatricula
+  )
+  // GENERA UN DESCARBABLE CON EL PAQUETE DE ENTREGAS
+  .get(
+    '/download/:idpaquete/:matricula',
+    validate(checkSchema(documentoSchemaGetZip)),
+    DonwloadAllFilesByPaquete,
+  )
+  // OBTIENE EL ARCHIVO SOLICITADO
+  .get(
+    '/:idpaquete/:iddocumento/:matricula',
+    validate(checkSchema(documentoSchemaGetFile)),
+    GetFileDocumentoById,
+  )
+  // OBTIENE EL ARCHIVO SOLICITADO
+  .get(
+    '/download/:idpaquete/:iddocumento/:matricula',
+    validate(checkSchema(documentoSchemaGetFile)),
+    DonwloadFileDocumentoById,
   )
   // SUBE EL DOCUMENTO INDICADO AL SISTEMA, REGISTRA LA ENTREGA EN LA BD
   .post(
-    '/upload/:name',
-    passport.authenticate(
-      [Erol.DIRECTOR],
-      { session: false }
-    ),
-    UploadDocumentoAlumno
+    '/:idpaquete/:iddocumento/:matricula',
+    validate(checkSchema(documentoSchemaPost)),
+    uploadFile.single('file'),
+    PostFileDocumento,
   )
   .use(passport.authenticate(isAdmin, { session: false }))
-  // REGISTAR DE UN NUEVO PAQUETE DE DOCUMENTOS
-  .post(
-    '/new',
-    validate(checkSchema({})),
-    NewPaqueteDocumentos
-  )
-  // ACTUALIZA LA INFORMACION DEL PAQUETE DE DOCUMENTOS
+  // ACTUALIZA LA INFORMACION TECNICA DEL DOCUMENTO
   .put(
-    '/update',
-    validate(checkSchema({})),
-    UpdatePaqueteDocumentos
+    '/:idpaquete/:iddocumento/:matricula',
+    validate(checkSchema(documentoSchemaPut)),
+    uploadFile.single('file'),
+    PutFileDocumento
   )
 
 export default router;

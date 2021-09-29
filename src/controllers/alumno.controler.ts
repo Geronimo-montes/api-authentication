@@ -51,7 +51,7 @@ export const AlumnoByMatricula =
 /**
  * Registra los datos de un alumno nuevo, en el sistema
  */
-export const NewAlumno =
+export const PostAlumno =
   async (req: Request, res: Response, next: NextFunction) => {
     alumnoModel
       // UNA VEZ SUBIDA LA IMAGEN DE PERFIL REGISTRAMOS LOS DATOS DEL ALUMNO
@@ -66,11 +66,23 @@ export const NewAlumno =
  * Se proporciona los datos de un alumno y se actualizan en la base de datos.
  * Parametro esperado [body.data]
  */
-export const UpdateAlumno =
+export const PutAlumno =
   (req: Request, res: Response, next: NextFunction) => {
     alumnoModel
       // SUBIDA LA NUEVA IMAGEN ACTUALIZAMOS LA INFO DEL ALUMNO
-      .updateAlumno({ ...req.body, perfil: req.file?.filename })
+      .updateAlumno({ ...req.body })
+      // RESPONDEMOS LA SOLICITUD CON UN RESPONSEDATA
+      .then((respons) => res.status(200).json(new ResponseData(true, respons, null)))
+      // EN CASO DE ERROR DESCIAMOS EL ERROR HACIA EL MANEJADOR DE ERRORES
+      .catch((err) => next(new Error(err)));
+  };
+
+export const PutAlumnoEstatus =
+  (req: Request, res: Response, next: NextFunction) => {
+    const { matricula, estatus } = req.params;
+    alumnoModel
+      // SUBIDA LA NUEVA IMAGEN ACTUALIZAMOS LA INFO DEL ALUMNO
+      .putAlumnoEstatus(matricula, estatus)
       // RESPONDEMOS LA SOLICITUD CON UN RESPONSEDATA
       .then((respons) => res.status(200).json(new ResponseData(true, respons, null)))
       // EN CASO DE ERROR DESCIAMOS EL ERROR HACIA EL MANEJADOR DE ERRORES
@@ -85,23 +97,3 @@ export const ValidarMatricula =
     // LA VALIDACION SE REALIZA DIRECTAMENTE DESDE LA VALIDACION DE LOS PARAMETROS
     return res.status(200).json(new ResponseData(true, '', false));
   };
-
-/**
- * 
- */
-export const GetDocEntregadosAlumnoPack =
-  (req: Request, res: Response, next: NextFunction) => {
-    if (!req.params.matricula || !req.params.idpaquete)
-      return res.status(400).json(
-        new ResponseData(false, 'No se puede obtener lo información requerida', null));
-
-    const
-      matricula = req.params.matricula,
-      idpaquete = Number(req.params.idpaquete);
-
-    alumnoModel.getDocsEntregadosAlumnoPack(matricula, idpaquete)
-      .then((data: IdocumentoEntregado[]) => {
-        res.status(200).json(
-          new ResponseData(true, '', data));
-      }).catch((err) => res.status(500).json(new ResponseData(false, err, null)));
-  }

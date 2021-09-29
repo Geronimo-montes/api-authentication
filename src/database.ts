@@ -5,7 +5,7 @@ import config from './config/config';
 const DB = mysql.createPool(config.DB.URI);
 
 DB.getConnection((err, conn) => {
-  if (err) throw (err.message);
+  if (err) throw err.message;
 
   console.log('¡Conexion a la base de datos exitosa!');
   conn.release();

@@ -1,7 +1,7 @@
 {
-  "name": "ngx-admin",
+  "name": "gestor-documentacion",
   "version": "1.0.0",
-  "description": "",
+  "description": "App web para gestionar la documentación.",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
@@ -9,10 +9,11 @@
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Montes Barreras Luis Geronimo",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "compressing": "^1.5.1",
     "cors": "^2.8.5",
     "express-validator": "^6.12.1",
     "jsonwebtoken": "^8.5.1",

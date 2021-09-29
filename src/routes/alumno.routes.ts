@@ -10,21 +10,28 @@ import {
 import {
   AllAlumnosByUnidadAcademica,
   AlumnoByMatricula,
-  GetDocEntregadosAlumnoPack,
-  NewAlumno,
-  UpdateAlumno,
+  PutAlumnoEstatus,
+  PostAlumno,
+  PutAlumno,
   ValidarMatricula,
 } from '../controllers/alumno.controler';
 import {
-  AlumnoSchemaGet,
+  AlumnoSchemaPutEstatus,
   AlumnoSchemaGetAll,
-  AlumnoSchemaGetDoc,
+  AlumnoSchemaMatriculaExist,
+  AlumnoSchemaMatriculaRegistrer,
   AlumnoSchemaPost,
   AlumnoSchemaPut,
 } from '../validator/Schemas/alumno.schema';
 
 const router = Router()
-  .use(passport.authenticate(isAdmin, { session: false }))
+  .use(passport.authenticate(isAuthenticate, { session: false }))
+  // LISTAR DATOS DEL ALUMNO MEDIANTE SU MATRICULA
+  .get(
+    '/:matricula',
+    validate(checkSchema(AlumnoSchemaMatriculaExist)),
+    AlumnoByMatricula
+  )
   // LISTAR ALUMNOS POR UNIDAD ACADEMICA
   .get(
     '/all/:clave',
@@ -34,35 +41,31 @@ const router = Router()
   // VALIDAR EXISTENCIA DE LA MATRICULA EN EL SISTEMA
   .get(
     '/validar/:matricula',
-    validate(checkSchema(AlumnoSchemaGet)),
+    validate(checkSchema(AlumnoSchemaMatriculaRegistrer)),
     ValidarMatricula,
   )
+  .use(passport.authenticate(isAdmin, { session: false }))
   // REGISTRAR NUEVO ALUMNO
   .post(
-    '/new',
+    '/:matricula',
+    validate(checkSchema(AlumnoSchemaMatriculaRegistrer)),
     uploadPerfil.single('perfil'),
     validate(checkSchema(AlumnoSchemaPost)),
-    NewAlumno
+    PostAlumno
   )
   // ACTUALIZAR INFORMACION DEL ALUMNO MEDIANTE SU MATRICULA
   .put(
-    '/update',
+    '/:matricula',
+    validate(checkSchema(AlumnoSchemaMatriculaExist)),
     uploadPerfil.none(),
     validate(checkSchema(AlumnoSchemaPut)),
-    UpdateAlumno
+    PutAlumno
   )
-  .use(passport.authenticate(isAuthenticate, { session: false }))
-  // LISTAR DATOS DEL ALUMNO MEDIANTE SU MATRICULA
-  .get(
-    '/:matricula',
-    validate(checkSchema(AlumnoSchemaGet)),
-    AlumnoByMatricula
-  )
-  // 
-  .get( //docs
-    '/:matricula/:idpaquete',
-    validate(checkSchema(AlumnoSchemaGetDoc)),
-    GetDocEntregadosAlumnoPack
+  // ALTA / BAJA ALUMNO REGISTRADO
+  .put(
+    '/:matricula/:estatus',
+    validate(checkSchema(AlumnoSchemaPutEstatus)),
+    PutAlumnoEstatus
   );
 
 export default router;

@@ -18,6 +18,27 @@ import {
 	estatusValidator,
 } from "../comon.validator";
 
+
+export const AlumnoSchemaMatriculaExist: Schema = {
+	matricula: {
+		...matriculaValidator,
+		custom: {
+			options: matriculaExistValidator,
+			bail: true
+		},
+	},
+};
+
+export const AlumnoSchemaMatriculaRegistrer: Schema = {
+	matricula: {
+		...matriculaValidator,
+		custom: {
+			options: matriculaIsRegistrerValidator,
+			bail: true,
+		},
+	},
+};
+
 /**
  * Validador para la ruta alumno/all
  */
@@ -32,42 +53,10 @@ export const AlumnoSchemaGetAll: Schema = {
 };
 
 /**
- * Validador para la ruta alumno/:matricula
- */
-export const AlumnoSchemaGet: Schema = {
-	matricula: {
-		...matriculaValidator,
-		custom: {
-			options: matriculaExistValidator,
-			bail: true
-		},
-	},
-};
-
-/**
- * Validador para la ruta alumno/:matricula/:idpaquete
- */
-export const AlumnoSchemaGetDoc: Schema = {
-	matricula: {
-		...matriculaValidator,
-		custom: {
-			options: matriculaIsRegistrerValidator,
-			bail: true
-		},
-	},
-};
-
-/**
- * Validador para la ruta alumno/new
+ * Validador para registro de nuevo alumno
  */
 export const AlumnoSchemaPost: Schema = {
-	matricula: {
-		...matriculaValidator,
-		custom: {
-			options: matriculaIsRegistrerValidator,
-			bail: true,
-		},
-	},
+	...AlumnoSchemaMatriculaRegistrer,
 	clave: {
 		...claveValidator,
 		custom: {
@@ -91,16 +80,10 @@ export const AlumnoSchemaPost: Schema = {
 };
 
 /**
- * Validador para la ruta alumno/update
+ * Validador para la actualizacion de los datos de un alumno
  */
 export const AlumnoSchemaPut: Schema = {
-	matricula: {
-		...matriculaValidator,
-		custom: {
-			options: matriculaExistValidator,
-			bail: true
-		},
-	},
+	...AlumnoSchemaMatriculaExist,
 	nombre: { ...isAlphaValidator },
 	ape_1: { ...isAlphaValidator },
 	ape_2: { ...isAlphaValidator },
@@ -108,5 +91,12 @@ export const AlumnoSchemaPut: Schema = {
 	direccion: { ...direccionValidator },
 	telefono: { ...telefonoValidator },
 	email: { ...emailValidator },
+};
+
+/**
+ * Validador para la actualizacion de los datos de un alumno
+ */
+export const AlumnoSchemaPutEstatus: Schema = {
+	...AlumnoSchemaMatriculaExist,
 	estatus: { ...estatusValidator },
 };

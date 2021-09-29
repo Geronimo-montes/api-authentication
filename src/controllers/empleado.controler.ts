@@ -18,7 +18,9 @@ export const AllEmpleados =
 
 export const AllEmpleadosByUnidad =
   (req: Request, res: Response, next: NextFunction) => {
-    empleadoModel.getAllEmpleadosByUnidad(req.params.clave)
+
+    const { clave } = req.params;
+    empleadoModel.getAllEmpleadosByUnidad(clave)
       .then((data) => res.status(200).json(new ResponseData(true, '', data)))
       .catch((err) => next(new Error(err)));
   }
@@ -39,7 +41,16 @@ export const EmpleadoById =
  */
 export const UpdateEmpleado =
   (req: Request, res: Response, next: NextFunction) => {
-    empleadoModel.updateEmpleado({ ...req.body, perfil: req.file?.filename })
+    empleadoModel.updateEmpleado({ ...req.body })
+      .then((repons: string) =>
+        res.status(200).json(new ResponseData(true, repons, null)))
+      .catch((err) => next(new Error(err)));
+  }
+
+export const UpdateEstatusEmpleado =
+  (req: Request, res: Response, next: NextFunction) => {
+    const { idempleado, estatus } = req.params;
+    empleadoModel.updateEstatusEmpleado(Number(idempleado), estatus)
       .then((repons: string) =>
         res.status(200).json(new ResponseData(true, repons, null)))
       .catch((err) => next(new Error(err)));

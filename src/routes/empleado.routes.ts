@@ -3,15 +3,17 @@ import passport from 'passport';
 import { Router } from 'express';
 import { validate } from '../middlewares/validator.middleware';
 import { checkSchema } from 'express-validator';
-import { isAdmin } from '../middlewares/auth.middleware';
+import { isAdmin, isAuthenticate } from '../middlewares/auth.middleware';
 import {
   AllEmpleados,
   EmpleadoById,
   NewEmpleado,
   UpdateEmpleado,
-  AllEmpleadosByUnidad
+  AllEmpleadosByUnidad,
+  UpdateEstatusEmpleado
 } from '../controllers/empleado.controler';
 import {
+  EmpleadoEstatusSchemaPut,
   EmpleadoSchemaGet,
   EmpleadoSchemaGetAll,
   EmpleadoSchemaGetAllUnidad,
@@ -20,10 +22,11 @@ import {
 } from '../validator/Schemas/empleado.schema';
 
 const router = Router()
+  .use(passport.authenticate(isAuthenticate, { session: false }))
   .use(passport.authenticate(isAdmin, { session: false }))
   // LISTADO DE TODOS LOS EMPLEADOS REGISTRADOS EN EL SISTEMA
   .get(
-    '/all',
+    '/',
     validate(checkSchema(EmpleadoSchemaGetAll)),
     AllEmpleados
   )
@@ -41,10 +44,15 @@ const router = Router()
   )
   // ACTUALIZACION DE LA INFORMACION DE UN EMPLEADO
   .put(
-    '/update',
+    '/:idempleado',
     uploadPerfil.none(),
     validate(checkSchema(EmpleadoSchemaPut)),
     UpdateEmpleado
+  )
+  .put(
+    '/:idempleado/:estatus',
+    validate(checkSchema(EmpleadoEstatusSchemaPut)),
+    UpdateEstatusEmpleado
   )
   // REGISTRO DE UN NUEVO EMPLEADO
   .post(

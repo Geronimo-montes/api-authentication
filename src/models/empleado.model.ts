@@ -7,44 +7,64 @@ class EmpleadoModel {
    * Lista los datos de los empleados con rol: auxiliar y jefatura. En caso de ser auxiliar se realiza una consulta para obtener los datos de la jefatura asignada
    * @returns {Promise<Iusuario[]>}
    */
-  public getAllEmpleados(): Promise<Iusuario[]> {
-    const qry = `SELECT 
-    idusuario, perfil, email, password, rol, sesion_conectada, clave, idjefatura, nombre, ape_1, ape_2, telefono, ultima_conexion, estatus 
-    FROM usuario WHERE rol IN (? , ?) ORDER BY estatus, CONCAT(nombre, ' ', ape_1, ' ', ape_2)`;
+  public async getAllEmpleados(): Promise<Iusuario[]> {
+    const qry =
+      `SELECT
+      usuario.idusuario AS idusuario,
+      usuario.perfil AS perfil,
+      usuario.email AS email,
+      usuario.password AS password,
+      usuario.rol AS rol,
+      usuario.sesion_conectada AS sesion_conectada,
+      usuario.clave AS clave,
+      usuario.idjefatura AS idjefatura,
+      CONCAT(u.nombre, ' ', u.ape_1, ' ', u.ape_2) as jefatura,
+      usuario.nombre AS nombre,
+      usuario.ape_1 AS ape_1,
+      usuario.ape_2 AS ape_2,
+      usuario.telefono AS telefono,
+      usuario.ultima_conexion AS ultima_conexion,
+      usuario.estatus AS estatus
+    FROM usuario
+    LEFT JOIN usuario AS u ON usuario.idjefatura = u.idusuario
+    WHERE usuario.rol IN (? , ?)
+    ORDER BY usuario.estatus, CONCAT(usuario.nombre,' ',usuario.ape_1,' ',usuario.ape_2)`;
 
-    return new Promise((resolve, reject) => {
-      DB.query(qry, [Erol.AUXILIAR, Erol.JEFATURA], async (err, res, fields) => {
+    return new Promise(async (resolve, reject) => {
+      DB.query(qry, [Erol.AUXILIAR, Erol.JEFATURA], (err, res, fields) => {
         if (err) reject(err);
-
-        let empleados: Iusuario[] = [];
-        for (let i = 0; i < res.length; i++) {
-          if (res[i].idjefatura)
-            await this.getEmpleadoByid(res[i].idjefatura)
-              .then(data => empleados.push({ ...res[i], dataJefatura: data }))
-              .catch(err => reject(err));
-        }
-
-        resolve(empleados);
+        resolve(res);
       });
     });
   }
 
   public getAllEmpleadosByUnidad(clave: string): Promise<Iusuario[]> {
-    const qry = `SELECT idusuario, perfil, email, password, rol, sesion_conectada, clave, idjefatura, nombre, ape_1, ape_2, telefono, ultima_conexion, estatus FROM usuario WHERE clave = ? ORDER BY estatus, CONCAT(nombre, ' ', ape_1, ' ', ape_2)`;
+    const qry =
+      `SELECT
+      usuario.idusuario AS idusuario,
+      usuario.perfil AS perfil,
+      usuario.email AS email,
+      usuario.password AS password,
+      usuario.rol AS rol,
+      usuario.sesion_conectada AS sesion_conectada,
+      usuario.clave AS clave,
+      usuario.idjefatura AS idjefatura,
+      CONCAT(u.nombre, ' ', u.ape_1, ' ', u.ape_2) as jefatura,
+      usuario.nombre AS nombre,
+      usuario.ape_1 AS ape_1,
+      usuario.ape_2 AS ape_2,
+      usuario.telefono AS telefono,
+      usuario.ultima_conexion AS ultima_conexion,
+      usuario.estatus AS estatus
+    FROM usuario
+    LEFT JOIN usuario AS u ON usuario.idjefatura = u.idusuario
+    WHERE usuario.clave = ? AND usuario.rol IN (? , ?)
+    ORDER BY usuario.estatus, CONCAT(usuario.nombre,' ',usuario.ape_1,' ',usuario.ape_2)`;
 
     return new Promise((resolve, reject) => {
-      DB.query(qry, [clave], async (err, res, fields) => {
+      DB.query(qry, [clave, Erol.AUXILIAR, Erol.JEFATURA], async (err, res, fields) => {
         if (err) reject(err);
-
-        let empleados: Iusuario[] = [];
-        for (let i = 0; i < res.length; i++) {
-          if (res[i].idjefatura)
-            await this.getEmpleadoByid(res[i].idjefatura)
-              .then(data => empleados.push({ ...res[i], dataJefatura: data }))
-              .catch(err => reject(err));
-        }
-
-        resolve(empleados);
+        resolve(res);
       });
     });
   }
@@ -65,17 +85,24 @@ class EmpleadoModel {
   public updateEmpleado(data: Iusuario): Promise<string> {
     const
       qry =
-        `UPDATE usuario SET email = ?, rol = ?, clave = ?, idjefatura = ?, nombre = ?, ape_1 = ?, ape_2 = ?, telefono = ?, estatus = ? WHERE idusuario = ?`,
+        `UPDATE usuario SET 
+        email = ?,
+        rol = ?,
+        clave = ?,
+        nombre = ?,
+        ape_1 = ?,
+        ape_2 = ?,
+        telefono = ?
+        WHERE idusuario = ?;`,
+
       params = [
         data.email,
         data.rol,
         data.clave,
-        data.idjefatura,
         data.nombre,
         data.ape_1,
         data.ape_2,
         data.telefono,
-        data.estatus,
         data.idusuario,
       ];
 
@@ -83,6 +110,21 @@ class EmpleadoModel {
       DB.query(qry, params, (err, res, fields) => {
         if (err) reject(err);
         if (res.affectedRows > 0) resolve(`Datos del empleado actualizados.`);
+        else reject();
+      });
+    });
+  }
+
+  public updateEstatusEmpleado(idusuario: number, estatus: string): Promise<string> {
+    const
+      qry =
+        `UPDATE usuario SET estatus = ? WHERE idusuario = ?`,
+      params = [estatus, idusuario,];
+
+    return new Promise((resolve, reject) => {
+      DB.query(qry, params, (err, res, fields) => {
+        if (err) reject(err);
+        if (res.affectedRows > 0) resolve(`El empleado con id ${idusuario} ha sido dado de ${(estatus === 'a') ? 'alta' : 'bja'} del sistema.`);
         else reject();
       });
     });

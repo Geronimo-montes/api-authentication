@@ -17,7 +17,7 @@ export interface Iusuario {
   sesion_conectada?: string;
   clave?: string;
   idjefatura?: number;
-  dataJefatura?: Iusuario;
+  jefatura?: string;
   nombre?: string;
   ape_1?: string;
   ape_2?: string;
@@ -52,10 +52,10 @@ export interface Ialumno {
 };
 
 export interface IdocumentoEntregado {
+  ruta: string; // agregar campo a la bd
   matricula: string;
   idpaquete: number;
   iddocumento: number;
-  nombre: string; // agregar campo a la bd
   fecha_entrega: Date;
 }
 

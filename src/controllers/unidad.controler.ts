@@ -16,7 +16,8 @@ import {
  */
 export const AllUnidades =
   (req: Request, res: Response, next: NextFunction) => {
-    unidadModel.getAllUnidadesAcademicas()
+    unidadModel
+      .getAllUnidadesAcademicas()
       .then((data: Iunidadacademica[]) =>
         res.status(200).json(new ResponseData(true, '', data)))
       .catch((err) => next(new Error(err)));
@@ -38,7 +39,8 @@ export const GetUnidadById =
     }
 
     // CONSULTAMOS LA UNIDAD ACADEMICA MEDIANTE SU ID
-    unidadModel.getUnidadAcademicaById(req.params.clave)
+    unidadModel
+      .getUnidadAcademicaById(req.params.clave)
       .then((data: Iunidadacademica) =>
         res.status(200).json(new ResponseData(true, '', data)))
       .catch((err) => next(new Error(err)));
@@ -50,7 +52,18 @@ export const GetUnidadById =
 export const UpdateUnidadAcademica =
   (req: Request, res: Response, next: NextFunction) => {
     // UPDATE A LA INFORMACION CONTENIDA EN LA PETICION
-    unidadModel.updateUnidadAcademica({ ...req.body, perfil: req.file?.filename })
+    unidadModel
+      .updateUnidadAcademica({ ...req.body })
+      .then((respons) => res.status(200).json(new ResponseData(true, respons, null)))
+      .catch((err) => next(new Error(err)));
+  }
+
+export const putEstatusUnidadAcademica =
+  (req: Request, res: Response, next: NextFunction) => {
+    const { clave, estatus } = req.params;
+    // UPDATE A LA INFORMACION CONTENIDA EN LA PETICION
+    unidadModel
+      .putUnidadEstatus(clave, estatus)
       .then((respons) => res.status(200).json(new ResponseData(true, respons, null)))
       .catch((err) => next(new Error(err)));
   }

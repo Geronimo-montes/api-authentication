@@ -33,7 +33,20 @@ export const UnidadSchemaGet: Schema = {
 };
 
 /**
- * Validador para la ruta unidad-academica/new
+ * Validador para el registro de una nueva unidad academica. Valida la existencia de la unidad en el sistema antes de subir el archivo
+ */
+export const UnidadSchemaClavePost: Schema = {
+	clave: {
+		...claveValidator,
+		custom: {
+			options: claveIsRegistrerValidator,
+			bail: true,
+		},
+	},
+};
+
+/**
+ * Validador para el registro de una nueva unidad academica
  */
 export const UnidadSchemaPost: Schema = {
 	clave: {
@@ -70,5 +83,15 @@ export const UnidadSchemaPut: Schema = {
 	direccion: { ...direccionValidator },
 	correo: { ...emailValidator },
 	telefono: { ...telefonoValidator },
-	estatus: { ...estatusValidator },
 };
+
+export const UnidadSchemaEstatusPut: Schema = {
+	clave: {
+		...claveValidator,
+		custom: {
+			options: claveExistValidator,
+			bail: true,
+		}
+	},
+	estatus: { ...estatusValidator },
+}

@@ -1,183 +1,149 @@
+import compressing from 'compressing';
+import documentoModel from '../models/documento.model';
+import packDocumentoModel from '../models/documento.model';
+import fs from 'fs';
 import {
   ResponseData
 } from "../config/response";
-import
-packDocumentoModel from '../models/pack-documento.model';
-import
-uploadDocumentoMiddleware from '../middlewares/_documento.middleware';
-import {
-  getExtencionFile
-} from '../middlewares/_documento.middleware';
 import {
   Request,
   Response,
   NextFunction,
 } from 'express';
-import {
-  Idocumento,
-  Ipackdocumentacion,
-} from '../models/model.model';
+import path from 'path';
 
-/**
- * Lista la información de los paquete de documentos registrados
- */
-export const AllPaquetesDocumentos =
+export const GetAllDocumentosByIdpaquete =
   (req: Request, res: Response, next: NextFunction) => {
+    const { idpaquete } = req.params;
     packDocumentoModel
-      // LISTAMOS LOS PAQUETES DE DOCUMETNOS REGISTRADOS
-      .getAllPaquetesDocumentos()
-      // RESPONDEMOS LA SOLICITUD CON UN RESPONSEDATA
+      // REALIZAMOS LA PERTICION DEL DETALLE DEL PAQUETE
+      .getDocumentosByPaquete(Number(idpaquete))
+      // RESPONDEMOS LA SOLICITUD CON EL MENSAJE RETORNADO
       .then((data) => res.status(200).json(new ResponseData(true, '', data)))
-      // EN CASO DE ERROR DESCIAMOS EL ERROR HACIA EL MANEJADOR DE ERRORES
-      .catch((err) => next(new Error(err)));
-  }
-
-/**
- * Obtiene la informacion tecnica del paquete de documentos proporcionado
- */
-export const PaqueteDocumentosById =
-  (req: Request, res: Response, next: NextFunction) => {
-    if (!req.params.idpaquetedocumentos)
-      return res.status(400).json(
-        new ResponseData(false, 'El paquete que desea consultar no esta registrado.', null))
-
-    const id_paquete_documentos: number = Number(req.params.idpaquetedocumentos);
-
-    packDocumentoModel.getPaqueteDocumentosById(id_paquete_documentos)
-      .then((data: Ipackdocumentacion) => {
-        res.status(200)
-          .json(new ResponseData(true, '', data));
-      })
       // RESPONDEMOS EN CASO DE ERROR CON EL DESCIO DE ERROR HACIA EL MANEJADOR
       .catch((err) => next(new Error(err)));
   }
 
-/**
- * Lista los datos de los documentos que pertenecen al pquete proporcionado
- */
-export const DetallePaqueteDocumentos =
+export const GetDocumentoById =
   (req: Request, res: Response, next: NextFunction) => {
-    if (!req.params.idpaquetedocumentos)
-      return res.status(400).json(
-        new ResponseData(false, 'El paquete que desea consultar no esta registrado.', null))
-
-    const id_paquete_documentos: number = Number(req.params.idpaquetedocumentos);
-
-    packDocumentoModel.getDetallePaqueteDocumentos(id_paquete_documentos)
-      .then((data: Idocumento[]) => {
-        res.status(200)
-          .json(new ResponseData(true, '', data));
-      })
+    const { idpaquete, iddocumento } = req.params;
+    documentoModel
+      // RALIZAMOS LA PETICION DEL DETALLE DEL DOCUMENTO
+      .getDocumentoById(Number(idpaquete), Number(iddocumento))
+      // RESPONDEMOS LA SOLICITUD CON EL MENSAJE RETORNADO
+      .then((data) => res.status(200).json(new ResponseData(true, '', data)))
       // RESPONDEMOS EN CASO DE ERROR CON EL DESCIO DE ERROR HACIA EL MANEJADOR
       .catch((err) => next(new Error(err)));
   }
 
-/**
- * Revlidar datos de entrada?
- */
-export const UpdatePaqueteDocumentos =
+export const GetEntregasByPaqueteMatricula =
   (req: Request, res: Response, next: NextFunction) => {
-    if (!req.body.data)
-      return res.status(400).json(
-        new ResponseData(false, 'No se puede actualizar los datos del paquete proporcionado.', null))
-
-    const paquete_documentos: Ipackdocumentacion = req.body.data;
-
-    packDocumentoModel.updatePaqueteDocumentos(paquete_documentos)
-      .then((data: boolean) => {
-        res.status(200).json(
-          new ResponseData(
-            data,
-            (data) ?
-              `Datos del paquete ${paquete_documentos.nombre} actualizados con exito.` :
-              `Error al actualizar los datos del paquete ${paquete_documentos.nombre}. Verifique la información.`,
-            null
-          ));
-      })
+    const { idpaquete, matricula } = req.params;
+    documentoModel
+      // RALIZAMOS LA PETICION DEL DETALLE DEL DOCUMENTO
+      .getDocsEntregadosAlumnoPack(Number(idpaquete), matricula)
+      // RESPONDEMOS LA SOLICITUD CON EL MENSAJE RETORNADO
+      .then((data) => res.status(200).json(new ResponseData(true, '', data)))
       // RESPONDEMOS EN CASO DE ERROR CON EL DESCIO DE ERROR HACIA EL MANEJADOR
       .catch((err) => next(new Error(err)));
   }
 
-/*
-  ruta_imagen: {},
-  nombre: 'assadfsadf',
-  descripcion: 'asdfsadfasdf',
-  numero_documentos: 3,
-  detalleDocumento: [
-    {
-      foto_ejemplo: {},
-      nombre: 'asdfasdf',
-      formato: 'jpg',
-      peso_max: '1',
-      requerido: false
-    // },
-*/
-export const NewPaqueteDocumentos =
+export const DonwloadAllFilesByPaquete =
   (req: Request, res: Response, next: NextFunction) => {
+    const
+      { idpaquete, matricula } = req.params,
+      pathDir = `${__dirname}/../private/temp/zip`,
+      pathZip = `${__dirname}/../private/temp/compres.zip`;
 
-    console.log(req.body.data);
 
-    if (!req.body.data)
-      return res.status(400).json(
-        new ResponseData(false, 'No se puede registrar los datos del paquete proporcionado. ', null))
+    // CREAMOS LA CARPETA CONTENEDORA DE LOS ARCHIVOS A COMPRIMIR
+    fs.promises.mkdir(pathDir)
+      // RALIZAMOS LA PETICION DEL DETALLE DEL LA ENTREGA
+      .then(() => documentoModel
+        .getDocumentosEntregadosByPaquete(Number(idpaquete), matricula))
+      // MOVEMOS LOS DOCUMENTOS A LA CARPETA
+      .then((data) => Promise.all(data.map((d) => fs.copyFileSync
+        (d.ruta, `${pathDir}/${d.iddocumento}${path.extname(d.ruta)}`))
+      ))
+      // CREAMOS EL ARCHIVO COMPRIMIDO
+      .then(() => compressing.zip.compressDir(pathDir, pathZip))
+      // DESCARGAMOS EL ZIP
+      .then(() => res.download(pathZip))
+      // REDIRIGIMOS AL MANEJADOR DE ERRORES 
+      .catch((err) => next(new Error(err)))
+      // ELIMINAMOS LA CARPETA CONTENEDORA DE LOS ARCHIVOS COMPRIMIDOS
+      .finally(() => {
+        fs.rmdirSync(pathDir, { recursive: true });
+      });
+  }
 
-    const paquete_documentos = req.body.data;
-    packDocumentoModel.newPaqueteDocumentos(paquete_documentos)
-      .then((data: boolean) => {
-        res.status(200).json(
-          new ResponseData(
-            data,
-            (data) ?
-              `Datos del paquete ${paquete_documentos.nombre} registrados con exito.` :
-              `Error al registrar los datos del paquete ${paquete_documentos.nombre}. Verifique la información.`,
-            null
-          ));
+export const GetFileDocumentoById =
+  (req: Request, res: Response, next: NextFunction) => {
+    const { idpaquete, iddocumento, matricula } = req.params;
+    documentoModel
+      // RALIZAMOS LA PETICION DEL DETALLE DEL LA ENTREGA
+      .getDocumentoEntregadoById(Number(idpaquete), Number(iddocumento), matricula)
+      // RESPONDEMOS LA SOLICITUD CON EL ARCHIVO
+      .then((data) => res.sendFile(data.ruta))
+      // REDIRIGIMOS AL MANEJADOR DE ERRORES 
+      .catch((err) => next(new Error(err)))
+  }
+
+export const DonwloadFileDocumentoById =
+  (req: Request, res: Response, next: NextFunction) => {
+    const
+      { idpaquete, iddocumento, matricula } = req.params;
+    documentoModel
+      // RALIZAMOS LA PETICION DEL DETALLE DEL LA ENTREGA
+      .getDocumentoEntregadoById(Number(idpaquete), Number(iddocumento), matricula)
+      // RESPONDEMOS LA SOLICITUD CON EL ARCHIVO
+      .then((data) => res.download(data.ruta))
+      // REDIRIGIMOS AL MANEJADOR DE ERRORES 
+      .catch((err) => next(new Error(err)))
+  }
+
+export const PostFileDocumento =
+  (req: Request, res: Response, next: NextFunction) => {
+    const
+      filename = `${req.file?.destination.replace('\\', '/')}\\${req.file?.filename}`,
+      { idpaquete, iddocumento, matricula } = req.params;
+
+    documentoModel
+      // OBTENEMOS LOS DATOS TECNICOS DEL DOCUMENTO
+      .getDocumentoById(Number(idpaquete), Number(iddocumento))
+      // REGISTRAMOS LA ENTREGA DEL DOCUMENTO JUNTO CON LA UBICACION ASIGNADA
+      .then((data) => documentoModel.insertDocumentoEntregado(
+        filename, matricula, Number(idpaquete), Number(iddocumento)))
+      // RESPONDEMOS CON EL ARCHIVO
+      .then((respons) => res.status(200).json(new ResponseData(true, respons, null)))
+      // EN CASO DE ERROR
+      .catch((err) => {
+        fs.unlink(filename, (err) => next(err))
+        next(new Error(err));
+      });
+  }
+
+export const PutFileDocumento =
+  (req: Request, res: Response, next: NextFunction) => {
+    const
+      filename = `${req.file?.destination.replace('\\', '/')} / ${req.file?.filename}`,
+      { idpaquete, iddocumento, matricula } = req.params;
+
+    documentoModel
+      // RALIZAMOS LA PETICION DEL DETALLE DEL LA ENTREGA
+      .getDocumentoEntregadoById(Number(idpaquete), Number(iddocumento), matricula)
+      // LANZAMOS LA ACTUALIZACION
+      .then((data) =>
+        documentoModel.updateDocumentoEntregado(
+          filename, data.ruta, data.matricula, data.idpaquete, data.iddocumento))
+      .then((ruta) => {
+        fs.unlink(ruta, (err) => {
+          return (err) ?
+            Promise.reject(err) :
+            Promise.resolve();
+        });
       })
-      // RESPONDEMOS EN CASO DE ERROR CON EL DESCIO DE ERROR HACIA EL MANEJADOR
-      .catch((err) => next(new Error(err)));
-  }
-
-/**
- * Actauliza la foto de perfil de usuario del alumno
- */
-export const UploadDocumentoAlumno =
-  async (req: Request, res: Response, next: NextFunction) => {
-    try {
-      await uploadDocumentoMiddleware(req, res);
-
-      // Validacion de los parametros
-      if (!req.file)
-        return res.status(400)
-          .json(new ResponseData(false, `Favor de subir un archivo.`, null));
-      else if (!req.body.matricula)
-        return res.status(400)
-          .json(new ResponseData(false, `La matricula proporcionada no esta registrada`, null));
-      else if (!req.body.idpaquete)
-        return res.status(400)
-          .json(new ResponseData(false, `Paquete de documentos desconocido.`, null));
-      else if (!req.body.iddocumento)
-        return res.status(400)
-          .json(new ResponseData(false, `Documento no registrado en el paquete.`, null));
-
-      const
-        name = `${req.params.name}${getExtencionFile(req.file)}`,
-        matricula = req.body.matricula,
-        idpaquete = Number(req.body.idpaquete),
-        iddocumento = Number(req.body.iddocumento);
-
-      await packDocumentoModel
-        .insertDocumentoEntregado(name, matricula, idpaquete, iddocumento)
-        .then(() => res.status(200).json(
-          new ResponseData(true, `Archivo subido exitosamente.`, null)))
-
-        // RESPONDEMOS EN CASO DE ERROR CON EL DESCIO DE ERROR HACIA EL MANEJADOR
-        .catch((err) => next(new Error(err)));
-    } catch (err) {
-      res.status(500)
-        .json(new ResponseData(
-          false,
-          `No es posible subir el archivo. Error: ${err}.`,
-          null
-        ));
-    }
-  }
+      .then(() => res.status(200).json(new ResponseData(true, 'Si se pudo', null)))
+      // REDIRIGIMOS AL MANEJADOR DE ERRORES 
+      .catch((err) => next(new Error(err)))
+  };

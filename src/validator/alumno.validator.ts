@@ -12,7 +12,7 @@ import {
  * Validator utilizado para las matriculas de alumnos registrados.
  */
 export const matriculaValidator: ParamSchema = {
-	in: ['body', 'params'],
+	in: ['params', 'body'],
 	...comonValidators,
 	// LAS MATRICULAS SON LONGITUD 10
 	isLength: {

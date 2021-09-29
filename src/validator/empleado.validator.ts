@@ -13,7 +13,7 @@ import {
  * Validator utilizado para el idempleado
  */
 export const idempleadoValidator: ParamSchema = {
-	in: ['body', 'params'],
+	in: ['params', 'body'],
 	...comonValidators,
 	// EL PARAMETRO DEBE SER NUMERICO
 	isNumeric: {
