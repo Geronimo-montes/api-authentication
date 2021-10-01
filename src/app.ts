@@ -15,7 +15,6 @@ import empleadoRoutes from './routes/empleado.routes';
 
 import ErrorHandler from './middlewares/error-handler.middleware';
 import ErrorHandlerMulter from './middlewares/error-multer.middleware';
-import alumnoModel from './models/alumno.model';
 import { ResponseData } from './config/response';
 
 // CONFIGURACIONES NECESARIAS PARA EXPRESS

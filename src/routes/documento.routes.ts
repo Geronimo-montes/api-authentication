@@ -12,6 +12,7 @@ import {
   DonwloadFileDocumentoById,
   GetAllDocumentosByIdpaquete,
   GetDocumentoById,
+  GetEntregasByPaqueteDocumentoMatricula,
   GetEntregasByPaqueteMatricula,
   GetFileDocumentoById,
   PostFileDocumento,
@@ -45,6 +46,12 @@ const router = Router()
     '/entregas/:idpaquete/:matricula',
     validate(checkSchema(documentoSchemaGetZip)),
     GetEntregasByPaqueteMatricula
+  )
+  // INFORMACION DE DOCUMENTO ENTREGADO
+  .get(
+    '/entregas/:idpaquete/:iddocumento/:matricula',
+    validate(checkSchema(documentoSchemaGetFile)),
+    GetEntregasByPaqueteDocumentoMatricula
   )
   // GENERA UN DESCARBABLE CON EL PAQUETE DE ENTREGAS
   .get(

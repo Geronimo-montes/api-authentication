@@ -48,6 +48,18 @@ export const GetEntregasByPaqueteMatricula =
       .catch((err) => next(new Error(err)));
   }
 
+export const GetEntregasByPaqueteDocumentoMatricula =
+  (req: Request, res: Response, next: NextFunction) => {
+    const { idpaquete, iddocumento, matricula } = req.params;
+    documentoModel
+      // RALIZAMOS LA PETICION DEL DETALLE DEL DOCUMENTO
+      .getDocumentoEntregadoById(Number(idpaquete), Number(iddocumento), matricula)
+      // RESPONDEMOS LA SOLICITUD CON EL MENSAJE RETORNADO
+      .then((data) => res.status(200).json(new ResponseData(true, '', data)))
+      // RESPONDEMOS EN CASO DE ERROR CON EL DESCIO DE ERROR HACIA EL MANEJADOR
+      .catch((err) => next(new Error(err)));
+  }
+
 export const DonwloadAllFilesByPaquete =
   (req: Request, res: Response, next: NextFunction) => {
     const
@@ -109,11 +121,20 @@ export const PostFileDocumento =
       { idpaquete, iddocumento, matricula } = req.params;
 
     documentoModel
-      // OBTENEMOS LOS DATOS TECNICOS DEL DOCUMENTO
-      .getDocumentoById(Number(idpaquete), Number(iddocumento))
+      // OBTENEMOS }ById(Number(idpaquete), Number(iddocumento))
       // REGISTRAMOS LA ENTREGA DEL DOCUMENTO JUNTO CON LA UBICACION ASIGNADA
-      .then((data) => documentoModel.insertDocumentoEntregado(
-        filename, matricula, Number(idpaquete), Number(iddocumento)))
+
+      // VALIDAMOS SI EXISTEN ENTREGAS DEL DOCUMENTO
+      .isEntregado(Number(idpaquete), Number(iddocumento), matricula)
+      // OBTENEMOS LOS DATOS TECNICOS DEL DOCUMENTO
+      .then((data) => {
+        if (data)
+          return documentoModel.updateDocumentoEntregado(
+            filename, <string>data, matricula, Number(idpaquete), Number(iddocumento));
+        else
+          return documentoModel.insertDocumentoEntregado(
+            filename, matricula, Number(idpaquete), Number(iddocumento));
+      })
       // RESPONDEMOS CON EL ARCHIVO
       .then((respons) => res.status(200).json(new ResponseData(true, respons, null)))
       // EN CASO DE ERROR

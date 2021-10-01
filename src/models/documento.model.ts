@@ -1,4 +1,5 @@
 import { Model } from '../config/model';
+import fs from 'fs';
 import {
   Idocumento,
   IdocumentoEntregado,
@@ -38,7 +39,8 @@ class DocumentoModel extends Model {
 
   public getDocumentosEntregadosByPaquete(idpaquete: number, matricula: string): Promise<IdocumentoEntregado[]> {
     const
-      qry = `SELECT * FROM documento_alumno WHERE idpaquete = ? AND matricula = ?;`,
+      qry =
+        `SELECT * FROM documento_alumno WHERE idpaquete = ? AND matricula = ?;`,
       params = [idpaquete, matricula];
     return this.executeQry(qry, ...params)
       .then((r) =>
@@ -56,9 +58,29 @@ class DocumentoModel extends Model {
       .then((r) =>
         (r.length > 0) ?
           Promise.resolve(r[0]) :
-          Promise.reject('No existen entregas para el documento.'))
+          Promise.resolve())
+      // Promise.reject('No existen entregas para el documento.'))
       .catch((err) => Promise.reject(err));
   }
+
+
+  public isEntregado(idpaquete: number, iddocumento: number, matricula: string): Promise<string | boolean> {
+    const
+      qry = `SELECT * FROM documento_alumno WHERE idpaquete = ? AND iddocumento = ? AND matricula = ?;`,
+      params = [idpaquete, iddocumento, matricula];
+
+    return this.executeQry(qry, ...params)
+      .then((res) => {
+        if (res.length > 0) {
+          fs.unlinkSync(res[0].ruta);
+          return Promise.resolve(res[0].ruta);
+        } else
+          return Promise.resolve(false);
+
+      })
+      .catch((err) => Promise.reject(err));
+  }
+
 
   public insertDocumentoEntregado(filename: string | undefined, matricula: string, idpaquete: number, iddocumento: number): Promise<string> {
     const
@@ -81,9 +103,9 @@ class DocumentoModel extends Model {
     return this.executeQry(qry, ...params)
       .then((respons) =>
         (respons.affectedRows > 0) ?
-          Promise.resolve(oldPath) :
+          Promise.resolve('Documento entregado con exito.') :
           Promise.reject())
-      .catch((err) => Promise.reject(`Error al actualizar el documento.`));
+      .catch((err) => Promise.reject('Error al actualizar el documento.'));
   }
 
   public Exist(iddocumento: number): Promise<boolean> {
