@@ -1,4 +1,16 @@
-import app from './app';
+import express from 'express';
 
-app.listen(app.get('port'));
-console.log(`Server on port ${app.get('port')}`);
+async function startServer() {
+    const app = express();
+
+    await require('./helpers').default({ expressApp: app });
+    
+    app.listen(app.get('port'), () => {
+        console.log(`Server on port ${app.get('port')}`);
+    }).on('error', err => {
+        console.error(err);
+        process.exit(1);
+    })
+}
+
+startServer();

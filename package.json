@@ -1,17 +1,18 @@
 {
-  "name": "gestor-documentacion",
+  "name": "api-nodejs",
   "version": "1.0.0",
-  "description": "App web para gestionar la documentación.",
-  "main": "index.js",
+  "description": "API.",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "nodemon",
     "dev": "tsc-watch --onSuccess \"node dist/index.js\" ",
     "build": "tsc"
   },
   "keywords": [],
-  "author": "Montes Barreras Luis Geronimo",
+  "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/serve-favicon": "^2.5.3",
     "bcrypt": "^5.0.1",
     "compressing": "^1.5.1",
     "cors": "^2.8.5",
@@ -25,7 +26,10 @@
     "passport": "^0.4.1",
     "passport-custom": "^1.1.1",
     "passport-jwt": "^4.0.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0",
+    "ts-node": "^10.4.0",
+    "tsconfig-paths": "^3.12.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
