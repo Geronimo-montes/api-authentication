@@ -1,14 +1,22 @@
+import 'reflect-metadata'; // We need this in order to use @Decorators
+
+import Logger from './helpers/logger';
 import express from 'express';
+import config from '@config';
 
 async function startServer() {
     const app = express();
 
     await require('./helpers').default({ expressApp: app });
-    
-    app.listen(app.get('port'), () => {
-        console.log(`Server on port ${app.get('port')}`);
+
+    app.listen(config.PORT, () => {
+        Logger.info(`
+        ################################################
+        🛡️  Server listening on port: ${app.get('port')} 🛡️
+        ################################################
+        http://localhost:3000/api/`);
     }).on('error', err => {
-        console.error(err);
+        Logger.error(err)
         process.exit(1);
     })
 }

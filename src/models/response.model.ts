@@ -1,9 +1,9 @@
 export class ResponseData {
   data: any;
   response: boolean = false;
-  message: string = '';
+  message: string = 'Not Found.';
 
-  constructor(response: boolean, message: string, data: any) {
+  constructor(response?: boolean, message?: string, data?: any) {
     this.data = data;
     this.response = response;
     this.message = message;

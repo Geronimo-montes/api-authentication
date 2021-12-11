@@ -1,58 +1,67 @@
 import express, { Request, Response, NextFunction, } from 'express';
-import morgan from 'morgan';
+
 import cors from 'cors';
-import passport from 'passport';
 import path from 'path';
-import favicon from 'serve-favicon';
 
 import { ResponseData } from '@models/response.model';
-import config from '@config/config';
+import config from '@config';
 import routes from '@api/index';
 
 export default ({ app }: { app: express.Application }) => {
-	// 
-	app.set('port', process.env.PORT || config.ASI_PORT);
+	/**
+	 * Rutas para verificar el estado del servidor
+	 */
+	app.get(`${config.API.PREFIX}/status`, (req, res) => res.status(200).end());
+	app.head(`${config.API.PREFIX}/status`, (req, res) => res.status(200).end());
 
-	// 
-	app.use(morgan('dev'));
-
-	// 
-	app.use(cors({
-		// origin: 'http://localhost:4200'
-	}));
-
-	// 
+	/**
+	 * PUERTO, HEADERS, FORMATO DE RESPUESTA
+	 */
+	app.set('port', process.env.PORT || config.PORT);
+	app.use(cors());
 	app.use(express.json());
-
-	// 
 	app.use(express.urlencoded({ extended: false }));
 
-	// FAVICON
-	app.use(favicon(path.join(__dirname, '../data/public', 'favicon.ico')))
+	/**
+	 * PUBLIC FILES
+	 */
+	const public_dir = path.join(__dirname, '../assets/public');
+	app.use(config.API.PREFIX + '/static', express.static(public_dir));
 
-	// ARCHIVOS ESTATICOS DE CARATER PUBLICO
-	app.use(config.api.prefix + '/static', express.static(path.join(__dirname, '../data/public')));
+	/**
+	 * API ROUTES
+	 */
+	app.use(config.API.PREFIX, routes());
+	app.get('/favicon.ico', (req, res) => res.status(204));
 
-	// MIDDLEWARE DE AUTENTICACION DE USUARIOS
-	app.use(passport.initialize());
-
-	// API ROUTES
-	app.use(config.api.prefix, routes());
-
-	/// catch 404 and forward to error handler
+	/**
+	 * CATCH 404 AND FORWARD TO ERROR HANDLER
+	 */
 	app.use((req: Request, res: Response, next: NextFunction) => {
-		next(new Error('Not Found'));
+		const err = new Error('Not Found');
+		err['status'] = 404
+		next(err);
 	});
 
-	// ERROR HANDLE
-	app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-		if (!err) return next();
+	/**
+	 * ERROR HANDLERS
+	 */
+	app.use((err, req, res, next) => {
+		if (err.name === 'UnauthorizedError')
+			return res
+				.status(err.status)
+				.send({ message: err.message })
+				.end();
 
-		console.error({ err });
+		return next(err);
+	});
 
+	app.use((err, req, res, next) => {
 		return res
-			.status(500)
+			.status(err.status || 500)
 			.json(new ResponseData(false, err.message, err))
 			.end();
 	});
+
+	return app;
 }
