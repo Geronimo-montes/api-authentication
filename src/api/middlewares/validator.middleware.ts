@@ -1,6 +1,6 @@
 import { ErrorFormatter, ValidationChain, validationResult, } from "express-validator";
 import { Request, Response, NextFunction, } from 'express';
-import { ResponseData } from "@models/response.model";
+import { ResponseData } from "@utils/response";
 
 export default (validations: ValidationChain[]) => {
 	return async (request: Request, response: Response, next: NextFunction) => {

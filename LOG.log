@@ -1,0 +1,1648 @@
+2021-12-11 17:02:29  [info]: MongoDB Inicialized 
+2021-12-11 17:02:29  [info]: Express Inicialized 
+2021-12-11 17:02:29  [info]: Hola 
+2021-12-11 17:02:29  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:02:51  [info]: MongoDB Inicialized 
+2021-12-11 17:02:51  [info]: Express Inicialized 
+2021-12-11 17:02:51  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:04:30  [info]: MongoDB Inicialized 
+2021-12-11 17:04:30  [info]: Express Inicialized 
+2021-12-11 17:04:30  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:04:58  [info]: MongoDB Inicialized 
+2021-12-11 17:04:58  [info]: Express Inicialized 
+2021-12-11 17:04:58  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:05:02  [info]: MongoDB Inicialized 
+2021-12-11 17:05:02  [info]: Express Inicialized 
+2021-12-11 17:05:02  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:05:07  [info]: MongoDB Inicialized 
+2021-12-11 17:05:07  [info]: Express Inicialized 
+2021-12-11 17:05:07  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:05:10  [info]: MongoDB Inicialized 
+2021-12-11 17:05:10  [info]: Express Inicialized 
+2021-12-11 17:05:10  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:09:59  [info]: MongoDB Inicialized 
+2021-12-11 17:09:59  [info]: Express Inicialized 
+2021-12-11 17:09:59  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:11:00  [info]: MongoDB Inicialized 
+2021-12-11 17:11:00  [info]: Express Inicialized 
+2021-12-11 17:11:00  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:17:45  [info]: MongoDB Inicialized 
+2021-12-11 17:17:45  [info]: Express Inicialized 
+2021-12-11 17:17:45  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:17:56  [info]: MongoDB Inicialized 
+2021-12-11 17:17:56  [info]: Express Inicialized 
+2021-12-11 17:17:56  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:18:01  [info]: MongoDB Inicialized 
+2021-12-11 17:18:01  [info]: Express Inicialized 
+2021-12-11 17:18:01  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:20:37  [debug]: Calling Sign-Up endpoint with body: [Object: null prototype] {
+  name: 'geronimo',
+  email: 'asdfasdf@asdfasdf.com',
+  password: 'asdfasdf12'
+} 
+2021-12-11 17:20:37  [error]: 🔥 error: TypeError: Reflect.deleteProperty called on non-object
+    at Object.deleteProperty (<anonymous>)
+    at C:\Users\geron\Documents\nodejs_projects\projects\api_template\src\services\auth.service.ts:42:21
+    at new Promise (<anonymous>)
+    at C:\Users\geron\Documents\nodejs_projects\projects\api_template\src\services\auth.service.ts:38:9
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+  [stack]: 'TypeError: Reflect.deleteProperty called on non-object\n' +
+    '    at Object.deleteProperty (<anonymous>)\n' +
+    '    at C:\\Users\\geron\\Documents\\nodejs_projects\\projects\\api_template\\src\\services\\auth.service.ts:42:21\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at C:\\Users\\geron\\Documents\\nodejs_projects\\projects\\api_template\\src\\services\\auth.service.ts:38:9\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:93:5)',
+  [message]: 'Reflect.deleteProperty called on non-object'
+} 
+2021-12-11 17:21:15  [info]: MongoDB Inicialized 
+2021-12-11 17:21:15  [info]: Express Inicialized 
+2021-12-11 17:21:15  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:21:35  [info]: MongoDB Inicialized 
+2021-12-11 17:21:35  [info]: Express Inicialized 
+2021-12-11 17:21:35  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:21:46  [debug]: Calling Sign-Up endpoint with body: [Object: null prototype] {
+  name: 'geronimo',
+  email: 'asdfasdf@asdfasdf.com',
+  password: 'asdfasdf12'
+} 
+2021-12-11 17:21:46  [error]: 🔥 error: MongoServerError: E11000 duplicate key error collection: face_database.users index: email_1 dup key: { email: "asdfasdf@asdfasdf.com" }
+    at C:\Users\geron\Documents\nodejs_projects\projects\api_template\node_modules\mongoose\node_modules\mongodb\src\operations\insert.ts:75:25
+    at C:\Users\geron\Documents\nodejs_projects\projects\api_template\node_modules\mongoose\node_modules\mongodb\src\cmap\connection_pool.ts:469:13
+    at handleOperationResult (C:\Users\geron\Documents\nodejs_projects\projects\api_template\node_modules\mongoose\node_modules\mongodb\src\sdam\server.ts:608:5)
+    at MessageStream.messageHandler (C:\Users\geron\Documents\nodejs_projects\projects\api_template\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:486:12)
+    at processIncomingData (C:\Users\geron\Documents\nodejs_projects\projects\api_template\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:167:12)
+    at MessageStream._write (C:\Users\geron\Documents\nodejs_projects\projects\api_template\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:64:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10) {
+  [stack]: 'MongoServerError: E11000 duplicate key error collection: face_database.users index: email_1 dup key: { email: "asdfasdf@asdfasdf.com" }\n' +
+    '    at C:\\Users\\geron\\Documents\\nodejs_projects\\projects\\api_template\\node_modules\\mongoose\\node_modules\\mongodb\\src\\operations\\insert.ts:75:25\n' +
+    '    at C:\\Users\\geron\\Documents\\nodejs_projects\\projects\\api_template\\node_modules\\mongoose\\node_modules\\mongodb\\src\\cmap\\connection_pool.ts:469:13\n' +
+    '    at handleOperationResult (C:\\Users\\geron\\Documents\\nodejs_projects\\projects\\api_template\\node_modules\\mongoose\\node_modules\\mongodb\\src\\sdam\\server.ts:608:5)\n' +
+    '    at MessageStream.messageHandler (C:\\Users\\geron\\Documents\\nodejs_projects\\projects\\api_template\\node_modules\\mongoose\\node_modules\\mongodb\\src\\cmap\\connection.ts:753:5)\n' +
+    '    at MessageStream.emit (events.js:315:20)\n' +
+    '    at MessageStream.EventEmitter.emit (domain.js:486:12)\n' +
+    '    at processIncomingData (C:\\Users\\geron\\Documents\\nodejs_projects\\projects\\api_template\\node_modules\\mongoose\\node_modules\\mongodb\\src\\cmap\\message_stream.ts:167:12)\n' +
+    '    at MessageStream._write (C:\\Users\\geron\\Documents\\nodejs_projects\\projects\\api_template\\node_modules\\mongoose\\node_modules\\mongodb\\src\\cmap\\message_stream.ts:64:5)\n' +
+    '    at writeOrBuffer (_stream_writable.js:352:12)\n' +
+    '    at MessageStream.Writable.write (_stream_writable.js:303:10)',
+  [message]: 'E11000 duplicate key error collection: face_database.users index: email_1 dup key: { email: "asdfasdf@asdfasdf.com" }',
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'asdfasdf@asdfasdf.com' },
+  [name]: [Getter],
+  [errmsg]: [Getter],
+  [errorLabels]: [Getter]
+} 
+2021-12-11 17:24:00  [info]: MongoDB Inicialized 
+2021-12-11 17:24:00  [info]: Express Inicialized 
+2021-12-11 17:24:00  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:24:10  [info]: MongoDB Inicialized 
+2021-12-11 17:24:10  [info]: Express Inicialized 
+2021-12-11 17:24:10  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:24:44  [info]: MongoDB Inicialized 
+2021-12-11 17:24:44  [info]: Express Inicialized 
+2021-12-11 17:24:44  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:24:49  [info]: MongoDB Inicialized 
+2021-12-11 17:24:49  [info]: Express Inicialized 
+2021-12-11 17:24:49  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:24:57  [info]: MongoDB Inicialized 
+2021-12-11 17:24:57  [info]: Express Inicialized 
+2021-12-11 17:24:57  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:25:54  [info]: MongoDB Inicialized 
+2021-12-11 17:25:54  [info]: Express Inicialized 
+2021-12-11 17:25:54  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:27:43  [info]: MongoDB Inicialized 
+2021-12-11 17:27:43  [info]: Express Inicialized 
+2021-12-11 17:27:43  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:27:54  [info]: MongoDB Inicialized 
+2021-12-11 17:27:54  [info]: Express Inicialized 
+2021-12-11 17:27:54  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:28:14  [debug]: Calling Sign-Up endpoint with body: [Object: null prototype] {
+  name: 'geronimo',
+  email: 'asdf@asdfasdf.com',
+  password: 'asdfasdf12'
+} 
+2021-12-11 17:29:20  [info]: MongoDB Inicialized 
+2021-12-11 17:29:20  [info]: Express Inicialized 
+2021-12-11 17:29:20  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:29:30  [debug]: Calling Sign-Up endpoint with body: {
+  body: [Object: null prototype] {
+    name: 'geronimo',
+    email: 'email@asdfasdf.com',
+    password: 'asdfasdf12'
+  }
+} 
+2021-12-11 17:30:41  [info]: MongoDB Inicialized 
+2021-12-11 17:30:41  [info]: Express Inicialized 
+2021-12-11 17:30:41  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:31:15  [info]: MongoDB Inicialized 
+2021-12-11 17:31:15  [info]: Express Inicialized 
+2021-12-11 17:31:15  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:31:45  [info]: MongoDB Inicialized 
+2021-12-11 17:31:45  [info]: Express Inicialized 
+2021-12-11 17:31:45  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:31:51  [debug]: Calling Sign-Up endpoint with body: [object Object] 
+2021-12-11 17:33:33  [info]: MongoDB Inicialized 
+2021-12-11 17:33:33  [info]: Express Inicialized 
+2021-12-11 17:33:33  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:33:59  [info]: MongoDB Inicialized 
+2021-12-11 17:33:59  [info]: Express Inicialized 
+2021-12-11 17:33:59  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:34:01  [debug]: Calling Sign-Up endpoint with body: [object Object] 
+2021-12-11 17:34:18  [info]: MongoDB Inicialized 
+2021-12-11 17:34:18  [info]: Express Inicialized 
+2021-12-11 17:34:18  [info]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:34:25  [debug]: Calling Sign-Up endpoint with body: {"name":"geronimo","email":"a@asdfasdf.com","password":"asdfasdf12"} 
+2021-12-11 17:35:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:35:05  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:35:05  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:35:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:35:11  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:35:11  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:35:17  [[34mdebug[39m]: Calling Sign-Up endpoint with body: {"name":"geronimo","email":"aa@asdfasdf.com","password":"asdfasdf12"} 
+2021-12-11 17:35:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:35:36  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:35:37  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:35:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:35:47  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:35:47  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:35:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:35:55  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:35:55  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:36:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:36:31  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:36:31  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:37:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:37:01  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:37:01  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:37:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:37:14  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:37:14  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:37:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:37:38  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:37:38  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:37:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:37:44  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:37:44  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:55:42  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:55:42  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:55:42  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:55:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:55:45  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:55:45  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:55:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:55:47  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:55:47  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:56:00  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:56:00  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:56:00  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:58:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:58:18  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:58:18  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:58:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:58:24  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:58:24  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:58:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:58:32  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:58:32  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:58:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:58:36  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:58:36  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:58:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:58:43  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:58:43  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:58:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:58:55  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:58:55  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:59:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:59:06  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:59:06  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:59:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:59:09  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:59:09  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 17:59:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 17:59:13  [[32minfo[39m]: Express Inicialized 
+2021-12-11 17:59:13  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:00:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:00:10  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:00:10  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:00:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:00:37  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:00:37  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:00:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:00:51  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:00:51  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:00:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:00:59  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:00:59  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:05:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:05:14  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:05:14  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:05:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:05:47  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:05:47  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:05:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:05:56  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:05:56  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:06:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:06:03  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:06:03  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:06:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:06:08  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:06:08  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:06:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:06:37  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:06:37  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:06:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:06:43  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:06:43  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:07:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:07:48  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:07:48  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:07:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:07:51  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:07:51  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:08:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:08:09  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:08:09  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:08:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:08:16  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:08:16  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:08:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:08:43  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:08:43  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:08:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:08:48  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:08:48  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:08:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:08:54  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:08:54  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:08:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:08:59  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:08:59  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:09:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:09:21  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:09:21  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:09:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:09:27  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:09:27  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:13:19  [[31merror[39m]: Hashing password 
+2021-12-11 18:14:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:14:44  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:14:44  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:15:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:15:30  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:15:30  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:15:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:15:36  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:15:36  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:15:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:15:53  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:15:53  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:16:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:16:20  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:16:20  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:16:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:16:52  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:16:52  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:17:00  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:17:00  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:17:00  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:17:07  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:17:07  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:17:07  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:17:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:17:14  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:17:14  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:17:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:17:20  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:17:20  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:17:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:17:26  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:17:26  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:18:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:18:03  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:18:03  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:18:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:18:13  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:18:13  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:18:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:18:20  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:18:20  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:18:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:18:37  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:18:37  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:18:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:18:44  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:18:44  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:19:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:19:44  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:19:44  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:20:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:20:01  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:20:01  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:21:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:21:13  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:21:13  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:21:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:21:28  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:21:28  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:22:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:22:25  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:22:25  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:22:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:22:41  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:22:41  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:23:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:23:02  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:23:02  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:23:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:23:13  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:23:13  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:23:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:23:21  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:23:21  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:23:42  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:23:42  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:23:42  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:24:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:24:02  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:24:02  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:24:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:24:24  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:24:24  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:24:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:24:49  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:24:49  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:25:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:25:25  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:25:25  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:25:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:25:41  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:25:41  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:26:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:26:36  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:26:36  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:26:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:26:57  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:26:57  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:27:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:27:01  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:27:01  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:27:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:27:29  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:27:30  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:27:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:27:35  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:27:35  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:27:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:27:53  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:27:53  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:28:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:28:08  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:28:08  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:28:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:28:19  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:28:19  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:31:04  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:31:04  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:31:04  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:33:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:33:34  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:33:34  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:33:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:33:44  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:33:44  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:33:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:33:49  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:33:49  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:33:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:33:55  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:33:55  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:37:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:37:14  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:37:14  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:37:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:37:29  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:37:29  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:39:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:39:52  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:39:52  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:40:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:40:15  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:40:15  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:40:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:40:18  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:40:18  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:40:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:40:22  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:40:22  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:47:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:47:22  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:47:22  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:47:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:47:43  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:47:43  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:48:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:48:29  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:48:29  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:48:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:48:35  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:48:35  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:48:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:48:47  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:48:47  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:49:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:49:02  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:49:02  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:49:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:49:30  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:49:30  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:50:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:50:11  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:50:11  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:50:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:50:29  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:50:29  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:50:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:50:37  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:50:37  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:51:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:51:08  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:51:09  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:52:40  [[31merror[39m]: Hashing password 
+2021-12-11 18:53:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:53:28  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:53:29  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:53:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:53:38  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:53:38  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:55:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:55:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:55:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:56:07  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:56:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:56:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:56:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:56:39  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:56:39  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:56:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:56:49  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:56:49  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:57:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:57:10  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:57:10  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:59:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:59:02  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:59:02  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 18:59:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 18:59:24  [[32minfo[39m]: Express Inicialized 
+2021-12-11 18:59:24  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:00:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:00:10  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:00:10  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:00:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:00:14  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:00:14  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:00:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:00:41  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:00:41  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:00:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:00:47  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:00:47  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:00:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:00:59  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:00:59  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:01:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:01:05  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:01:05  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:02:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:02:01  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:02:01  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:02:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:02:25  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:02:25  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:02:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:02:27  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:02:28  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:03:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:03:32  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:03:32  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:03:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:03:39  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:03:39  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:04:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:04:37  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:04:37  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:04:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:04:41  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:04:41  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:05:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:05:31  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:05:31  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:05:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:05:34  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:05:34  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:05:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:05:38  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:05:38  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:05:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:05:48  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:05:48  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:06:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:06:18  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:06:18  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:06:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:06:28  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:06:28  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:06:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:06:40  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:06:40  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:11:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:11:19  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:11:19  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:11:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:11:25  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:11:25  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:11:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:11:46  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:11:46  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:11:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:11:50  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:11:50  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:12:00  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:12:00  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:12:00  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:12:04  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:12:04  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:12:04  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:12:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:12:06  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:12:06  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:12:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:12:18  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:12:18  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:12:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:12:35  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:12:35  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:13:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:13:08  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:13:08  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:13:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:13:22  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:13:22  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:13:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:13:27  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:13:27  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:13:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:13:34  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:13:34  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:13:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:13:39  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:13:39  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:13:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:13:44  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:13:44  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:13:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:13:47  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:13:47  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:14:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:14:54  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:14:54  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:15:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:15:03  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:15:03  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:15:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:15:06  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:15:06  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:15:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:15:35  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:15:35  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:16:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:16:39  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:16:39  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:16:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:16:45  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:16:45  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:16:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:16:51  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:16:51  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:17:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:17:05  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:17:05  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:17:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:17:20  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:17:20  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:17:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:17:29  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:17:29  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:17:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:17:32  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:17:32  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:17:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:17:35  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:17:35  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:18:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:18:24  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:18:24  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:18:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:18:56  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:18:56  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:19:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:19:39  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:19:39  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:20:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:20:24  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:20:24  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:20:42  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:20:42  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:20:42  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:21:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:21:33  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:21:33  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:22:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:22:29  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:22:29  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:22:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:22:33  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:22:33  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:23:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:23:38  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:23:38  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:23:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:23:49  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:23:49  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:23:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:23:52  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:23:52  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:24:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:24:03  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:24:03  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:24:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:24:06  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:24:06  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:24:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:24:36  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:24:36  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:24:42  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:24:42  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:24:42  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:24:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:24:47  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:24:47  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:25:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:25:06  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:25:06  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:25:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:25:13  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:25:13  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:26:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:26:31  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:26:31  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:26:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:26:50  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:26:50  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:26:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:26:57  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:26:57  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:27:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:27:09  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:27:09  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:27:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:27:20  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:27:20  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:27:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:27:35  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:27:35  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:27:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:27:44  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:27:44  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:27:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:27:55  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:27:55  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:28:04  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:28:04  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:28:04  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:28:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:28:08  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:28:08  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:30:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:30:12  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:30:12  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:31:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:31:32  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:31:32  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:31:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:31:38  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:31:38  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:31:42  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:31:42  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:31:42  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:31:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:31:55  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:31:55  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:32:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:32:05  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:32:05  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 
+2021-12-11 19:32:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-11 19:32:10  [[32minfo[39m]: Express Inicialized 
+2021-12-11 19:32:10  [[32minfo[39m]: 
+        ################################################
+        🛡️  Server listening on port: 3000 🛡️
+        ################################################
+        http://localhost:3000/api/ 

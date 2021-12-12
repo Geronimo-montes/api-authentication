@@ -2,8 +2,8 @@ import mongoose from 'mongoose';
 import { Logger } from 'winston';
 import { Container } from 'typedi';
 import { EventSubscriber, On } from 'event-dispatch';
-import events from './events';
-import { IUser } from '@interfaces/IUser';
+import events from './events.subscriber';
+import { IUser } from '@interfaces/IUser.interface';
 
 @EventSubscriber()
 export default class UserSubscriber {

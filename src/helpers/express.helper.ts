@@ -3,7 +3,7 @@ import express, { Request, Response, NextFunction, } from 'express';
 import cors from 'cors';
 import path from 'path';
 
-import { ResponseData } from '@models/response.model';
+import { ResponseData } from '@utils/response';
 import config from '@config';
 import routes from '@api/index';
 
@@ -26,13 +26,13 @@ export default ({ app }: { app: express.Application }) => {
 	 * PUBLIC FILES
 	 */
 	const public_dir = path.join(__dirname, '../assets/public');
-	app.use(config.API.PREFIX + '/static', express.static(public_dir));
+	app.use(`${config.API.PREFIX}/static`, express.static(public_dir));
 
 	/**
 	 * API ROUTES
 	 */
 	app.use(config.API.PREFIX, routes());
-	app.get('/favicon.ico', (req, res) => res.status(204));
+	app.get(`${config.API.PREFIX}/favicon.ico`, (req, res) => res.status(204));
 
 	/**
 	 * CATCH 404 AND FORWARD TO ERROR HANDLER

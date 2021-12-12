@@ -1,6 +1,6 @@
 import { Container } from "typedi";
-import agendaFactory from './agenda';
-import LoggerInstance from './logger';
+import agendaFactory from './agenda.helper';
+import LoggerInstance from './logger.helper';
 
 
 export default ({ mongoConnection, models }: {

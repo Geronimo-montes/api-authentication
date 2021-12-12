@@ -1,11 +1,12 @@
-import expressLoader from "./express";
-import mongooseLoader from "./mongoose";
-import injectorLoader from "./injector";
-import jobsLoader from "./jobs";
-import Logger from './logger';
+import expressLoader from "./express.helper";
+import mongooseLoader from "./mongoose.helper";
+import injectorLoader from "./injector.helper";
+import jobsLoader from "./jobs.helper";
+import Logger from './logger.helper';
 
 
 export default async ({ expressApp }) => {
+
     /**
      * 
      */
@@ -33,10 +34,11 @@ export default async ({ expressApp }) => {
         mongoConnection,
         models: [
             userModel,
-            // salaryModel,
-            // whateverModel
         ],
     });
 
+    /**
+     * 
+     */
     await jobsLoader({ agenda });
 }

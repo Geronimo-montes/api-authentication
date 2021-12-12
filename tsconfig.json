@@ -7,17 +7,17 @@
     ],
     "typeRoots": [
       "./node_modules/@types",
-      "types"
+      "./src/types"
     ],
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node", 
+    "moduleResolution": "node",
     "module": "commonjs",
     "pretty": true,
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "./build",
     "allowJs": true,
     "noEmit": false,
     "esModuleInterop": true,
@@ -30,8 +30,6 @@
   },
   "include": [
     "./src/**/*",
-    "./",
-    "types"
   ],
   "exclude": [
     "node_modules",

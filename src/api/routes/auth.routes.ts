@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import validator from '@api/middlewares/validator-handler.middleware';
-import { singUpSchemaPost } from '@validator/Schemas/app.schema';
+import validator from '@api/middlewares/validator.middleware';
+import { singInSchemaPost, singUpSchemaPost } from '@validator/Schemas/app.schema';
 import { checkSchema } from 'express-validator';
-import { SingUp } from './controllers/auth.controller';
+import { SignUp, SignIn } from './controllers/auth.controller';
 
 const route = Router();
 
@@ -11,8 +11,18 @@ export default (app: Router) => {
   route
     // METODOS DE LA RUTA
     .post(
-      '/signup', // RUTA
-      validator(checkSchema(singUpSchemaPost)), // VALIDADORES DE PARAMETROS
-      SingUp // METODO
+      '/signup',
+      validator(checkSchema(singUpSchemaPost)),
+      SignUp
+    )
+    .post(
+      '/signin',
+      validator(checkSchema(singInSchemaPost)),
+      SignIn
+    )
+    .delete(
+      '/signout',
+      validator(checkSchema({})),
+      () => { }
     );
 };

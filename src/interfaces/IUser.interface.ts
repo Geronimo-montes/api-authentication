@@ -1,10 +1,10 @@
 export interface IUser {
   _id: string;
+  role: string;
   name: string;
   email: string;
-  password: string;
-  salt: string;
-  role: string;
+  password?: string;
+  salt?: string;
 }
 
 export interface IUserInputDTO {

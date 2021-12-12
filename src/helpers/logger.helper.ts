@@ -3,6 +3,7 @@ import config from '@config';
 import { allColors } from 'winston/lib/winston/config';
 
 const { combine, timestamp, label, printf } = winston.format;
+
 const myFormat = printf(info => {
   if (info instanceof Error) {
     return `${info.timestamp}  [${info.level}]: ${info.message} ${info.stack}`;
