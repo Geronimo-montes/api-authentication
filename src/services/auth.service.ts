@@ -6,45 +6,47 @@ import { Service, Inject } from 'typedi';
 
 import config from '@config';
 import events from '@subscribers/events.subscriber';
+
 import { EventDispatcher } from '@decorators/eventDispatcher';
 import { EventDispatcherInterface } from '@decorators/eventDispatcher';
-import { IUser, IUserInputDTO } from '@interfaces/IUser.interface';
+
+import { IUser } from '@interfaces/IUser.interface';
 
 @Service()
 export default class AuthService {
 
   constructor(
-    @Inject('logger') private logger: Logger,
+    @Inject('logger') private Log: Logger,
     @Inject('userModel') private Model: Models.UserModel,
     @EventDispatcher() private event: EventDispatcherInterface,
   ) { }
 
   /**
-   * Metodo para regisrar un usuario en el sistema.
+   * Metodo para regisrar un usuario administrador en el sistema.
    * 
    * @param {IUserInputDTO} userInputDTO Datos de usuarios a registrar.
    * @returns {Promise<INewUser>} Data del usuario registrado
    */
-  public async SignUp(userInputDTO: IUserInputDTO): Promise<any> {
+  public async SignUp({ name, email, password }): Promise<any> {
     try {
 
-      this.logger.silly('Hashing password');
+      this.Log.debug('Hashing password');
       const _s = randomBytes(32);
-      const hash = await argon2.hash(userInputDTO.password, { salt: _s });
-      console.log({ hash })
+      const hash = await argon2.hash(password, { salt: _s });
 
-      this.logger.silly('Creating user db record');
+      this.Log.debug('Creating user db record');
       const userRow = await this.Model
-        .create({ ...userInputDTO, salt: _s.toString('hex'), hash });
+        .create({ name, email, password: hash, salt: _s.toString('hex') });
       console.log({ userRow })
 
-      this.logger.silly('Generating JWT');
+      this.Log.debug('Generating JWT');
       const { user, token } = this.generateToken(userRow);
       console.log({ user, token })
 
       this.event.dispatch(events.user.signUp, { user: user });
       return Promise.resolve({ user, token });
     } catch (err) {
+      this.Log.error('🔥🔥 error: %o 🔥🔥', err)
       throw new Error(err.message);
     }
   }
@@ -61,23 +63,24 @@ export default class AuthService {
       const userRecord = await this.Model.findOne({ email });
 
       if (!userRecord)
-        throw new Error('Usuario no registrado');
+        Promise.reject(new Error('Usuario no registrado'));
 
-      this.logger.silly('Checking password');
-      const isAuthenticate = argon2.verify(userRecord.password, password);
+      this.Log.debug('Checking password');
+      const isAuthenticate = await argon2.verify(userRecord.password, password)
 
       if (!isAuthenticate)
-        throw (new Error('Contraseña Invalida'));
+        Promise.reject(new Error('Contraseña Invalida'));
 
-      this.logger.silly('Generating JWT');
+      this.Log.debug('🚦⚠️ Generating JWT ⚠️🚦');
       const { user, token } = this.generateToken(userRecord);
 
       // this.event.dispatch(events.user.signIn, { user: user });
 
-      this.logger.silly('Password is valid!');
+      this.Log.debug('Password is valid!');
       return Promise.resolve({ user, token });
     } catch (err) {
-      throw new Error(err.message);
+      this.Log.error('🔥🔥 error: %o 🔥🔥', err)
+      throw err;
     }
   }
 
@@ -87,11 +90,21 @@ export default class AuthService {
    * @returns {Promise<INewUser>} Usuario y token de acceso
    */
   private generateToken({ _id, role, name, email, password, salt }: IUser) {
-    const
-      exp = new Date(new Date().getDate() + 60).getTime() / 1000,
-      user = { _id, role, name, email };
-
-    this.logger.silly(`Sign JWT for userId: ${_id}`);
-    return { user, token: jwt.sign({ ...user, exp }, config.JWT.SECRET) };
+    this.Log.debug(`🚦⚠️ Sign JWT for userId: ${_id} ⚠️🚦`);
+    return {
+      user: { _id, role, name, email },
+      token: jwt.sign(
+        { _id, role, name, email },
+        config.JWT.SECRET,
+        { expiresIn: 86400 }, //24 horas
+      )
+    };
   }
 }
+
+/**
+ * 
+ *     { usuario: usuario },
+    config.jwtSecret,
+ * 
+ */

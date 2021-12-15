@@ -1,13 +1,24 @@
 import dotenv from 'dotenv';
+import path from 'path';
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'develoment';
 const envFound = dotenv.config();
+
 if (envFound.error) {
   throw new Error("⚠️  Couldn't find .env file  ⚠️");
 
 }
 
+const ROOT_PATH = path.join(__dirname, '..');
+
 export default {
+  /**
+   * 
+   */
+  ROOT: {
+    PATH: ROOT_PATH,
+    URL: process.env.ROOTURL || 'http://localhost:3000/api/',
+  },
   /**
    * 
    */
@@ -16,14 +27,23 @@ export default {
    * 
    */
   API: {
-    PREFIX: '/api'
+    PREFIX: '/api',
+  },
+  /**
+   * 
+   */
+  FILES: {
+    PUBLIC: path.join(ROOT_PATH, 'assets', 'public'),
+    PRIVATE: path.join(ROOT_PATH, 'assets', 'private'),
   },
   /**
    * 
    */
   JWT: {
-    SECRET: process.env.JWT_SECRET || 'somesecrettoken',
-    ALGORITHM: process.env.JWT_ALGO || 'RS256',
+    SECRET: process.env.JWT_SECRET,
+    // SECRET: process.env.JWT_SECRET || 'somesecrettoken',
+    ALGORITHM: process.env.JWT_ALGORITMO,
+    // ALGORITHM: process.env.JWT_ALGORITMO || 'RS256',
   },
   /**
    * 
@@ -43,4 +63,8 @@ export default {
     POOLTIME: process.env.AGENDA_POOL_TIME,
     CONCURRENCY: parseInt(process.env.AGENDA_CONCURRENCY, 10),
   },
+  /**
+   * 
+   */
+  CLOUDINARY_URL: process.env.CLOUDINARY_URL,
 };

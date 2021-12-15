@@ -3,9 +3,10 @@ import express, { Request, Response, NextFunction, } from 'express';
 import cors from 'cors';
 import path from 'path';
 
-import { ResponseData } from '@utils/response';
 import config from '@config';
-import routes from '@api/index';
+import routes from '@api';
+import Container from 'typedi';
+import { Logger } from 'winston';
 
 export default ({ app }: { app: express.Application }) => {
 	/**
@@ -44,23 +45,12 @@ export default ({ app }: { app: express.Application }) => {
 	});
 
 	/**
-	 * ERROR HANDLERS
+	 * ERROR HANDLLER
 	 */
 	app.use((err, req, res, next) => {
-		if (err.name === 'UnauthorizedError')
-			return res
-				.status(err.status)
-				.send({ message: err.message })
-				.end();
-
-		return next(err);
-	});
-
-	app.use((err, req, res, next) => {
-		return res
-			.status(err.status || 500)
-			.json(new ResponseData(false, err.message, err))
-			.end();
+		const Log = <Logger>Container.get('logger')
+		Log.error(`🔥🔥 ${err} 🔥🔥`)
+		return res.status(err.status || 500).json({ err }).end();
 	});
 
 	return app;

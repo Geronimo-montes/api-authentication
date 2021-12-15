@@ -1,4 +1,4 @@
-export class ResponseData {
+export default class Response {
   data: any;
   response: boolean = false;
   message: string = 'Not Found.';

@@ -15,14 +15,10 @@ export default class UserSubscriber {
     const Logger: Logger = Container.get('logger');
 
     try {
-      /**
-       * @TODO implement this
-       * 
-       *  const UserModel = Container.get('UserModel') as 
-       *  mongoose.Model<IUser & mongoose.Document>;
-       * 
-       *  UserModel.update({ _id }, { $set: { lastLogin: new Date() } });
-       */
+      const UserModel = Container.get('UserModel') as
+        mongoose.Model<IUser & mongoose.Document>;
+
+      UserModel.updateOne({ _id }, { $set: { lastLogin: new Date() } });
     } catch (e) {
       Logger.error(`🔥 Error on event ${events.user.signUp}: %o`, e);
 
