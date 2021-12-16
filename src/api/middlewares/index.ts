@@ -1,11 +1,11 @@
 import isAuth from './isAuth.middleware';
 import validator from './validator.middleware';
-import uploadFiles from './multer.middleware';
+import uploadImages from './multer/image.middleware';
 
 export default {
   isAuth,
   validator,
-  uploadFiles,
+  uploadImages,
 
   /**
    * FALTA VERIFICAR UTILIDAD

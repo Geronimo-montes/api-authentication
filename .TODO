@@ -1,1 +1,4 @@
-todo asdfasdf
+Log.warn(`❗🚦 🚧⚠️ Warn: ${warn}  ⚠️🚧 🚦❗`);
+Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
+Log.debug(`❔🔍 🚦⚠️  Debug: ${debug}  🚦⚠️ 🔍❔`);
+Log.info(`⚠️🌐 🌐💻  Info: ${info}  💻🌐 🌐⚠️`);

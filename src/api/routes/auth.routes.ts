@@ -1,3 +1,4 @@
+import { Logger } from 'winston';
 import { Router } from 'express';
 import { Request } from 'express';
 import { Response } from 'express';
@@ -5,10 +6,10 @@ import { Container } from 'typedi';
 import { NextFunction } from 'express';
 import { checkSchema } from 'express-validator';
 
-import AuthService from '@services/auth.service';
 import middlewares from '@api/middlewares';
 
-import authSchemas from '@validator/Schemas/auth.schema';
+import AuthService from '@services/auth.service';
+import Schemas from '@validator';
 
 
 const route = Router();
@@ -17,24 +18,49 @@ export default (app: Router) => {
   app.use('/auth', route)
   route
     .post(
-      '/sign-up',
-      middlewares.validator(checkSchema(authSchemas.signInPost)),
+      '/admin/sign-up',
+      middlewares.validator(checkSchema(Schemas.auth.signInPost)),
       async (req: Request, res: Response, next: NextFunction) => {
+        const Log: Logger = Container.get('logger');
+
+        Container.get(AuthService)
+          .SignUpAdmin(req.body)
+          .then(({ user, token }) => {
+            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
+            res.status(201).json({ user, token });
+          })
+          .catch((err) => next(err));
+      }
+    )
+    .post(
+      '/sign-up',
+      middlewares.validator(checkSchema(Schemas.auth.signInPost)),
+      async (req: Request, res: Response, next: NextFunction) => {
+        const Log: Logger = Container.get('logger');
+
         Container.get(AuthService)
           .SignUp(req.body)
-          .then(({ user, token }) => res.status(201).json({ user, token }))
-          .catch((err) => next(new Error(err.message)))
+          .then(({ user, token }) => {
+            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
+            res.status(201).json({ user, token });
+          })
+          .catch((err) => next(err));
       }
     )
     .post(
       '/sign-in',
-      middlewares.validator(checkSchema(authSchemas.signUpPost)),
+      middlewares.validator(checkSchema(Schemas.auth.signUpPost)),
       async (req: Request, res: Response, next: NextFunction) => {
+        const Log: Logger = Container.get('logger');
+
         const { email, password } = req.body;
 
         Container.get(AuthService)
           .SignIn(email, password)
-          .then(({ user, token }) => res.status(201).json({ user, token }))
+          .then(({ user, token }) => {
+            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
+            res.status(201).json({ user, token });
+          })
           .catch((err) => {
             console.log({ err });
             return next(err);
@@ -43,30 +69,45 @@ export default (app: Router) => {
     )
     .delete(
       '/sign-out',
-      middlewares.validator(checkSchema(authSchemas.signOutDelete)),
+      middlewares.validator(checkSchema(Schemas.auth.signOutDelete)),
       async (req: Request, res: Response, next: NextFunction) => {
+        const Log: Logger = Container.get('logger');
+
         const nameMedod = req.url;
         Promise.resolve({})
-          .then(({ }) => res.status(201).json({ nameMedod }))
-          .catch((err) => next(new Error(err.message)));
+          .then(({ }) => {
+            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
+            res.status(201).json({ nameMedod });
+          })
+          .catch((err) => next(err));;
       }
     )
     .put(
       '/refresh-session',
-      middlewares.validator(checkSchema(authSchemas.refreshSessionPut)),
+      middlewares.validator(checkSchema(Schemas.auth.refreshSessionPut)),
       async (req: Request, res: Response, next: NextFunction) => {
+        const Log: Logger = Container.get('logger');
+
         Promise.resolve({})
-          .then(({ }) => res.status(201).json({}))
-          .catch((err) => next(new Error(err.message)))
+          .then(({ }) => {
+            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
+            res.status(201).json({});
+          })
+          .catch((err) => next(err));
       }
     )
     .put(
       '/edit-profile',
-      middlewares.validator(checkSchema(authSchemas.editProfilePut)),
+      middlewares.validator(checkSchema(Schemas.auth.editProfilePut)),
       async (req: Request, res: Response, next: NextFunction) => {
+        const Log: Logger = Container.get('logger');
+
         Promise.resolve({})
-          .then(({ }) => res.status(201).json({}))
-          .catch((err) => next(new Error(err.message)))
+          .then(({ }) => {
+            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
+            res.status(201).json({});
+          })
+          .catch((err) => next(err));
       }
     )
 };

@@ -30,10 +30,19 @@ export default async ({ expressApp }) => {
     /**
      * 
      */
+    const dataFaceModel = {
+        name: 'dataFaceModel',
+        model: require('../models/data_face.model').default,
+    };
+
+    /**
+     * 
+     */
     const { agenda } = await injectorLoader({
         mongoConnection,
         models: [
             userModel,
+            dataFaceModel,
         ],
     });
 

@@ -1,6 +1,5 @@
-import 'reflect-metadata'; // We need this in order to use @Decorators
+import 'reflect-metadata';
 
-// import Logger from './helpers/logger.helper';
 import express from 'express';
 import config from '@config';
 import { Logger } from 'winston';
@@ -13,16 +12,13 @@ async function startServer() {
     const Log = <Logger>Container.get('logger');
 
     app.listen(config.PORT,
-        () => Log.info(`🛡️🛡️ Server running: ${config.ROOT.URL} 🛡️🛡️`))
-        .on('error', err => {
-            Log.error('🔥🔥 error: %o 🔥🔥', err)
-            process.exit(1);
-        });
+        () =>
+            Log.info(`🌐💻 Server running: ${config.ROOT.URL} 🌐💻`))
+        .on('error',
+            err => {
+                Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
+                process.exit(1);
+            });
 }
 
 startServer();
-
-    // Log.warn('🚦🚧⚠️   ⚠️🚧🚦');
-    // Log.error('🔥🔥   🔥🔥')
-    // Log.debug('🔎🔎   🔍🔍')warn
-    // Log.info('🛡️🛡️   🛡️🛡️')

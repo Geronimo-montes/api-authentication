@@ -9,45 +9,83 @@ import events from '@subscribers/events.subscriber';
 
 import { EventDispatcher } from '@decorators/eventDispatcher';
 import { EventDispatcherInterface } from '@decorators/eventDispatcher';
+import { ERol } from '@interfaces/IRol.interface';
 
-import { IUser } from '@interfaces/IUser.interface';
 
+/**
+ * 
+ */
 @Service()
 export default class AuthService {
 
   constructor(
     @Inject('logger') private Log: Logger,
-    @Inject('userModel') private Model: Models.UserModel,
+    @Inject('userModel') private UserModel: Models.UserModel,
     @EventDispatcher() private event: EventDispatcherInterface,
   ) { }
 
   /**
    * Metodo para regisrar un usuario administrador en el sistema.
    * 
-   * @param {IUserInputDTO} userInputDTO Datos de usuarios a registrar.
-   * @returns {Promise<INewUser>} Data del usuario registrado
+   * @param {} userInputDTO Datos de usuarios a registrar.
+   * @returns {} Data del usuario registrado
+   */
+  public async SignUpAdmin({ name, email, password }): Promise<any> {
+    try {
+
+      this.Log.debug('🔍🔍 🚦⚠️  Hashing password  🚦⚠️ 🔍🔍');
+      const _s = randomBytes(32);
+      const hash = await argon2.hash(password, { salt: _s });
+      this.Log.debug('🔍🔍 🚦⚠️  Creating user db record  🚦⚠️ 🔍🔍');
+      const userRow = await this.UserModel
+        .create({
+          name: name,
+          email: email,
+          password: hash,
+          salt: _s.toString('hex'),
+          role: ERol.ADMIN,
+        });
+
+      this.Log.debug('🔍🔍 🚦⚠️  Generating JWT  🚦⚠️ 🔍🔍');
+      const { user, token } = this.generateToken(userRow);
+
+      this.Log.debug('🔍🔍 🚦⚠️  Generating JWT  🚦⚠️ 🔍🔍');
+      this.event.dispatch(events.user.signUp, { user: user });
+      return Promise.resolve({ user, token });
+
+    } catch (err) {
+      this.Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
+      throw new Error(err);
+    }
+  }
+
+  /**
+   * Metodo para regisrar un usuario  en el sistema.
+   * 
+   * @param {} userInputDTO Datos de usuarios a registrar.
+   * @returns {} Data del usuario registrado
    */
   public async SignUp({ name, email, password }): Promise<any> {
     try {
 
-      this.Log.debug('Hashing password');
+      this.Log.debug('🔍🔍 🚦⚠️  Hashing password  🚦⚠️ 🔍🔍');
       const _s = randomBytes(32);
       const hash = await argon2.hash(password, { salt: _s });
 
-      this.Log.debug('Creating user db record');
-      const userRow = await this.Model
+      this.Log.debug('🔍🔍 🚦⚠️  Creating user db record  🚦⚠️ 🔍🔍');
+      const userRow = await this.UserModel
         .create({ name, email, password: hash, salt: _s.toString('hex') });
-      console.log({ userRow })
 
-      this.Log.debug('Generating JWT');
+      this.Log.debug('🔍🔍 🚦⚠️  Generating JWT  🚦⚠️ 🔍🔍');
       const { user, token } = this.generateToken(userRow);
-      console.log({ user, token })
 
+      this.Log.debug('🔍🔍 🚦⚠️  Generating JWT  🚦⚠️ 🔍🔍');
       this.event.dispatch(events.user.signUp, { user: user });
       return Promise.resolve({ user, token });
+
     } catch (err) {
-      this.Log.error('🔥🔥 error: %o 🔥🔥', err)
-      throw new Error(err.message);
+      this.Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
+      throw new Error(err);
     }
   }
 
@@ -60,26 +98,48 @@ export default class AuthService {
    */
   public async SignIn(email: string, password: string): Promise<any> {
     try {
-      const userRecord = await this.Model.findOne({ email });
+      const userRecord = await this.UserModel.findOne({ email });
 
       if (!userRecord)
-        Promise.reject(new Error('Usuario no registrado'));
+        throw new Error('Usuario no registrado');
 
-      this.Log.debug('Checking password');
+      this.Log.debug('🔍🔍 🚦⚠️  Checking password  🚦⚠️ 🔍🔍');
       const isAuthenticate = await argon2.verify(userRecord.password, password)
 
       if (!isAuthenticate)
-        Promise.reject(new Error('Contraseña Invalida'));
+        throw new Error('Contraseña Invalida');
 
-      this.Log.debug('🚦⚠️ Generating JWT ⚠️🚦');
+      this.Log.debug('🔍🔍 🚦⚠️  Generating JWT  🚦⚠️ 🔍🔍');
       const { user, token } = this.generateToken(userRecord);
 
       // this.event.dispatch(events.user.signIn, { user: user });
 
-      this.Log.debug('Password is valid!');
+      this.Log.debug('🔍🔍 🚦⚠️  Password is valid!  🚦⚠️ 🔍🔍');
       return Promise.resolve({ user, token });
     } catch (err) {
-      this.Log.error('🔥🔥 error: %o 🔥🔥', err)
+      this.Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
+      throw err;
+    }
+  }
+
+  /**
+ * Autentica las credenciales del usuario y gnenera un token de acceso.
+ * 
+ * @param {string} email
+ * @param {string} password
+ * @returns 
+ */
+  public async GetUser(name: string): Promise<Models.User> {
+    try {
+      const userRecord = await this.UserModel.findOne({ name });
+
+      if (!userRecord)
+        throw new Error('Usuario no registrado');
+
+      this.Log.debug('🔍🔍 🚦⚠️  Password is valid!  🚦⚠️ 🔍🔍');
+      return Promise.resolve(userRecord);
+    } catch (err) {
+      this.Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
       throw err;
     }
   }
@@ -89,14 +149,15 @@ export default class AuthService {
    * @param {IUserInputDTO} user Datos de usuarios a registrar.
    * @returns {Promise<INewUser>} Usuario y token de acceso
    */
-  private generateToken({ _id, role, name, email, password, salt }: IUser) {
-    this.Log.debug(`🚦⚠️ Sign JWT for userId: ${_id} ⚠️🚦`);
+  private generateToken({ _id, role, name, email, password, salt }: Models.User) {
+    this.Log.debug(`🔍🔍 🚦⚠️  Sign JWT for userId: ${_id}  🚦⚠️ 🔍🔍`);
     return {
       user: { _id, role, name, email },
       token: jwt.sign(
         { _id, role, name, email },
         config.JWT.SECRET,
-        { expiresIn: 86400 }, //24 horas
+        // { expiresIn: 86400 }, //24 horas
+        { expiresIn: 3153600 },   //1 año
       )
     };
   }

@@ -1,5 +1,5 @@
-import authSchemas from "./Schemas/auth.schema"
+import auth from "./Schemas/auth.schema"
 
 export default {
-  authSchemas,
+  auth,
 }

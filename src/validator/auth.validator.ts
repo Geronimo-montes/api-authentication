@@ -6,6 +6,8 @@ import { existsValidators, isAlphaValidator, notEmptyValidators } from "./comon.
  */
 export const nameValidator: ParamSchema = {
 	in: ['params'],
+	...existsValidators,
+	...notEmptyValidators,
 	...isAlphaValidator
 };
 

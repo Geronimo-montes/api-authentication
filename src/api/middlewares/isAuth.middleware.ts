@@ -45,8 +45,8 @@ const isAuth = (req, res, next) => {
       throw new UnauthorizedError(err.code, { message: 'Invalid Token' });
     }
 
-    req.user = decoded;
-    
+    req.User = decoded.user;
+
     next();
   });
 };

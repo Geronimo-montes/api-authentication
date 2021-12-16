@@ -49,7 +49,7 @@ export default ({ app }: { app: express.Application }) => {
 	 */
 	app.use((err, req, res, next) => {
 		const Log = <Logger>Container.get('logger')
-		Log.error(`🔥🔥 ${err} 🔥🔥`)
+		Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
 		return res.status(err.status || 500).json({ err }).end();
 	});
 

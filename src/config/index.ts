@@ -22,6 +22,13 @@ export default {
   /**
    * 
    */
+  PYTHON: {
+    MODEL: path.join(ROOT_PATH, '..', '..', 'python', 'biometric_recognition', 'src', 'main.py'),
+    EXE: path.join(ROOT_PATH, '..', '..', 'python', 'biometric_recognition', '.venv', 'Scripts', 'python.exe')
+  },
+  /**
+   * 
+   */
   PORT: process.env.PORT || 3000,
   /**
    * 

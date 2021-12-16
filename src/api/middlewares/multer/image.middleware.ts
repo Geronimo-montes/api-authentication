@@ -6,6 +6,9 @@ import { Request } from 'express';
 import { Logger } from 'winston';
 import Container from 'typedi';
 
+/**
+ * 
+ */
 const storage = multer.diskStorage({
   destination: config.FILES.PRIVATE,
 
@@ -16,6 +19,9 @@ const storage = multer.diskStorage({
   },
 });
 
+/**
+ * 
+ */
 const limits = {
   /** Maximum size of each form field name in bytes. (Default: 100) */
   fieldNameSize: 200,
@@ -26,7 +32,7 @@ const limits = {
   /** Maximum size of each file in bytes. (Default: Infinity) */
   fileSize: 100000000,
   /** Maximum number of file fields. (Default: Infinity) */
-  files: 1,
+  files: 20,
   /** Maximum number of parts (non-file fields + files). (Default: Infinity) */
   // parts?: number | undefined;
   /** Maximum number of headers. (Default: 2000) */
@@ -36,30 +42,35 @@ const limits = {
 
 /**
  * Funcion para validacion de tipo de archivo (mimetype)
+ * 
+ * @param req 
+ * @param file 
+ * @param cb 
+ * @returns 
  */
 const fileFilter = (
   req: Request, file: Express.Multer.File, cb: multer.FileFilterCallback
 ) => {
   const Log = <Logger>Container.get('logger');
-  const mimetype = ['image/png', 'image/jpg', 'video/mp4'];
+  const mimetype = ['image/png', 'image/jpg', 'image/jpeg'];
+  Log.info(`⚠️🌐 🌐💻  Info: ${file.mimetype}  💻🌐 🌐⚠️`);
 
   if (!mimetype.includes(file.mimetype)) {
-    Log.error(`🔥🔥 Invalid Access Token 🔥🔥`)
-    return cb(new Error('TYPE_FILE_NOT_SUPORTED'));
+    /**
+     * TODO: Implementes Error: TYPE_FILE_NOT_SUPORTED
+     */
+    const err = new Error('TYPE_FILE_NOT_SUPORTED');
+    Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
+    return cb(err);
   }
   cb(null, true);
 };
 
+/**
+ * 
+ */
 export default multer({
   storage: storage,
   limits: limits,
   fileFilter: fileFilter,
 });
-
-
-
-
-/***
- * POST BASE
- * https://medium.com/@joeokpus/uploading-images-to-cloudinary-using-multer-and-expressjs-f0b9a4e14c54
- */
