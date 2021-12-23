@@ -7,8 +7,10 @@
     ],
     "typeRoots": [
       "./node_modules/@types",
-      "./src/types"
+      "./src/types",
     ],
+    "declaration": true,
+    "declarationDir": "./src/types",
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -34,6 +36,5 @@
   "exclude": [
     "node_modules",
     "tests",
-    
   ]
 }

@@ -1,11 +1,13 @@
+import { Inject } from 'typedi';
+import { Service } from 'typedi';
 import { Logger } from 'winston';
-import { Service, Inject } from 'typedi';
+import { spawn } from 'child_process';
 
 import config from '@config';
 
+
 import { EventDispatcher } from '@decorators/eventDispatcher';
 import { EventDispatcherInterface } from '@decorators/eventDispatcher';
-import { spawn } from 'child_process';
 
 
 /**
@@ -15,7 +17,7 @@ import { spawn } from 'child_process';
 export default class RecogniceFaceService {
   constructor(
     @Inject('logger') private Log: Logger,
-    @Inject('dataFaceModel') private DataFaceModel: Models.DataFaceModel,
+    @Inject('dataFaceModel') private DataFaceModel: models.DataFaceModel,
     @EventDispatcher() private event: EventDispatcherInterface,
   ) { }
 

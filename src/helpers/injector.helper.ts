@@ -8,10 +8,16 @@ export default ({ mongoConnection, models }: {
     models: { name: string; model: any; }[]
 }) => {
     try {
-        models.forEach(m => Container.set(m.name, m.model));
-
         const agendaInstance = agendaFactory({ mongoConnection });
 
+        /**
+         * INYECCION DE MODELOS DE DATOS
+         */
+        models.forEach(m => Container.set(m.name, m.model));
+
+        /**
+         * INGECCION DE DEPENDENCIAS LOGGER Y AGENGA 
+         */
         Container.set('agendaInstance', agendaInstance);
         Container.set('logger', LoggerInstance);
 

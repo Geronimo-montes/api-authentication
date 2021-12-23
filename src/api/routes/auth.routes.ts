@@ -6,32 +6,35 @@ import { Container } from 'typedi';
 import { NextFunction } from 'express';
 import { checkSchema } from 'express-validator';
 
-import middlewares from '@api/middlewares';
-
-import AuthService from '@services/auth.service';
 import Schemas from '@validator';
+import middlewares from '@api/middlewares';
+import AuthService from '@services/auth.service';
 
 
 const route = Router();
 
 export default (app: Router) => {
   app.use('/auth', route)
+
   route
+    /******/
     .post(
       '/admin/sign-up',
-      middlewares.validator(checkSchema(Schemas.auth.signInPost)),
+      middlewares.validator(checkSchema(Schemas.auth.signUpPost)),
+
       async (req: Request, res: Response, next: NextFunction) => {
         const Log: Logger = Container.get('logger');
+        const InstanceAuthService = Container.get(AuthService);
 
-        Container.get(AuthService)
-          .SignUpAdmin(req.body)
+        InstanceAuthService.SignUpAdmin(req.body)
           .then(({ user, token }) => {
-            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
-            res.status(201).json({ user, token });
+            const msg = `Usuario ${user.email} Registrado`
+            Log.info(`⚠️🌐 🌐💻  AuthRoute:  Resolucion Exitosa '${msg}'  💻🌐 🌐⚠️`);
+            res.status(201).json({ user, token, msg });
           })
           .catch((err) => next(err));
-      }
-    )
+      })
+    /******/
     .post(
       '/sign-up',
       middlewares.validator(checkSchema(Schemas.auth.signInPost)),
@@ -41,12 +44,12 @@ export default (app: Router) => {
         Container.get(AuthService)
           .SignUp(req.body)
           .then(({ user, token }) => {
-            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
+            Log.info(`⚠️🌐 🌐💻  AuthRoute: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
             res.status(201).json({ user, token });
           })
           .catch((err) => next(err));
-      }
-    )
+      })
+    /******/
     .post(
       '/sign-in',
       middlewares.validator(checkSchema(Schemas.auth.signUpPost)),
@@ -58,15 +61,15 @@ export default (app: Router) => {
         Container.get(AuthService)
           .SignIn(email, password)
           .then(({ user, token }) => {
-            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
+            Log.info(`⚠️🌐 🌐💻  AuthRoute: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
             res.status(201).json({ user, token });
           })
           .catch((err) => {
             console.log({ err });
             return next(err);
           });
-      }
-    )
+      })
+    /******/
     .delete(
       '/sign-out',
       middlewares.validator(checkSchema(Schemas.auth.signOutDelete)),
@@ -76,12 +79,12 @@ export default (app: Router) => {
         const nameMedod = req.url;
         Promise.resolve({})
           .then(({ }) => {
-            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
+            Log.info(`⚠️🌐 🌐💻  AuthRoute: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
             res.status(201).json({ nameMedod });
           })
           .catch((err) => next(err));;
-      }
-    )
+      })
+    /******/
     .put(
       '/refresh-session',
       middlewares.validator(checkSchema(Schemas.auth.refreshSessionPut)),
@@ -90,12 +93,12 @@ export default (app: Router) => {
 
         Promise.resolve({})
           .then(({ }) => {
-            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
+            Log.info(`⚠️🌐 🌐💻  AuthRoute: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
             res.status(201).json({});
           })
           .catch((err) => next(err));
-      }
-    )
+      })
+    /******/
     .put(
       '/edit-profile',
       middlewares.validator(checkSchema(Schemas.auth.editProfilePut)),
@@ -104,7 +107,7 @@ export default (app: Router) => {
 
         Promise.resolve({})
           .then(({ }) => {
-            Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
+            Log.info(`⚠️🌐 🌐💻  AuthRoute: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
             res.status(201).json({});
           })
           .catch((err) => next(err));

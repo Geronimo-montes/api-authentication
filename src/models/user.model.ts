@@ -1,5 +1,3 @@
-import { ERol } from '@interfaces/IRol.interface';
-import { IUser } from '@interfaces/IUser.interface';
 import mongoose from "mongoose";
 
 const User = new mongoose.Schema(
@@ -23,11 +21,13 @@ const User = new mongoose.Schema(
 
     role: {
       type: String,
-      enum: [ERol.ADMIN, ERol.USER],
-      default: ERol.USER,
+      enum: ['admin', 'user'],
+      default: 'user',
+      // enum: [models.ERol.ADMIN, models.ERol.USER],
+      // default: models.ERol.USER,
     },
   }
 );
 
 export default mongoose
-  .model<IUser & mongoose.Document>('User', User);
+  .model<models.IUser & mongoose.Document>('User', User);

@@ -15,7 +15,7 @@ export default (app: Router) => {
   route
     .post(
       '/video',
-      middlewares.uploadFiles.single('video'),
+      middlewares.multerMiddleware.video.single('video'),
       middlewares.validator(checkSchema({})),
       async (req: Request, res: Response, next: NextFunction) => {
         const nameMedod = req.url;
@@ -28,7 +28,7 @@ export default (app: Router) => {
     )
     .post(
       '/images',
-      middlewares.uploadFiles.array('images', 20),
+      middlewares.multerMiddleware.images.array('images', 20),
       middlewares.validator(checkSchema({})),
       async (req: Request, res: Response, next: NextFunction) => {
         const nameMedod = req.url;

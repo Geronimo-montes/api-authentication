@@ -1,5 +1,6 @@
 import { Router } from "express"
-import biometricFaceRoutes from "./biometric-face";
+
+import biometricFaceRoutes from '@api/routes/biometric-face';
 
 const route = Router();
 

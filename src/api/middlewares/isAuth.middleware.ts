@@ -1,8 +1,8 @@
-import jwt from 'jsonwebtoken'
+import jwt from 'express-jwt'
 import config from "@config";
 
 import { JsonWebTokenError } from "jsonwebtoken";
-import { UnauthorizedError } from "express-jwt";
+// import { UnauthorizedError } from "express-jwt";
 
 import Container from 'typedi';
 import { Logger } from 'winston';
@@ -24,95 +24,20 @@ const getTokenFromHeader = (req) => {
   ) {
     return req.headers.authorization.split(' ')[1];
   } else {
-    Log.error('🔥🔥 Access Token Not Provider 🔥🔥');
-    throw new JsonWebTokenError('Access Token Not Provider');
+    return null;
   }
 
 }
 
-const isAuth = (req, res, next) => {
-  const Log = <Logger>Container.get('logger');
-  const token = getTokenFromHeader(req);
-
-  if (!token) {
-    Log.error('🔥🔥 Invalid Access Token 🔥🔥');
-    throw new JsonWebTokenError('Invalid Access Token');
-  }
-
-  jwt.verify(token, config.JWT.SECRET, (err, decoded) => {
-    if (err) {
-      Log.error(`🔥🔥 ${err} 🔥🔥`);
-      throw new UnauthorizedError(err.code, { message: 'Invalid Token' });
-    }
-
-    req.User = decoded.user;
-
-    next();
-  });
-};
-
-// isAdmin = (req, res, next) => {
-//   User.findByPk(req.userId).then(user => {
-//     user.getRoles().then(roles => {
-//       for (let i = 0; i < roles.length; i++) {
-//         if (roles[i].name === "admin") {
-//           next();
-//           return;
-//         }
-//       }
-
-//       res.status(403).send({
-//         message: "Require Admin Role!"
-//       });
-//       return;
-//     });
-//   });
-// };
-
-// isModerator = (req, res, next) => {
-//   User.findByPk(req.userId).then(user => {
-//     user.getRoles().then(roles => {
-//       for (let i = 0; i < roles.length; i++) {
-//         if (roles[i].name === "moderator") {
-//           next();
-//           return;
-//         }
-//       }
-
-//       res.status(403).send({
-//         message: "Require Moderator Role!"
-//       });
-//     });
-//   });
-// };
-
-// isModeratorOrAdmin = (req, res, next) => {
-//   User.findByPk(req.userId).then(user => {
-//     user.getRoles().then(roles => {
-//       for (let i = 0; i < roles.length; i++) {
-//         if (roles[i].name === "moderator") {
-//           next();
-//           return;
-//         }
-
-//         if (roles[i].name === "admin") {
-//           next();
-//           return;
-//         }
-//       }
-
-//       res.status(403).send({
-//         message: "Require Moderator or Admin Role!"
-//       });
-//     });
-//   });
-// };
-
-// const authJwt = {
-// verifyToken: verifyToken,
-// isAdmin: isAdmin,
-// isModerator: isModerator,
-// isModeratorOrAdmin: isModeratorOrAdmin
-// };
+/**
+ * Meddleaware de verificacion de credenciales de usuario
+ */
+const isAuth = jwt({
+  secret: config.JWT.SECRET, // The _secret_ to sign the JWTs
+  algorithms: ['sha1', 'RS256', 'HS256'],
+  // algorithms: [config.JWT.ALGORITHM], // JWT Algorithm
+  userProperty: 'token', // Use req.token to store the JWT
+  getToken: getTokenFromHeader, // How to extract the JWT from the request
+});
 
 export default isAuth;

@@ -32,7 +32,7 @@ const limits = {
   /** Maximum size of each file in bytes. (Default: Infinity) */
   fileSize: 100000000,
   /** Maximum number of file fields. (Default: Infinity) */
-  files: 20,
+  files: 1,
   /** Maximum number of parts (non-file fields + files). (Default: Infinity) */
   // parts?: number | undefined;
   /** Maximum number of headers. (Default: 2000) */
@@ -52,16 +52,16 @@ const fileFilter = (
   req: Request, file: Express.Multer.File, cb: multer.FileFilterCallback
 ) => {
   const Log = <Logger>Container.get('logger');
-  const mimetype = ['image/png', 'image/jpg'];
-
-  if (!mimetype.includes(file.mimetype)) {
-    /**
-     * TODO: Implementes Error: TYPE_FILE_NOT_SUPORTED
-     */
-    const err = new Error('TYPE_FILE_NOT_SUPORTED');
-    Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
-    return cb(err);
-  }
+  // const mimetype = ['image/png', 'image/jpg'];
+  // 
+  // if (!mimetype.includes(file.mimetype)) {
+  //   /**
+  //    * TODO: Implementes Error: TYPE_FILE_NOT_SUPORTED
+  //    */
+  //   const err = new Error('TYPE_FILE_NOT_SUPORTED');
+  //   Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
+  //   return cb(err);
+  // }
   cb(null, true);
 };
 

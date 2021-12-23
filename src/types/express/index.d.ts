@@ -1,40 +1,18 @@
-import { Document, Model } from 'mongoose';
-import { IUser } from '@interfaces/IUser.interface';
-import { ERol } from '@interfaces/IRol.interface';
-import { type } from 'os';
-import { IDataFace } from '@interfaces/IDataFace.interface';
+import models from '@/types/models';
+import { Document } from 'mongoose';
 
-
-/**
- * 
- */
 declare global {
-  namespace Express {
-    export interface Request {
-      IUser: IUser & Document;
-    }
-
-
-  }
-
   /**
-   * 
+   * @namespace Express
    */
-  namespace Models {
-    /**
-     * Interfaces que se refieren a los modelos
-     * 
-     * TODO: Investigar como estructurar los types en NodeJS 
-     * para modificar esta implementación
-     */
-    export type Roles = ERol;
-    export type User = IUser;
-    export type dataFace = IDataFace;
+  namespace Express {
 
     /**
-     * 
+     * @interface Request 
+     * @description Objeto que nos permiete manipular la peticiones que se generen en el uso de nuestra aplicación
      */
-    export type UserModel = Model<IUser & Document>;
-    export type DataFaceModel = Model<IDataFace & Document>;
+    export interface Request {
+      User: models.IUser & Document;
+    }
   }
 }

@@ -1,6 +1,9 @@
-import { Request, Router } from 'express';
+import { Router } from 'express';
+import { Request } from 'express';
 import { Response } from 'express';
 import { NextFunction } from 'express';
+
+import middlewares from '@api/middlewares';
 
 const route = Router();
 
@@ -10,6 +13,7 @@ export default (app: Router) => {
   route
     .get(
       '/',
+      middlewares.isAuth,
       (req: Request, res: Response, next: NextFunction,) => {
         return res.status(201).json(
           {

@@ -10,7 +10,7 @@ type ErrorCode =
   | 'LIMIT_UNEXPECTED_FILE'
   | 'TYPE_FILE_NOT_SUPORTED';
 
-class MulterExtendsError extends MulterError {
+class MulterExtendsError extends Error {
   /** Name of the MulterError constructor. */
   name: string;
   /** Identifying error code. */

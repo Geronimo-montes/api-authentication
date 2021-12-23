@@ -1,3 +1,7 @@
+/**
+ * Link de descarga
+ * https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-5.0.5-signed.msi
+ */
 import mongoose, { ConnectOptions } from 'mongoose';
 import config from '@config';
 

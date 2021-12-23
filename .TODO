@@ -1,3 +1,4 @@
+#TODO: Implementar doble autenticacion
 Log.warn(`❗🚦 🚧⚠️ Warn: ${warn}  ⚠️🚧 🚦❗`);
 Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
 Log.debug(`❔🔍 🚦⚠️  Debug: ${debug}  🚦⚠️ 🔍❔`);

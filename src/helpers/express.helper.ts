@@ -7,6 +7,7 @@ import config from '@config';
 import routes from '@api';
 import Container from 'typedi';
 import { Logger } from 'winston';
+import { HTMLCode } from '@errors/code_errors/error';
 
 export default ({ app }: { app: express.Application }) => {
 	/**
@@ -38,6 +39,17 @@ export default ({ app }: { app: express.Application }) => {
 	/**
 	 * CATCH 404 AND FORWARD TO ERROR HANDLER
 	 */
+	app.use((err: any, req: Request, res: Response, next: NextFunction) => {
+		if (err.name == 'UnauthorizedError') {
+			return res.status(HTMLCode.Errs400.Unauthorized).json({ err });
+		}
+
+		next(err);
+	});
+
+	/**
+	 * CATCH 404 AND FORWARD TO ERROR HANDLER
+	 */
 	app.use((req: Request, res: Response, next: NextFunction) => {
 		const err = new Error('Not Found');
 		err['status'] = 404
@@ -49,8 +61,10 @@ export default ({ app }: { app: express.Application }) => {
 	 */
 	app.use((err, req, res, next) => {
 		const Log = <Logger>Container.get('logger')
-		Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
+		Log.error(`❗⚠️ 🔥👽  Express:  ${err}  👽🔥 ⚠️❗`);
+
 		return res.status(err.status || 500).json({ err }).end();
+		// return res.status().json({ err }).end();
 	});
 
 	return app;
