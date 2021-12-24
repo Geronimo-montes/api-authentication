@@ -9,6 +9,8 @@ import events from '@subscribers/events.subscriber';
 
 import { EventDispatcher } from '@decorators/eventDispatcher';
 import { EventDispatcherInterface } from '@decorators/eventDispatcher';
+import { IUser } from '@interfaces/IUser.interface';
+import { ERol } from '@interfaces/IRol.interface';
 
 
 /**
@@ -19,7 +21,7 @@ export default class AuthService {
 
   constructor(
     @Inject('logger') private Log: Logger,
-    @Inject('userModel') private UserModel: models.UserModel,
+    @Inject('userModel') private UserModel: Models.UserModel,
     @EventDispatcher() private event: EventDispatcherInterface,
   ) { }
 
@@ -31,7 +33,7 @@ export default class AuthService {
    */
   public async SignUpAdmin(
     { name, email, password }
-  ): Promise<{ user: models.IUser, token: string }> {
+  ): Promise<{ user: IUser, token: string }> {
     try {
 
       this.Log.debug('🔍🔍 🚦⚠️  AuthService: Hashing password  🚦⚠️ 🔍🔍');
@@ -45,7 +47,7 @@ export default class AuthService {
           email: email,
           password: hash,
           salt: salt.toString('hex'),
-          role: models.ERol.ADMIN,
+          role: ERol.ADMIN,
         });
 
       this.Log.debug('🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍');
@@ -131,7 +133,7 @@ export default class AuthService {
  * @param {string} password
  * @returns 
  */
-  public async GetUser(name: string): Promise<models.IUser> {
+  public async GetUser(name: string): Promise<IUser> {
     try {
       const userRecord = await this.UserModel.findOne({ name });
 
@@ -151,7 +153,7 @@ export default class AuthService {
    * @param {IUserInputDTO} user Datos de usuarios a registrar.
    * @returns {Promise<INewUser>} Usuario y token de acceso
    */
-  private generateToken({ _id, role, name, email, password, salt }: models.IUser) {
+  private generateToken({ _id, role, name, email, password, salt }: IUser) {
     this.Log.debug(`🔍🔍 🚦⚠️  AuthService: Sign JWT for userId: ${_id}  🚦⚠️ 🔍🔍`);
     return {
       user: { _id, role, name, email },

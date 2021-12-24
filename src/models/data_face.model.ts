@@ -1,5 +1,6 @@
 
-import mongoose from "mongoose";
+import { IDataFace } from "@interfaces/IDataFace.interface";
+import mongoose, { Document } from "mongoose";
 
 const DataFace = new mongoose.Schema(
   {
@@ -24,4 +25,4 @@ const DataFace = new mongoose.Schema(
 );
 
 export default mongoose
-  .model<models.IDataFace & mongoose.Document>('DataFace', DataFace);
+  .model<IDataFace & Document>('DataFace', DataFace);

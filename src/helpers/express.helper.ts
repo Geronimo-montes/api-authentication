@@ -7,7 +7,7 @@ import config from '@config';
 import routes from '@api';
 import Container from 'typedi';
 import { Logger } from 'winston';
-import { HTMLCode } from '@errors/code_errors/error';
+import { HTMLCode } from '@interfaces/errors/code_errors/error';
 
 export default ({ app }: { app: express.Application }) => {
 	/**

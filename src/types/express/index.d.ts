@@ -1,7 +1,8 @@
-import models from '@/types/models';
-import { Document } from 'mongoose';
+import { IUser } from '@interfaces/IUser.interface';
+import { Document, Model } from 'mongoose';
 
 declare global {
+
   /**
    * @namespace Express
    */
@@ -12,7 +13,11 @@ declare global {
      * @description Objeto que nos permiete manipular la peticiones que se generen en el uso de nuestra aplicación
      */
     export interface Request {
-      User: models.IUser & Document;
+      User: IUser & Document;
     }
   }
+
+  // namespace Models {
+  //   export type UserModel = Model<IUser & Document>
+  // }
 }

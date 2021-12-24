@@ -17,10 +17,15 @@ import { EventDispatcherInterface } from '@decorators/eventDispatcher';
 export default class RecogniceFaceService {
   constructor(
     @Inject('logger') private Log: Logger,
-    @Inject('dataFaceModel') private DataFaceModel: models.DataFaceModel,
+    @Inject('dataFaceModel') private DataFaceModel: Models.DataFaceModel,
     @EventDispatcher() private event: EventDispatcherInterface,
   ) { }
 
+  /**
+   * 
+   * @param <Object>{name, email, files} 
+   * @returns 
+   */
   public async AddFaceToModel({ name, email, files }: any): Promise<any> {
     try {
       this.Log.debug('🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍');
@@ -28,7 +33,7 @@ export default class RecogniceFaceService {
         .create({ name, email, number_files: files.length })
 
       this.Log.debug('🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍');
-      const python = spawn(config.PYTHON.EXE, [config.PYTHON.MODEL, 'add_galery', name]);
+      const python = spawn(config.PYTHON.EXE, [config.PYTHON.MODEL, '--add_galery', '-n', name]);
 
       return new Promise((resolve, reject) => {
         python
@@ -44,6 +49,36 @@ export default class RecogniceFaceService {
           })
           .on('data', (data) => {
             this.Log.debug(`🔍🔍 🚦⚠️  Child Process: ${data}  🚦⚠️ 🔍🔍`);
+          });
+      })
+    } catch (err) {
+      this.Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
+      throw new Error(err);
+    }
+  }
+
+  public async RecognizeFaceFromGalery(): Promise<any> {
+    try {
+      this.Log.debug('🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍');
+      const python = spawn(config.PYTHON.EXE, [config.PYTHON.MODEL, '--recognize_galery']);
+
+      return new Promise((resolve, reject) => {
+        let _data = null;
+
+        python
+          .on('exit', (code) => {
+            const msg = `Child Process Exited With Code: ${code}`;
+            this.Log.debug(`🔍🔍 🚦⚠️  ${msg}  🚦⚠️ 🔍🔍`);
+            resolve({ _data });
+          })
+          .stdout
+          .on('error', (err) => {
+            this.Log.error(`❗⚠️ 🔥👽  Child Process: "Error": { ${err} }  👽🔥 ⚠️❗`);
+            throw err;
+          })
+          .on('data', (data) => {
+            this.Log.debug(`🔍🔍 🚦⚠️  Child Process: ${data}  🚦⚠️ 🔍🔍`);
+            _data = data
           });
       })
     } catch (err) {

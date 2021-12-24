@@ -47,9 +47,13 @@ export default (app: Router) => {
       async (req: Request, res: Response, next: NextFunction) => {
         const Log: Logger = Container.get('logger');
         try {
-          const { name, email } = await Container.get(AuthService).GetUser(req.params.name);
-          const { msg, dataFace } = await Container.get(RecogniceFaceService)
-            .AddFaceToModel({ name, email, files: req.files });
+          const { name, email } =
+            await Container.get(AuthService)
+              .GetUser(req.params.name);
+
+          const { msg, dataFace } =
+            await Container.get(RecogniceFaceService)
+              .AddFaceToModel({ name, email, files: req.files });
 
           Log.info(`⚠️🌐 🌐💻  Info: Resolucion Exitosa: '${req.url}'  💻🌐 🌐⚠️`);
           res.status(201).json({ msg, dataFace });
