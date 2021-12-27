@@ -9,21 +9,23 @@ import events from '@subscribers/events.subscriber';
 
 import { EventDispatcher } from '@decorators/eventDispatcher';
 import { EventDispatcherInterface } from '@decorators/eventDispatcher';
-import { IUser } from '@interfaces/IUser.interface';
-import { ERol } from '@interfaces/IRol.interface';
+import { IUser } from '@interfaces/models/IUser.interface';
+import { ERol } from '@interfaces/models/IRol.interface';
+import ServiceBase from '@models/model-base.model';
 
 
 /**
  * 
  */
-@Service()
-export default class AuthService {
+export default class AuthService extends ServiceBase {
 
   constructor(
     @Inject('logger') private Log: Logger,
-    @Inject('userModel') private UserModel: Models.UserModel,
     @EventDispatcher() private event: EventDispatcherInterface,
-  ) { }
+    @Inject('userModel') private UserModel: Models.UserModel,
+  ) {
+    super();
+  }
 
   /**
    * Metodo para regisrar un usuario administrador en el sistema.
@@ -111,11 +113,13 @@ export default class AuthService {
       const isAuthenticate = await argon2.verify(userRecord.password, password)
 
       if (!isAuthenticate)
+        // TODO: Add PasswordNotValidError
         throw new Error('Contraseña Invalida');
 
       this.Log.debug('🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍');
       const { user, token } = this.generateToken(userRecord);
 
+      // TODO: Agregar eventos autodisparables
       // this.event.dispatch(events.user.signIn, { user: user });
 
       this.Log.debug('🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍');
@@ -133,37 +137,19 @@ export default class AuthService {
  * @param {string} password
  * @returns 
  */
-  public async GetUser(name: string): Promise<IUser> {
+  public async GetUser(
+    user: { _id?: string, name?: string, email?: string }
+  ): Promise<IUser> {
+    // public async GetUser(name: string): Promise<IUser> {
     try {
-      const userRecord = await this.UserModel.findOne({ name });
-
-      if (!userRecord)
-        throw new Error('Usuario no registrado');
-
+      const userRecord = await this.UserModel.findOne(user);
       this.Log.debug('🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍');
+
       return Promise.resolve(userRecord);
     } catch (err) {
       this.Log.error(`❗⚠️ 🔥👽  AuthService: Error: ${err}  👽🔥 ⚠️❗`);
       throw err;
     }
-  }
-
-  /**
-   * Genera el token de acceso con duracion de 1 hora.
-   * @param {IUserInputDTO} user Datos de usuarios a registrar.
-   * @returns {Promise<INewUser>} Usuario y token de acceso
-   */
-  private generateToken({ _id, role, name, email, password, salt }: IUser) {
-    this.Log.debug(`🔍🔍 🚦⚠️  AuthService: Sign JWT for userId: ${_id}  🚦⚠️ 🔍🔍`);
-    return {
-      user: { _id, role, name, email },
-      token: jwt.sign(
-        { _id, role, name, email },
-        config.JWT.SECRET,
-        // { expiresIn: 86400 }, //24 horas
-        { expiresIn: 3153600 },   //1 año
-      )
-    };
   }
 }
 

@@ -1,5 +1,5 @@
-import { IUser } from '@interfaces/IUser.interface';
-import { Document, Model } from 'mongoose';
+import { IUser } from '@interfaces/models/IUser.interface';
+import { Document } from 'mongoose';
 
 declare global {
 
@@ -16,8 +16,4 @@ declare global {
       User: IUser & Document;
     }
   }
-
-  // namespace Models {
-  //   export type UserModel = Model<IUser & Document>
-  // }
 }

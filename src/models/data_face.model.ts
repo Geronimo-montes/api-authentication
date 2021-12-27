@@ -1,5 +1,5 @@
 
-import { IDataFace } from "@interfaces/IDataFace.interface";
+import { IDataFace } from "@interfaces/models/IDataFace.interface";
 import mongoose, { Document } from "mongoose";
 
 const DataFace = new mongoose.Schema(

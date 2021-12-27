@@ -1,16 +1,17 @@
 import { Router } from 'express';
+import signIn from './routes/sign-in.routes';
+import signUp from './routes/sign-up.routes';
+import user from './routes/user.routes';
+import auth_methods from './routes/auth-methods.routes';
 
-import metodsRoutes from './routes/metods.routes';
-
-import authRoutes from './routes/auth.routes';
-import userRoutes from './routes/user.routes';
 
 export default () => {
 	const app = Router();
 
-	authRoutes(app);
-	userRoutes(app);
-	metodsRoutes(app);
+	signIn(app);
+	signUp(app);
+	user(app);
+	auth_methods(app);
 
 	return app;
 }

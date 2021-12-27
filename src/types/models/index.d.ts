@@ -1,11 +1,28 @@
-import { IDataFace } from '@interfaces/IDataFace.interface';
-import { IUser } from '@interfaces/IUser.interface';
+import { IDataFace } from '@interfaces/models/IDataFace.interface';
+import { IUser } from '@interfaces/models/IUser.interface';
+import { UserNotFound } from '@interfaces/models/models-errors.iterface';
 import { Document, Model } from 'mongoose';
 
 declare global {
-  namespace Models {
-    type UserModel = Model<IUser & Document>;
 
-    type DataFaceModel = Model<IDataFace & Document>;
+  /**
+   * @namespace Models
+   */
+  namespace Models {
+
+    /**
+     * @interface UserModel
+     */
+    export type UserModel = Model<IUser & Document>;
+
+    /**
+     * @interface DataFaceModel
+     */
+    export type DataFaceModel = Model<IDataFace & Document>;
+
+
+    export type UserNotFoundError = UserNotFound;
+
+
   }
 }

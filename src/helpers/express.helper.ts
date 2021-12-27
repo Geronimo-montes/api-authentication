@@ -1,4 +1,8 @@
-import express, { Request, Response, NextFunction, } from 'express';
+import express from 'express';
+import { Logger } from 'winston';
+import { Request } from 'express';
+import { Response } from 'express';
+import { NextFunction } from 'express';
 
 import cors from 'cors';
 import path from 'path';
@@ -6,8 +10,7 @@ import path from 'path';
 import config from '@config';
 import routes from '@api';
 import Container from 'typedi';
-import { Logger } from 'winston';
-import { HTMLCode } from '@interfaces/errors/code_errors/error';
+import { HTTP } from '@interfaces/http/codes.interface';
 
 export default ({ app }: { app: express.Application }) => {
 	/**
@@ -41,7 +44,7 @@ export default ({ app }: { app: express.Application }) => {
 	 */
 	app.use((err: any, req: Request, res: Response, next: NextFunction) => {
 		if (err.name == 'UnauthorizedError') {
-			return res.status(HTMLCode.Errs400.Unauthorized).json({ err });
+			return res.status(HTTP.C400.Unauthorized).json({ err });
 		}
 
 		next(err);
@@ -52,7 +55,7 @@ export default ({ app }: { app: express.Application }) => {
 	 */
 	app.use((req: Request, res: Response, next: NextFunction) => {
 		const err = new Error('Not Found');
-		err['status'] = 404
+		err['status'] = HTTP.C400.Not_Found;
 		next(err);
 	});
 
@@ -61,10 +64,9 @@ export default ({ app }: { app: express.Application }) => {
 	 */
 	app.use((err, req, res, next) => {
 		const Log = <Logger>Container.get('logger')
-		Log.error(`❗⚠️ 🔥👽  Express:  ${err}  👽🔥 ⚠️❗`);
+		Log.error(`❗⚠️ 🔥👽  Express:  ${err.name}: ${err.message}  👽🔥 ⚠️❗`);
 
-		return res.status(err.status || 500).json({ err }).end();
-		// return res.status().json({ err }).end();
+		return res.status(err.status || 500).json({ Error: err }).end();
 	});
 
 	return app;
