@@ -1,3 +1,4 @@
+import fs from 'fs';
 import path from 'path';
 import multer from 'multer';
 
@@ -10,7 +11,22 @@ import Container from 'typedi';
  * 
  */
 const storage = multer.diskStorage({
-  destination: config.FILES.PRIVATE,
+  destination: async (req, file, cb) => {
+    try {
+      if (fs.existsSync(config.PYTHON.DATA))
+        fs.rmSync(config.PYTHON.DATA, { recursive: true, force: true });
+
+      fs.mkdirSync(config.PYTHON.DATA, { recursive: true });
+
+      cb(null, config.PYTHON.DATA);
+    } catch (err) {
+      cb(err, null);
+    } finally {
+      console.log('finalize')
+    }
+  },
+  // destination: config.PYTHON.DATA,
+  // destination: config.FILES.PRIVATE,
 
   filename: async (req, file, cb) => {
     const name = `${Math.random() + 1}`.substring(0, 20).replace(/\./g, 'a');

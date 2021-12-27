@@ -4,12 +4,11 @@ import path from 'path';
 process.env.NODE_ENV = process.env.NODE_ENV || 'develoment';
 const envFound = dotenv.config();
 
-if (envFound.error) {
+if (envFound.error)
   throw new Error("⚠️  Couldn't find .env file  ⚠️");
 
-}
-
 const ROOT_PATH = path.join(__dirname, '..');
+const PYTHON_PATH = path.join(__dirname, '..', '..', '..', 'biometric_recognition');
 
 export default {
   /**
@@ -23,8 +22,9 @@ export default {
    * 
    */
   PYTHON: {
-    MODEL: path.join(ROOT_PATH, '..', '..', 'python', 'biometric_recognition', 'src', 'main.py'),
-    EXE: path.join(ROOT_PATH, '..', '..', 'python', 'biometric_recognition', '.venv', 'Scripts', 'python.exe')
+    EXE: path.join(PYTHON_PATH, '.venv', 'Scripts', 'python.exe'),
+    MODEL: path.join(PYTHON_PATH, 'src', 'main.py'),
+    DATA: path.join(PYTHON_PATH, 'data', 'temp'),
   },
   /**
    * 
@@ -41,7 +41,6 @@ export default {
    */
   FILES: {
     PUBLIC: path.join(ROOT_PATH, 'assets', 'public'),
-    PRIVATE: path.join(ROOT_PATH, 'assets', 'private'),
   },
   /**
    * 

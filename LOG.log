@@ -1963,3 +1963,1892 @@
 2021-12-26 19:44:43  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
 2021-12-26 19:44:43  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
 2021-12-26 19:44:43  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: 'geronimomontes@gmail.com: Inicio de Sesión Exitoso'  💻🌐 🌐⚠️ 
+2021-12-26 20:47:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-26 20:47:10  [[32minfo[39m]: Express Inicialized 
+2021-12-26 20:47:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Hashing password  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Creating user db record  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: 'Usuario admin@admin.com Registrado' }  💻🌐 🌐⚠️ 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Checking password  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: 'admin@admin.com: Inicio de Sesión Exitoso' }  💻🌐 🌐⚠️ 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Hashing password  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Creating user db record  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: 'Usuario geronimomontes@gmail.com Registrado' }  💻🌐 🌐⚠️ 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:15  [[31merror[39m]: ❗⚠️ 🔥👽  Error: TypeError: Cannot read property 'length' of undefined  👽🔥 ⚠️❗ 
+2021-12-26 20:48:15  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Error: TypeError: Cannot read property 'length' of undefined  👽🔥 ⚠️❗ 
+2021-12-26 20:48:16  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:16  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Child Process: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Child Process: Copy Dir Temp...	  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Child Process: unknown  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Child Process Exited With Code: 0  🚦⚠️ 🔍🔍 
+2021-12-26 20:48:17  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-26 23:55:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-26 23:55:06  [[32minfo[39m]: Express Inicialized 
+2021-12-26 23:55:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-26 23:55:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-26 23:57:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-26 23:57:18  [[32minfo[39m]: Express Inicialized 
+2021-12-26 23:57:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-26 23:57:21  [[34mdebug[39m]: C:\Users\geron\Documents\nodejs_projects\projects\api-biometric-recognition\src\scripts\biometric_recognition\src\main.py,--recognize_galery 
+2021-12-26 23:57:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-26 23:57:58  [[32minfo[39m]: Express Inicialized 
+2021-12-26 23:57:58  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-26 23:58:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-26 23:58:54  [[32minfo[39m]: Express Inicialized 
+2021-12-26 23:58:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:01:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:01:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:01:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:02:04  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:02:04  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:02:04  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:02:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:02:27  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:02:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:03:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:03:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:03:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:05:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:05:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:05:08  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:06:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:06:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:06:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:07:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:07:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:07:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:07:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:07:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:07:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:08:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:08:02  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:08:02  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:08:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:08:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:08:08  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:08:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:08:31  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:08:31  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:08:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:08:39  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:08:39  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:08:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:08:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:08:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:09:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:09:02  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:09:02  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:10:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:10:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:10:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:10:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:10:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:10:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:10:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:10:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:10:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:10:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:10:27  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:10:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:10:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:10:52  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:10:52  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:10:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:10:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:10:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:11:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:11:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:11:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:11:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:11:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:11:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:11:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:11:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:11:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:11:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:11:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:11:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:11:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:11:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:11:47  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:12:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:12:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:12:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:12:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:12:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:12:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:12:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:12:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:12:28  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:12:28  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:12:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Hashing password  🚦⚠️ 🔍🔍 
+2021-12-27 00:12:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Creating user db record  🚦⚠️ 🔍🔍 
+2021-12-27 00:12:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-27 00:12:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-27 00:12:46  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: 'Usuario admin@admin.com Registrado' }  💻🌐 🌐⚠️ 
+2021-12-27 00:12:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Checking password  🚦⚠️ 🔍🔍 
+2021-12-27 00:12:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-27 00:12:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:12:54  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: 'admin@admin.com: Inicio de Sesión Exitoso' }  💻🌐 🌐⚠️ 
+2021-12-27 00:13:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Hashing password  🚦⚠️ 🔍🔍 
+2021-12-27 00:13:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Creating user db record  🚦⚠️ 🔍🔍 
+2021-12-27 00:13:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-27 00:13:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-27 00:13:02  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: 'Usuario geronimomontes@gmail.com Registrado' }  💻🌐 🌐⚠️ 
+2021-12-27 00:13:11  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Error: Not Found  👽🔥 ⚠️❗ 
+2021-12-27 00:14:04  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Hashing password  🚦⚠️ 🔍🔍 
+2021-12-27 00:14:04  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Creating user db record  🚦⚠️ 🔍🔍 
+2021-12-27 00:14:04  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-27 00:14:04  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-27 00:14:04  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: 'Usuario geronimomontes@gmail.com Registrado' }  💻🌐 🌐⚠️ 
+2021-12-27 00:14:12  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:14:12  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:14:12  [[31merror[39m]: ❗⚠️ 🔥👽  Error: TypeError: Cannot read property 'length' of undefined  👽🔥 ⚠️❗ 
+2021-12-27 00:14:12  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  TypeError: Cannot read property 'length' of undefined  👽🔥 ⚠️❗ 
+2021-12-27 00:14:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:14:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:14:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:15:00  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:15:00  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:15:00  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:15:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:15:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:15:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:15:48  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Error: EPERM: operation not permitted, lstat '\\?\C:\Users\geron\Documents\nodejs_projects\projects\api-biometric-recognition\src\scripts\biometric_recognition\data\test\1a1040080899239537.jpg'  👽🔥 ⚠️❗ 
+2021-12-27 00:16:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:16:56  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:16:56  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:17:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:17:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:17:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:17:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:17:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:16  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:17:16  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:17:16  [[31merror[39m]: ❗⚠️ 🔥👽  Error: MongoServerError: E11000 duplicate key error collection: face_database.datafaces index: email_1 dup key: { email: "geronimomontes@gmail.com" }  👽🔥 ⚠️❗ 
+2021-12-27 00:17:16  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  MongoServerError: E11000 duplicate key error collection: face_database.datafaces index: email_1 dup key: { email: "geronimomontes@gmail.com" }  👽🔥 ⚠️❗ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:17:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:17:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:17:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:19:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:19:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:19:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:25:00  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:25:00  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:25:00  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:25:09  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:25:09  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:25:09  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:25:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:25:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:25:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:26:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:26:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:26:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:26:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:26:13  [[31merror[39m]: ❗⚠️ 🔥👽  Error: MongoServerError: E11000 duplicate key error collection: face_database.datafaces index: email_1 dup key: { email: "geronimomontes@gmail.com" }  👽🔥 ⚠️❗ 
+2021-12-27 00:26:13  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  MongoServerError: E11000 duplicate key error collection: face_database.datafaces index: email_1 dup key: { email: "geronimomontes@gmail.com" }  👽🔥 ⚠️❗ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:26:25  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:26:25  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:26:25  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:27:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:27:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:27:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:27:53  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:27:53  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:27:53  [[31merror[39m]: ❗⚠️ 🔥👽  Error: MongoServerError: E11000 duplicate key error collection: face_database.datafaces index: email_1 dup key: { email: "geronimomontes@gmail.com" }  👽🔥 ⚠️❗ 
+2021-12-27 00:27:53  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  MongoServerError: E11000 duplicate key error collection: face_database.datafaces index: email_1 dup key: { email: "geronimomontes@gmail.com" }  👽🔥 ⚠️❗ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:28:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:28:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:28:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:29:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:29:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:29:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:29:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:29:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:29:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:30:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:30:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:30:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:30:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:30:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:30:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:30:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:30:39  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:30:39  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:30:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:30:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:30:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:30:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:30:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:30:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:31:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:31:01  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:31:01  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:31:26  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:31:26  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:31:26  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:31:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:31:55  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:31:55  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:32:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:32:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:32:08  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:33:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:33:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:33:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:21  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:33:21  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:33:21  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  MongoServerError: E11000 duplicate key error collection: face_database.datafaces index: email_1 dup key: { email: "geronimomontes@gmail.com" }  👽🔥 ⚠️❗ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:33:30  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:33:30  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:33:30  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:34:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:34:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:34:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:34:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:34:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:34:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:34:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:34:55  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:34:55  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:35:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:35:02  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:35:02  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:35:09  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:35:09  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:35:09  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:35:09  [[31merror[39m]: ❗⚠️ 🔥👽  ONError: Error: { spawn C:\Users\geron\Documents\nodejs_projects\projects\project_autheticate_user\api-biometric-recognition\biometric_recognition\.venv\Scripts\python.exe ENOENT }  👽🔥 ⚠️❗ 
+2021-12-27 00:35:09  [[31merror[39m]: ❗⚠️ 🔥👽  Error:  spawn C:\Users\geron\Documents\nodejs_projects\projects\project_autheticate_user\api-biometric-recognition\biometric_recognition\.venv\Scripts\python.exe ENOENT   👽🔥 ⚠️❗ 
+2021-12-27 00:35:09  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Error: spawn C:\Users\geron\Documents\nodejs_projects\projects\project_autheticate_user\api-biometric-recognition\biometric_recognition\.venv\Scripts\python.exe ENOENT  👽🔥 ⚠️❗ 
+2021-12-27 00:42:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:42:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:42:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:42:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:42:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 1  💻🌐 🌐⚠️ 
+2021-12-27 00:42:17  [[32minfo[39m]: ⚠️🌐 🌐💻  FaceIdRoutes: Petición Exitosa: 'Face Id agregado para geronimomontes@gmail.com'  💻🌐 🌐⚠️ 
+2021-12-27 00:45:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:45:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:45:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:45:53  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:45:53  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 1  💻🌐 🌐⚠️ 
+2021-12-27 00:45:53  [[32minfo[39m]: ⚠️🌐 🌐💻  FaceIdRoutes: Petición Exitosa: 'Face Id agregado para geronimomontes@gmail.com'  💻🌐 🌐⚠️ 
+2021-12-27 00:46:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:46:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:46:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:46:38  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:46:38  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 1  💻🌐 🌐⚠️ 
+2021-12-27 00:46:38  [[32minfo[39m]: ⚠️🌐 🌐💻  FaceIdRoutes: Petición Exitosa: 'Face Id agregado para geronimomontes@gmail.com'  💻🌐 🌐⚠️ 
+2021-12-27 00:46:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:46:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:46:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:47:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:47:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:47:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:47:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:47:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:47:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:47:36  [[31merror[39m]: ❗⚠️ 🔥👽  ONError: Error: { spawn C:\Users\geron\Documents\nodejs_projects\projects\project_autheticate_user\api-biometric-recognition\biometric_recognition\.venv\Scripts\python.exe ENOENT }  👽🔥 ⚠️❗ 
+2021-12-27 00:47:36  [[31merror[39m]: ❗⚠️ 🔥👽  Error:  spawn C:\Users\geron\Documents\nodejs_projects\projects\project_autheticate_user\api-biometric-recognition\biometric_recognition\.venv\Scripts\python.exe ENOENT   👽🔥 ⚠️❗ 
+2021-12-27 00:47:36  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Error: spawn C:\Users\geron\Documents\nodejs_projects\projects\project_autheticate_user\api-biometric-recognition\biometric_recognition\.venv\Scripts\python.exe ENOENT  👽🔥 ⚠️❗ 
+2021-12-27 00:49:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:49:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:49:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:49:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:49:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:49:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:49:56  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:49:56  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:49:56  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:49:56  [[31merror[39m]: ❗⚠️ 🔥👽  [object Object]   👽🔥 ⚠️❗ 
+2021-12-27 00:49:56  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Error: spawn C:\Users\geron\Documents\nodejs_projects\projects\project_autheticate_user\api-biometric-recognition\biometric_recognition\.venv\Scripts\python.exe ENOENT  👽🔥 ⚠️❗ 
+2021-12-27 00:50:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:50:25  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:50:25  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:50:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:50:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:50:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:50:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:50:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:50:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:50:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:50:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:50:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:50:57  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:50:57  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:50:57  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:50:57  [[31merror[39m]: ❗⚠️ 🔥👽  Error   👽🔥 ⚠️❗ 
+2021-12-27 00:50:57  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Error: spawn C:\Users\geron\Documents\nodejs_projects\projects\project_autheticate_user\api-biometric-recognition\biometric_recognition\.venv\Scripts\python.exe ENOENT  👽🔥 ⚠️❗ 
+2021-12-27 00:51:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:51:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:51:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:53:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:53:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:53:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:53:48  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:53:48  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:53:48  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:53:48  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Analizando galeria: Geronimo Montes...  🚦⚠️ 🔍🔍 
+2021-12-27 00:53:49  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Proceso terminado...  🚦⚠️ 🔍🔍 
+2021-12-27 00:53:49  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 00:53:49  [[32minfo[39m]: ⚠️🌐 🌐💻  FaceIdRoutes: Petición Exitosa: 'Face Id agregado para geronimomontes@gmail.com'  💻🌐 🌐⚠️ 
+2021-12-27 00:54:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:54:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:54:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 00:55:11  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:11  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:11  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:12  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Analizando galeria: Geronimo Montes...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:12  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:14  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:14  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:14  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:14  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Rostro no identificado...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:15  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:16  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:16  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:16  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:19  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:19  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:19  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:20  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Proceso terminado...  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:20  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 00:55:20  [[32minfo[39m]: ⚠️🌐 🌐💻  FaceIdRoutes: Petición Exitosa: 'Face Id agregado para geronimomontes@gmail.com'  💻🌐 🌐⚠️ 
+2021-12-27 00:55:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a0596243274248858.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a0705046974716148.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:48  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a096056816713325.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:49  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a350518175932189.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:50  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a4672894056587913.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:50  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a47551042778074.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:51  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a5289668627448396.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:52  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a5564354208822002.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:52  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a5821578447437021.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:53  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a6016831625264436.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a8053335573593288.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a84599790794078.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:55  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a8643061271045074.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:56  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a8649075103064496.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:57  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Geronimo Montes  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:57  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 00:55:57  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:57  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:57  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 00:55:57  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: 'geronimomontes@gmail.com: Inicio de Sesión Exitoso'  💻🌐 🌐⚠️ 
+2021-12-27 00:56:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 00:56:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 00:56:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:01:18  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:01:18  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:01:18  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:01:18  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Error: EPERM: operation not permitted, lstat '\\?\C:\Users\geron\Documents\nodejs_projects\projects\project_autheticate_user\biometric_recognition\data\temp\1a3826115898759899.jpg'  👽🔥 ⚠️❗ 
+2021-12-27 01:02:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:02:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:02:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:03:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:03:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:03:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:03:41  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:41  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:41  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:41  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Analizando galeria: Geronimo Montes...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:41  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:42  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:42  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:43  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:43  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:43  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:44  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:44  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:44  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:44  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:45  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:45  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:45  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:45  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:45  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Rostro no identificado...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:48  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:48  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:48  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:48  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:49  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:03:50  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:03:50  [[32minfo[39m]: ⚠️🌐 🌐💻  FaceIdRoutes: Petición Exitosa: 'Face Id agregado para geronimomontes@gmail.com'  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:06:58  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 01:06:58  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 01:06:58  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:06:58  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Analizando galeria: Geronimo Montes...  🚦⚠️ 🔍🔍 
+2021-12-27 01:06:58  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:06:59  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:06:59  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:06:59  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:01  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:01  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:01  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:01  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:02  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:03  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:03  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Rostro no identificado...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:03  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:03  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:04  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:04  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:04  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:04  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:04  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:05  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:05  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:05  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:07:07  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 1  💻🌐 🌐⚠️ 
+2021-12-27 01:07:07  [[32minfo[39m]: ⚠️🌐 🌐💻  FaceIdRoutes: Petición Exitosa: 'Face Id agregado para geronimomontes@gmail.com'  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:08:29  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:29  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Create Row In Mongosee  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:29  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:29  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Analizando galeria: Geronimo Montes...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:29  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:30  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:30  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:31  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:31  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:31  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:31  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:32  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:32  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:32  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:32  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:33  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:33  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:33  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:33  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Rostro no identificado...  🚦⚠️ 🔍🔍 
+2021-12-27 01:08:38  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:08:38  [[32minfo[39m]: ⚠️🌐 🌐💻  FaceIdRoutes: Petición Exitosa: 'Face Id agregado para geronimomontes@gmail.com'  💻🌐 🌐⚠️ 
+2021-12-27 01:09:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:09:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:09:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:09:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:09:36  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:10:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:10:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:10:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:10:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:10:17  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:11:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:11:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:11:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:12:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:12:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:12:08  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:12:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:12:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:12:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Recgnize Face From Galery...	unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:12:47  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:12:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 01:12:47  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  TypeError: Cannot destructure property '_id' of 'object null' as it is null.  👽🔥 ⚠️❗ 
+2021-12-27 01:14:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:14:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:14:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:14:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:14:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:14:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:14:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:14:39  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:14:39  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:14:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:14:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:14:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:15:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:15:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:15:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:15:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:15:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:15:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:15:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:15:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:15:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:15:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:15:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:15:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:15:59  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: '/face-id/images'  💻🌐 🌐⚠️ 
+2021-12-27 01:15:59  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:16:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:16:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:16:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:16:00  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:16:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:16:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:16:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:17:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:17:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:17:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:17:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:17:25  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:17:25  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:17:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:17:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:17:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:17:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:17:48  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:17:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:17:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:17:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:17:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:18:00  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 01:18:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:18:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:18:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:18:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:18:00  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:18:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:18:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:18:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:18:16  [[32minfo[39m]: 
+⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 01:18:16  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:18:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:18:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:18:17  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:18:17  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:18:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:18:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:18:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:18:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:18:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:18:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:18:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:18:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:18:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:18:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:18:54  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 01:18:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:18:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:18:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:18:54  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:18:54  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:19:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:19:09  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:19:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:19:12  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 01:19:12  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:19:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:19:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Recgnize Face From Galery...	unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:19:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:19:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 01:19:13  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  TypeError: Cannot destructure property '_id' of 'object null' as it is null.  👽🔥 ⚠️❗ 
+2021-12-27 01:20:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:20:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:20:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:20:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:20:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:20:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:21:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:21:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:21:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:21:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:21:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:21:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:21:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:21:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:21:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:22:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:22:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:22:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:22:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:22:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:22:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:22:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:22:35  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:22:35  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:22:35  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 01:22:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:22:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:22:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:22:35  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:22:35  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:22:44  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 01:22:44  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:22:45  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:22:45  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:22:45  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:22:45  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:22:46  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 01:22:46  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:22:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:22:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:22:47  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:22:47  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:22:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:22:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:22:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:23:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:23:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:23:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:24:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:24:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:24:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:24:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:24:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:24:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:24:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:24:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:24:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:24:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:24:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:24:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:24:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:24:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:24:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:24:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:24:58  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:24:58  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:25:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:25:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:25:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:25:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:25:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:25:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:26:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:26:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:26:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:26:34  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 01:26:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:26:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:26:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:26:35  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:26:35  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:26:47  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 01:26:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:26:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:26:47  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:26:47  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:26:47  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:29:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:29:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:29:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:29:17  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 01:29:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:29:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:29:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:29:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 01:29:18  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:29:18  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 01:29:54  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:29:54  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:29:54  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:29:54  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:29:54  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:29:54  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 01:29:54  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 01:29:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 01:29:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 01:29:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a1277.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 01:29:56  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a2292.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 01:29:57  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a3049.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 01:29:58  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a5831.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 01:29:59  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a9343.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 01:30:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a9760.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 01:30:01  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Geronimo Montes  🚦⚠️ 🔍🔍 
+2021-12-27 01:30:01  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 01:30:01  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 01:30:01  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Generating JWT  🚦⚠️ 🔍🔍 
+2021-12-27 01:30:01  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Password is valid!  🚦⚠️ 🔍🔍 
+2021-12-27 01:30:01  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: '[object Object]'  💻🌐 🌐⚠️ 
+2021-12-27 01:36:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:36:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:36:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:43:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:43:28  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:43:28  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:43:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:43:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:43:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:43:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:43:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:43:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:43:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:43:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:43:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:44:00  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:44:00  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:44:00  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:44:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:44:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:44:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:44:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:44:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:44:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:44:43  [[34mdebug[39m]: 🔍🔍 🚦⚠️  AuthService: Hashing password  🚦⚠️ 🔍🔍 
+2021-12-27 01:44:43  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: 'Usuario _admin@admin.com Registrado' }  💻🌐 🌐⚠️ 
+2021-12-27 01:45:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:45:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:45:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:45:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:45:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:45:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:46:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:46:02  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:46:02  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:46:07  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:46:07  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:46:07  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:46:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:46:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:46:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:46:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:46:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:46:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:47:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:47:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:47:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:47:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:47:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:47:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:47:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:47:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:47:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:47:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:47:22  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:47:22  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:47:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:47:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:47:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:47:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:47:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:47:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:47:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:47:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:47:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:48:07  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:48:07  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:48:07  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:48:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:48:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:48:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:48:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:48:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:48:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:48:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:48:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:48:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:48:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:48:48  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:48:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:49:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:49:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:49:08  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:49:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:49:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:49:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:49:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:49:28  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:49:28  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:49:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:49:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:49:39  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:49:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:49:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:49:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:50:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:50:22  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:50:22  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:50:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:50:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:50:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:50:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:50:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:50:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:50:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:50:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:50:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:50:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:50:56  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:50:56  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:51:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:51:02  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:51:02  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:52:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:52:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:52:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:52:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:52:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:52:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:53:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:53:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:53:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:53:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:53:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:53:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:53:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:53:28  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:53:28  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:53:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:53:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:53:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:53:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:53:48  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:53:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:53:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:53:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:53:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:54:07  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:54:07  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:54:07  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:54:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:54:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:54:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:54:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:54:31  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:54:31  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:54:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:54:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:54:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:54:54  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 01:54:54  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 01:54:54  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 01:54:54  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 01:55:21  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 01:55:21  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 01:55:21  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 01:55:21  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 01:55:21  [[32minfo[39m]: ⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: 'Usuario _geronimomontes@gmail.com Registrado' }  💻🌐 🌐⚠️ 
+2021-12-27 01:55:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:55:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:55:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:56:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:56:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:56:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:56:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:56:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:56:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:56:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:56:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:56:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:56:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:56:26  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:56:26  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:57:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:57:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:57:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:57:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:57:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:57:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:57:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:57:31  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:57:31  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:57:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:57:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:57:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:57:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:57:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:57:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:57:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:57:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:57:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:58:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:58:01  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:58:02  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:58:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:58:32  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:58:32  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 01:58:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 01:58:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 01:58:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:00:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:00:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:00:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:00:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:00:27  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:00:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:00:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:00:41  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:00:41  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:00:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:00:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:00:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:01:07  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:01:07  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:01:07  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:02:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:02:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:02:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:03:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:03:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:03:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:03:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:03:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:03:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:03:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:03:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:03:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:03:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:03:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:03:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:04:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:04:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:04:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:04:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:04:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:04:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:05:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:05:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:05:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:05:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:05:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:06:00  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:06:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:06:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:06:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:07:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:07:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:07:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:09:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:09:24  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:09:24  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:09:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:09:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:09:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:09:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:09:55  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:09:55  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:10:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:10:09  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:10:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:11:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:11:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:11:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:11:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:11:55  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:11:55  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:12:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:12:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:12:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:12:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:12:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:12:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:13:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:13:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:13:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:13:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:13:32  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:13:32  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:13:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:13:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:13:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:14:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:14:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:14:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:14:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:14:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:14:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:14:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:14:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:14:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:15:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:15:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:15:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:15:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:15:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:15:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:15:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:15:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:15:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:15:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:15:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:15:47  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:15:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:15:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:15:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:15:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:15:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:15:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:16:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:16:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:16:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:16:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:16:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:16:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:16:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:16:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:16:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:16:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:16:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:16:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:17:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:17:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:17:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:17:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:17:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:17:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:17:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:17:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:17:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:17:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:17:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:17:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:17:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:17:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:17:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:18:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:18:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:18:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:18:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:18:24  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:18:24  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:18:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:18:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:18:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:18:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:18:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:18:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:18:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:18:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:18:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:19:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:19:09  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:19:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:19:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:19:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:19:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:19:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:19:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:19:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:19:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:19:26  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:19:26  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:19:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:19:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:19:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:19:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:19:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:19:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:19:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:19:41  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:19:41  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:19:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:19:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:19:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:19:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:19:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:19:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:20:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:20:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:20:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:20:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:20:24  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:20:24  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:20:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:20:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:20:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:20:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:20:48  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:20:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:20:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:20:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:20:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:21:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:21:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:21:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:21:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:21:27  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:21:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:22:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:22:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:22:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:23:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:23:32  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:23:32  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:23:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:23:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:23:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:25:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:25:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:25:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:25:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:25:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:25:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:26:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:26:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:26:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:26:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:26:24  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:26:24  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:26:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:26:32  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:26:32  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:26:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:26:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:26:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:26:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:26:58  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:26:58  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:28:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:28:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:28:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:28:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:28:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:28:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:28:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:28:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:28:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:29:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:29:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:29:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:29:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:29:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:29:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:30:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:30:09  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:30:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:30:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:30:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:30:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:30:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:30:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:30:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:30:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:30:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:30:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:31:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:31:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:31:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:31:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:32:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:32:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:32:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:32:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:32:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:32:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:32:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:32:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:32:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:32:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:32:25  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:32:25  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:32:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:32:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:32:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:33:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:33:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:33:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:33:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:33:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:33:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:33:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:33:41  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:33:41  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:33:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:33:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:33:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:33:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:33:55  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:33:55  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:33:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:33:58  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:33:58  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:34:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:34:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:34:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:34:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:34:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:34:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:34:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:34:27  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:34:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:34:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:34:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:34:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:34:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:34:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:34:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:34:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:34:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:34:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:35:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:35:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:35:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:35:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:35:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:35:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:36:04  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:36:04  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:36:04  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:36:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:36:28  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:36:28  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:36:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:36:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:36:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:37:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:37:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:37:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:37:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:37:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:37:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:37:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:37:32  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:37:32  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:37:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:37:39  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:37:39  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:38:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:38:22  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:38:22  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:38:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:38:32  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:38:32  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:38:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:38:55  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:38:55  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:39:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:39:01  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:39:01  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:39:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:39:09  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:39:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:39:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:39:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:39:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:39:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:39:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:39:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:39:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:39:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:39:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:39:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:39:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:39:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:39:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:39:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:39:53  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:39:53  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 02:39:53  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Exec Script  🚦⚠️🔍 
+2021-12-27 02:39:53  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 02:39:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 02:39:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a0406.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:39:55  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a1982.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:39:56  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a2510.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:39:57  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a3926.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:39:58  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a5733.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:39:59  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a6722.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:40:00  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Geronimo Montes  🚦⚠️ 🔍🔍 
+2021-12-27 02:40:00  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 02:40:00  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Find Data User  🚦⚠️🔍 
+2021-12-27 02:40:00  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 02:40:00  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 02:40:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:40:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:40:25  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:40:25  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 02:40:25  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Exec Script  🚦⚠️🔍 
+2021-12-27 02:40:25  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 02:40:26  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 02:40:26  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a5835.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:40:28  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a7839.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:40:30  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a9263.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:40:32  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 02:40:32  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 02:40:32  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: Error: [object Object]  👽🔥 ⚠️❗ 
+2021-12-27 02:40:32  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  Face Not Found: Face Not Recongized  👽🔥 ⚠️❗ 
+2021-12-27 02:41:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:41:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:41:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:41:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:41:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:41:36  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:41:36  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 02:41:36  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Exec Script  🚦⚠️🔍 
+2021-12-27 02:41:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Execute File Python  🚦⚠️ 🔍🔍 
+2021-12-27 02:41:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 02:41:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a0282.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:41:38  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a0306.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:41:39  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a1207.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:41:40  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a1993.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:41:41  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a2742.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:41:42  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a4115.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:41:43  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Geronimo Monte  🚦⚠️ 🔍🔍 
+2021-12-27 02:41:43  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 02:41:43  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Find Data User  🚦⚠️🔍 
+2021-12-27 02:41:43  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: Error: [object Object]  👽🔥 ⚠️❗ 
+2021-12-27 02:41:43  [[31merror[39m]: ❗⚠️ 🔥👽  Express:  User Not Found: Usuario no Registrado  👽🔥 ⚠️❗ 
+2021-12-27 02:42:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:42:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:42:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:42:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:42:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:42:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:42:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:42:22  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:42:22  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:42:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:42:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:42:47  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:43:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:43:26  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:43:26  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:43:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:43:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:43:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:43:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:43:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:43:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:43:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:43:58  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:43:58  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:44:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:44:26  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:44:26  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:44:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:44:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:44:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:45:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:45:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:45:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:45:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:45:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:45:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:45:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:45:55  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:45:55  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:46:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:46:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:46:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:46:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:46:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:46:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:46:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:46:32  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:46:32  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:46:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:46:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:46:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:47:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:47:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:47:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:48:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:48:09  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:48:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:48:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:48:41  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:48:41  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:48:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:48:52  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:48:52  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:49:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:49:39  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:49:39  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:50:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:50:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:50:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:50:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:50:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:50:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:50:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:50:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:50:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:50:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:50:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:50:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:50:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:50:56  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:50:56  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:51:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:51:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:51:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:51:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:51:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:51:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:51:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:51:25  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:51:25  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:51:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:51:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:51:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:51:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:51:48  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:51:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:52:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:52:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:52:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:52:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:52:35  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:52:35  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:52:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:52:39  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:52:39  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:52:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:52:52  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:52:52  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:52:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:52:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:52:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:53:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:53:27  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:53:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:53:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:53:39  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:53:39  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:54:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 02:54:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 02:54:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 02:54:47  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 02:54:47  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 02:54:47  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 02:54:47  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 02:54:52  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 02:54:52  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 02:54:52  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 02:54:52  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 02:54:57  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 02:54:57  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 02:54:57  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 02:54:57  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:31  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Password is valid!  🚦⚠️🔍 
+2021-12-27 02:55:31  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Find User Data  🚦⚠️🔍 
+2021-12-27 02:55:31  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Create Row In Mongosee  🚦⚠️🔍 
+2021-12-27 02:55:31  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Exec Script  🚦⚠️🔍 
+2021-12-27 02:55:32  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Analizando galeria: Geronimo Montes...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:32  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:33  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:33  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:33  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:33  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:34  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:35  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Rostro no identificado...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:36  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:37  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:37  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:37  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:37  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:38  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:38  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:38  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:38  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:38  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:39  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:39  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:41  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 02:55:52  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:52  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:52  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:52  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:52  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:52  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 02:55:52  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 02:55:52  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Exec Script  🚦⚠️🔍 
+2021-12-27 02:55:52  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:52  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a4552.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:54  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a4668.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:55  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a4870.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:56  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a6741.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:57  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a7346.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:58  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a7706.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:59  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Geronimo Montes  🚦⚠️ 🔍🔍 
+2021-12-27 02:55:59  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 02:55:59  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Find Data User  🚦⚠️🔍 
+2021-12-27 02:55:59  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Generating JWT  🚦⚠️🔍 
+2021-12-27 02:55:59  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: ${{ user, token, msg }}  🚦⚠️🔍 
