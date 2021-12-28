@@ -1,16 +1,11 @@
 import express from 'express';
-import { Logger } from 'winston';
-import { Request } from 'express';
-import { Response } from 'express';
-import { NextFunction } from 'express';
-
 import cors from 'cors';
 import path from 'path';
 
 import config from '@config';
 import routes from '@api';
-import Container from 'typedi';
-import { HTTP } from '@interfaces/http/codes.interface';
+import { HttpCode } from '@interfaces/codes.interface';
+import middlewares from '@api/middlewares';
 
 export default ({ app }: { app: express.Application }) => {
 	/**
@@ -37,37 +32,14 @@ export default ({ app }: { app: express.Application }) => {
 	 * API ROUTES
 	 */
 	app.use(config.API.PREFIX, routes());
-	app.get(`${config.API.PREFIX}/favicon.ico`, (req, res) => res.status(204));
-
-	/**
-	 * CATCH 404 AND FORWARD TO ERROR HANDLER
-	 */
-	app.use((err: any, req: Request, res: Response, next: NextFunction) => {
-		if (err.name == 'UnauthorizedError') {
-			return res.status(HTTP.C400.Unauthorized).json({ err });
-		}
-
-		next(err);
-	});
-
-	/**
-	 * CATCH 404 AND FORWARD TO ERROR HANDLER
-	 */
-	app.use((req: Request, res: Response, next: NextFunction) => {
-		const err = new Error('Not Found');
-		err['status'] = HTTP.C400.Not_Found;
-		next(err);
-	});
+	app.get(`${config.API.PREFIX}/favicon.ico`, (req, res) =>
+		res.status(HttpCode.C2XX.No_Content));
 
 	/**
 	 * ERROR HANDLLER
 	 */
-	app.use((err, req, res, next) => {
-		const Log = <Logger>Container.get('logger')
-		Log.error(`❗⚠️ 🔥👽  Express:  ${err.name}: ${err.message}  👽🔥 ⚠️❗`);
-
-		return res.status(err.status || 500).json({ Error: err }).end();
-	});
+	app.use(middlewares.notFound404);
+	app.use(middlewares.error);
 
 	return app;
 }

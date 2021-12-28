@@ -13,6 +13,7 @@ export default (app: Router) => {
 
   route
     /******/
+    // TODO: ADD MIDDLEWARE API TOKEN AND ROLE OWNER
     .post(
       '/admin',
       middlewares.validator(checkSchema(Schemas.auth.signUpPost)),
@@ -21,6 +22,7 @@ export default (app: Router) => {
     /******/
     .post(
       '/user',
+      middlewares.isAuth,
       middlewares.validator(checkSchema(Schemas.auth.signUpPost)),
       controller.signUp.User,
     );

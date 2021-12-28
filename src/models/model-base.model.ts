@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 import { Service } from "typedi";
 
 import config from '@config';
-import { IUser } from "@interfaces/models/IUser.interface";
+import { IUser } from "@interfaces/IUser.interface";
 
 @Service()
 export default abstract class ServiceBase {

@@ -1,21 +1,12 @@
 import jwt from 'express-jwt'
 import config from "@config";
 
-import { JsonWebTokenError } from "jsonwebtoken";
-// import { UnauthorizedError } from "express-jwt";
-
-import Container from 'typedi';
-import { Logger } from 'winston';
-
 /**
- * 
  * Authorization: Bearer ${JWT}
- * 
  * @param req 
  * @returns 
  */
 const getTokenFromHeader = (req) => {
-  const Log = <Logger>Container.get('logger');
   const headersAuth = req.headers.authorization;
 
   if (

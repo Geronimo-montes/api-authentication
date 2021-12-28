@@ -15,24 +15,32 @@ export default (app: Router) => {
     /******/
     .get(
       '/all',
-      middlewares.validator(checkSchema({})),
-      controller.user.FindOne,
-    )
-    /******/
-    .get(
-      '/:id',
+      middlewares.isAuth,
+      middlewares.isAdmin,
       middlewares.validator(checkSchema({})),
       controller.user.All,
     )
     /******/
+    .get(
+      '/:id',
+      middlewares.isAuth,
+      middlewares.isAdmin,
+      middlewares.validator(checkSchema({})),
+      controller.user.FindOne,
+    )
+    /******/
     .put(
       '/:id',
+      middlewares.isAuth,
+      middlewares.isAdmin,
       middlewares.validator(checkSchema({})),
       controller.user.UpdeteOne,
     )
     /******/
     .delete(
       '/:id',
+      middlewares.isAuth,
+      middlewares.isAdmin,
       middlewares.validator(checkSchema({})),
       controller.user.DeleteOne,
     )

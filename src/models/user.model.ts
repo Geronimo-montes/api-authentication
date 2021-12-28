@@ -1,8 +1,10 @@
-import { IUser } from "@interfaces/models/IUser.interface";
+import { IUser } from "@interfaces/IUser.interface";
 import mongoose, { Document } from "mongoose";
 
 const User = new mongoose.Schema(
   {
+    _id_admin: String,
+
     name: {
       type: String,
       required: [true, 'Please enter a full name'],

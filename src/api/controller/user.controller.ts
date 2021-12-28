@@ -5,63 +5,81 @@ import { Container } from 'typedi';
 import { NextFunction } from 'express';
 // SERVICES
 import AuthService from '@services/auth.service';
-import RecogniceFaceService from '@services/recognice_face.service';
 
-import { HTTP } from '@interfaces/http/codes.interface';
+import { HttpCode } from '@interfaces/codes.interface';
+import UserService from '@services/user.service';
+import { IUser } from '@interfaces/IUser.interface';
 
-const FindOne = async (req: Request, res: Response, next: NextFunction) => {
-  const
-    Log: Logger = Container.get('logger'),
-    InstanceAuthService = Container.get(AuthService);
-
-  Promise.resolve('Resolve...')
-    .then((data) => {
-      const msg = ``;
-      Log.info(`⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: '${data}: ${msg}' }  💻🌐 🌐⚠️`);
-      res.status(HTTP.C200.Created).json({ msg });
-    })
-    .catch((err) => next(err));
-}
-
+/**
+ * 
+ */
 const All = async (req: Request, res: Response, next: NextFunction) => {
   const
     Log: Logger = Container.get('logger'),
-    InstanceAuthService = Container.get(AuthService);
+    InstanceUserService = Container.get(UserService),
+    _id_admin = req.token._id;
 
-  Promise.resolve('Resolve...')
-    .then((data) => {
-      const msg = ``;
-      Log.info(`⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: '${data}: ${msg}' }  💻🌐 🌐⚠️`);
-      res.status(HTTP.C200.Created).json({ msg });
-    })
+  console.log();
+  Log.info(`⚠️🌐💻  USER--> '..${req.url}'  💻🌐⚠️`);
+
+  InstanceUserService.All(_id_admin)
+    .then((users: IUser[]) =>
+      res.status(HttpCode.C2XX.OK).json(users))
     .catch((err) => next(err));
 }
 
+/**
+ * 
+ */
+const FindOne = async (req: Request, res: Response, next: NextFunction) => {
+  const
+    Log: Logger = Container.get('logger'),
+    InstanceUserService = Container.get(UserService),
+    _id_admin = req.token._id,
+    _id = req.params.id;
+
+  console.log();
+  Log.info(`⚠️🌐💻  USER--> '..${req.url}'  💻🌐⚠️`);
+
+  InstanceUserService.FindOne(_id_admin, _id)
+    .then((user: IUser) =>
+      res.status(HttpCode.C2XX.OK).json(user))
+    .catch((err) => next(err));
+}
+
+/**
+ * 
+ */
 const UpdeteOne = async (req: Request, res: Response, next: NextFunction) => {
   const
     Log: Logger = Container.get('logger'),
-    InstanceAuthService = Container.get(AuthService);
+    InstanceUserService = Container.get(UserService),
+    _id_admin = req.token._id;
 
-  Promise.resolve('Resolve...')
-    .then((data) => {
-      const msg = ``;
-      Log.info(`⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: '${data}: ${msg}' }  💻🌐 🌐⚠️`);
-      res.status(HTTP.C200.Created).json({ msg });
-    })
+  console.log();
+  Log.info(`⚠️🌐💻  USER--> '..${req.url}'  💻🌐⚠️`);
+
+  InstanceUserService.UpdateOne(_id_admin)
+    .then((user: IUser) =>
+      res.status(HttpCode.C2XX.OK).json(user))
     .catch((err) => next(err));
 }
 
+/**
+ * 
+ */
 const DeleteOne = async (req: Request, res: Response, next: NextFunction) => {
   const
     Log: Logger = Container.get('logger'),
-    InstanceAuthService = Container.get(AuthService);
+    InstanceUserService = Container.get(UserService),
+    _id_admin = req.token._id;
 
-  Promise.resolve('Resolve...')
-    .then((data) => {
-      const msg = ``;
-      Log.info(`⚠️🌐 🌐💻  AuthRoute: { Petición Exitosa: '${data}: ${msg}' }  💻🌐 🌐⚠️`);
-      res.status(HTTP.C200.Created).json({ msg });
-    })
+  console.log();
+  Log.info(`⚠️🌐💻  USER--> '..${req.url}'  💻🌐⚠️`);
+
+  InstanceUserService.UpdateOne(_id_admin)
+    .then((user: IUser) =>
+      res.status(HttpCode.C2XX.OK).json(user))
     .catch((err) => next(err));
 }
 

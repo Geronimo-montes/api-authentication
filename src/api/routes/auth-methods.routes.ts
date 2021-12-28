@@ -17,7 +17,7 @@ export default (app: Router) => {
       '/face-id/images/:id',
       /* FUNCIONES DE MIDDLEWARE */
       middlewares.isAuth,
-      middlewares.multerMiddleware.images.array('images', 20),
+      middlewares.multer.images.array('images', 20),
       controller.auth_methods.AddFaceId,
     )
     /******/

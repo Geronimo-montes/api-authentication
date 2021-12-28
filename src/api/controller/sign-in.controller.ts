@@ -7,9 +7,11 @@ import { NextFunction } from 'express';
 import AuthService from '@services/auth.service';
 import RecogniceFaceService from '@services/recognice_face.service';
 
-import { HTTP } from '@interfaces/http/codes.interface';
+import { HttpCode } from '@interfaces/codes.interface';
 
-
+/**
+ * 
+ */
 const UserCredentials = async (req: Request, res: Response, next: NextFunction) => {
   const
     Log: Logger = Container.get('logger'),
@@ -21,10 +23,13 @@ const UserCredentials = async (req: Request, res: Response, next: NextFunction) 
 
   InstanceAuthService.SignIn(email, password)
     .then(({ user, token, msg }) =>
-      res.status(HTTP.C200.Created).json({ user, token, msg }))
+      res.status(HttpCode.C2XX.Created).json({ user, token, msg }))
     .catch((err) => next(err));
 }
 
+/**
+ * 
+ */
 const FaceId_Imgs = async (req: Request, res: Response, next: NextFunction) => {
   const
     Log: Logger = Container.get('logger'),
@@ -36,10 +41,13 @@ const FaceId_Imgs = async (req: Request, res: Response, next: NextFunction) => {
 
   return InstanceRecogniceFace.SignIn()
     .then(({ user, token, msg }) =>
-      res.status(HTTP.C200.Created).json({ user, token, msg }))
+      res.status(HttpCode.C2XX.Created).json({ user, token, msg }))
     .catch((err) => next(err));
 }
 
+/**
+ * 
+ */
 const FaceId_Video = async (req: Request, res: Response, next: NextFunction) => {
   const
     Log: Logger = Container.get('logger'),
@@ -51,10 +59,13 @@ const FaceId_Video = async (req: Request, res: Response, next: NextFunction) => 
 
   return InstanceRecogniceFace.SignIn()
     .then(({ user, token, msg }) =>
-      res.status(HTTP.C200.Created).json({ user, token, msg }))
+      res.status(HttpCode.C2XX.Created).json({ user, token, msg }))
     .catch((err) => next(err));
 }
 
+/**
+ * 
+ */
 const Pin = async (req: Request, res: Response, next: NextFunction) => {
 }
 

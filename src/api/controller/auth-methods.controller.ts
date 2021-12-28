@@ -6,36 +6,41 @@ import { NextFunction } from 'express';
 // SERVICES
 import AuthService from '@services/auth.service';
 import RecogniceFaceService from '@services/recognice_face.service';
+// 
+import { HttpCode } from '@interfaces/codes.interface';
 
-import { HTTP } from '@interfaces/http/codes.interface';
-import { IUser } from '@interfaces/models/IUser.interface';
-import { UserNotFoundError } from '@interfaces/models/models-errors.iterface';
-
+/**
+ * 
+ */
 const AddFaceId = async (req: Request, res: Response, next: NextFunction) => {
   const
-    InstanceAuthService = Container.get(AuthService),
+    Log: Logger = Container.get('logger'),
     InstanceRecogniceFace = Container.get(RecogniceFaceService),
     _id = req.params.id;
 
-  InstanceAuthService.GetUser({ _id })
-    .then((user: IUser) => {
-      if (!user)
-        throw new UserNotFoundError('Usuario no Registrado');
+  console.log();
+  Log.info(`⚠️🌐💻  SIGNUP--> '..${req.url}'  💻🌐⚠️`);
 
-      return InstanceRecogniceFace.AddFaceToModel(user, req.files);
-    })
+  InstanceRecogniceFace.AddFaceToModel(_id, req.files)
     .then(({ data, msg }) =>
-      res.status(HTTP.C200.Created).json({ data, msg }))
+      res.status(HttpCode.C2XX.Created).json({ data, msg }))
     .catch((err) => next(err));
 }
 
+/**
+ * 
+ */
 const UpdateFaceId = async (req: Request, res: Response, next: NextFunction) => {
   const
+    Log: Logger = Container.get('logger'),
     InstanceAuthService = Container.get(AuthService);
+
+  console.log();
+  Log.info(`⚠️🌐💻  SIGNUP--> '..${req.url}'  💻🌐⚠️`);
 
   Promise.resolve({ data: '', msg: 'Resolve...' })
     .then(({ data, msg }) =>
-      res.status(HTTP.C200.Created).json({ data, msg }))
+      res.status(HttpCode.C2XX.Created).json({ data, msg }))
     .catch((err) => next(err));
 }
 

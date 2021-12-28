@@ -1,5 +1,5 @@
 
-export enum C100 {
+export enum C1XX {
   /**
    * 100 : Se utiliza para indicar que la primera parte de la petición del navegador se ha recibido correctamente
    */
@@ -21,7 +21,7 @@ export enum C100 {
 }
 
 
-export enum C200 {
+export enum C2XX {
   /**
    * 200 : Respuesta estándar para peticiones correctas
    */
@@ -70,7 +70,7 @@ export enum C200 {
 }
 
 
-export enum C300 {
+export enum C3XX {
   /**
    * 300 : Indica opciones múltiples para el URI que el cliente podría seguir.Esto podría ser utilizado, por ejemplo, para presentar distintas opciones de formato para video, listar archivos con distintas extensiones o word sense disambiguation
    */
@@ -117,7 +117,7 @@ export enum C300 {
 }
 
 
-export enum C400 {
+export enum C4XX {
   /**
    * 400 : El servidor no procesará la solicitud, porque no puede, o no debe, debido a algo que es percibido como un error del cliente (ej: solicitud malformada, sintaxis errónea, etc). La solicitud contiene sintaxis errónea y no debería repetirse
    */
@@ -265,7 +265,7 @@ export enum C400 {
 }
 
 
-export enum C500 {
+export enum C5XX {
   /**
    * 500 : Es un código comúnmente emitido por aplicaciones empotradas en servidores web, mismas que generan contenido dinámicamente, por ejemplo aplicaciones montadas en IIS o Tomcat, cuando se encuentran con situaciones de error ajenas a la naturaleza del servidor web
    */
@@ -337,25 +337,25 @@ export enum C500 {
   Version_Mismatch = 521,
 }
 
-export const HTTP = {
+export const HttpCode = {
   /**
-   * Error100 : 1xx: Respuestas informativas
+   * Code 100 : 1xx: Respuestas informativas
    */
-  C100,
+  C1XX,
   /**
-   * Error200 : 2xx: Peticiones correctas
+   * Code 2XX : 2xx: Peticiones correctas
    */
-  C200,
+  C2XX,
   /**
-   * Error300 : 3xx: Redirecciones
+   * Code 3XX : 3xx: Redirecciones
    */
-  C300,
+  C3XX,
   /**
-   * Error400 : 4xx: Errores del cliente
+   * Code 4XX : 4xx: Errores del cliente
    */
-  C400,
+  C4XX,
   /**
-   * Error500 : 5xx: Errores de servidor
+   * Code 5XX : 5xx: Errores de servidor
    */
-  C500,
+  C5XX,
 }

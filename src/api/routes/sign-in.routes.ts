@@ -21,13 +21,13 @@ export default (app: Router) => {
     /******/
     .post(
       '/face-id/images',
-      middlewares.multerMiddleware.images.array('images', 20),
+      middlewares.multer.images.array('images', 20),
       controller.signIn.FaceId_Imgs,
     )
     /******/
     .post(
       '/face-id/video',
-      middlewares.multerMiddleware.video.single('video'),
+      middlewares.multer.video.single('video'),
       controller.signIn.FaceId_Video,
     )
     /******/

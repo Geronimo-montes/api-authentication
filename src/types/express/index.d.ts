@@ -1,19 +1,36 @@
-import { IUser } from '@interfaces/models/IUser.interface';
-import { Document } from 'mongoose';
+
+import { Document, Model } from 'mongoose';
+import { IUser } from '@interfaces/IUser.interface';
+import { C1XX, C2XX, C3XX, C4XX, C5XX } from '@interfaces/codes.interface';
+import { IDataFace } from '@interfaces/IDataFace.interface';
+
+import { AuthenticateErrorCode } from '@errors/auth.error';
+import { UserErrorCode } from '@errors/user.error';
+import { ServerErrorCode } from '@errors/server.error';
+import { FaceIdErrorCode } from '@errors/face_id.error';
 
 declare global {
-
-  /**
-   * @namespace Express
-   */
   namespace Express {
-
-    /**
-     * @interface Request 
-     * @description Objeto que nos permiete manipular la peticiones que se generen en el uso de nuestra aplicación
-     */
-    export interface Request {
-      User: IUser & Document;
+    interface Request {
+      curren_user: IUser & Document;
+      token: IUser & Document;
     }
+  }
+
+  namespace Models {
+    type UserModel = Model<IUser & Document>;
+    type DataFaceModel = Model<IDataFace & Document>;
+
+  }
+
+  namespace HTTP {
+    type Code = C1XX | C2XX | C3XX | C4XX | C5XX;
+  }
+
+  namespace ERROR {
+    type AuthCode = AuthenticateErrorCode;
+    type UserCode = UserErrorCode;
+    type ServerCode = ServerErrorCode;
+    type FaceIdCode = FaceIdErrorCode;
   }
 }

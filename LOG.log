@@ -3852,3 +3852,1562 @@
 2021-12-27 02:55:59  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Find Data User  🚦⚠️🔍 
 2021-12-27 02:55:59  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Generating JWT  🚦⚠️🔍 
 2021-12-27 02:55:59  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 17:10:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:10:02  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:10:02  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:11:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:11:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:11:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:11:42  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 17:11:42  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 17:11:43  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 17:11:43  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 17:11:56  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 17:11:57  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 17:11:57  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 17:11:57  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 17:12:01  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 17:12:01  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 17:12:01  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 17:12:01  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 17:12:06  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Password is valid!  🚦⚠️🔍 
+2021-12-27 17:12:06  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Find User Data  🚦⚠️🔍 
+2021-12-27 17:12:06  [[31merror[39m]: ❗⚠️ 🔥👽  Recognice Face: Error: TypeError: Cannot read property 'length' of undefined  👽🔥 ⚠️❗ 
+2021-12-27 17:12:06  [[31merror[39m]: ❗⚠️🔥 Express:  [object Object] 🔥⚠️❗ 
+2021-12-27 17:12:11  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Password is valid!  🚦⚠️🔍 
+2021-12-27 17:12:11  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Find User Data  🚦⚠️🔍 
+2021-12-27 17:12:11  [[31merror[39m]: ❗⚠️ 🔥👽  Recognice Face: Error: TypeError: Cannot read property 'length' of undefined  👽🔥 ⚠️❗ 
+2021-12-27 17:12:11  [[31merror[39m]: ❗⚠️🔥 Express:  [object Object] 🔥⚠️❗ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 17:12:58  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Password is valid!  🚦⚠️🔍 
+2021-12-27 17:12:58  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Find User Data  🚦⚠️🔍 
+2021-12-27 17:12:58  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Create Row In Mongosee  🚦⚠️🔍 
+2021-12-27 17:12:58  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Exec Script  🚦⚠️🔍 
+2021-12-27 17:13:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Analizando galeria: Geronimo Montes...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:19  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:19  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:19  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:20  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:20  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:20  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:21  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:21  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:21  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:21  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:22  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:22  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:22  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:22  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:23  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Rostro no identificado...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:23  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:23  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:23  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:24  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:24  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Detectando Rostro...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:24  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Save img...  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:26  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 17:13:32  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 17:13:32  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Exec Script  🚦⚠️🔍 
+2021-12-27 17:13:32  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:32  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 17:13:33  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 17:13:33  [[31merror[39m]: ❗⚠️ 🔥👽  Recognice Face: Error: [object Object]  👽🔥 ⚠️❗ 
+2021-12-27 17:13:33  [[31merror[39m]: ❗⚠️🔥 Express:  [object Object] 🔥⚠️❗ 
+2021-12-27 17:49:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:49:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:49:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:49:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:49:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:49:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:51:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:51:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:51:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:51:13  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 17:51:13  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Exec Script  🚦⚠️🔍 
+2021-12-27 17:51:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 17:51:13  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 17:51:13  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 17:51:13  [[31merror[39m]: ❗⚠️ 🔥👽  Recognice Face: Error: [object Object]  👽🔥 ⚠️❗ 
+2021-12-27 17:51:13  [[31merror[39m]: ❗⚠️🔥 Express:  [object Object] 🔥⚠️❗ 
+2021-12-27 17:52:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:52:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:52:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:53:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:53:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:53:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:53:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:54:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:54:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:54:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:54:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:54:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:55:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:55:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:55:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:55:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:55:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:55:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:56:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:56:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:56:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:56:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:56:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:56:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:56:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:56:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:56:32  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:56:32  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:56:36  [[31merror[39m]: ❗⚠️🔥 Express:  [object Object] 🔥⚠️❗ 
+2021-12-27 17:57:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:57:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:57:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:58:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:58:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:58:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 17:59:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 17:59:58  [[32minfo[39m]: Express Inicialized 
+2021-12-27 17:59:58  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:00:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:00:26  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:00:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:00:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:00:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:00:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:01:02  [[31merror[39m]: ❗⚠️🔥 Express:  [object Object] 🔥⚠️❗ 
+2021-12-27 18:01:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:01:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:01:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:01:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:01:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:01:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:01:19  [[31merror[39m]: ❗⚠️🔥 Express:  [object Object] 🔥⚠️❗ 
+2021-12-27 18:01:21  [[31merror[39m]: ❗⚠️🔥 Express:  [object Object] 🔥⚠️❗ 
+2021-12-27 18:01:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:01:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:01:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:01:32  [[31merror[39m]: ❗⚠️🔥 Express:  [object Object] 🔥⚠️❗ 
+2021-12-27 18:01:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:01:48  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:01:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:01:48  [[31merror[39m]: ❗⚠️🔥 Express:  {[object Object]} 🔥⚠️❗ 
+2021-12-27 18:01:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:01:56  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:01:56  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:02:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:02:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:02:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:02:24  [[31merror[39m]: ❗⚠️🔥 Express:  {"status":500,"name":"InternalServerError","message":"Internal Server Error"} 🔥⚠️❗ 
+2021-12-27 18:03:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:03:02  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:03:02  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:03:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:03:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:03:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:03:17  [[31merror[39m]: ❗⚠️🔥 Express:  {"name":"Not Found","status":404} 🔥⚠️❗ 
+2021-12-27 18:03:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:03:35  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:03:35  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:03:43  [[31merror[39m]: ❗⚠️🔥 Express:  {"name":"Not Found","status":404} 🔥⚠️❗ 
+2021-12-27 18:03:50  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 18:03:50  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Exec Script  🚦⚠️🔍 
+2021-12-27 18:03:50  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 18:03:50  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 18:03:50  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 18:03:50  [[31merror[39m]: ❗⚠️ 🔥👽  Recognice Face: Error: [object Object]  👽🔥 ⚠️❗ 
+2021-12-27 18:03:50  [[31merror[39m]: ❗⚠️🔥 Express:  {"name":"Face Not Found","status":404} 🔥⚠️❗ 
+2021-12-27 18:03:56  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 18:03:56  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Exec Script  🚦⚠️🔍 
+2021-12-27 18:03:56  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 18:03:56  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: unknown  🚦⚠️ 🔍🔍 
+2021-12-27 18:03:56  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 18:03:56  [[31merror[39m]: ❗⚠️ 🔥👽  Recognice Face: Error: [object Object]  👽🔥 ⚠️❗ 
+2021-12-27 18:03:56  [[31merror[39m]: ❗⚠️🔥 Express:  {"name":"Face Not Found","status":404} 🔥⚠️❗ 
+2021-12-27 18:04:15  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 18:04:15  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 18:04:15  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 18:04:15  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 18:04:15  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 18:04:15  [[32minfo[39m]: ⚠️🌐 🌐💻  Info: image/jpeg  💻🌐 🌐⚠️ 
+2021-12-27 18:04:15  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../face-id/images'  💻🌐⚠️ 
+2021-12-27 18:04:15  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Exec Script  🚦⚠️🔍 
+2021-12-27 18:04:16  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Run Face Model...	Run Recgnize Face From Galery...	  🚦⚠️ 🔍🔍 
+2021-12-27 18:04:16  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a1452.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 18:04:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a3028.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 18:04:17  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a4289.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 18:04:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a5095.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 18:04:18  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a5147.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 18:04:19  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Analizando Imagen... 1a7002.jpg  🚦⚠️ 🔍🔍 
+2021-12-27 18:04:19  [[34mdebug[39m]: 🔍🔍 🚦⚠️  Data: Geronimo Montes  🚦⚠️ 🔍🔍 
+2021-12-27 18:04:19  [[32minfo[39m]: ⚠️🌐 🌐💻  Exited With Code: 0  💻🌐 🌐⚠️ 
+2021-12-27 18:04:19  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Find Data User  🚦⚠️🔍 
+2021-12-27 18:04:20  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Generating JWT  🚦⚠️🔍 
+2021-12-27 18:04:20  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 18:04:54  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:04:54  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:04:54  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 18:04:54  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 18:07:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:07:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:07:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:07:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:07:52  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:07:52  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:08:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:08:01  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:08:01  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:09:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:09:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:09:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:10:39  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:10:39  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:10:41  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: Error: MongoServerError: E11000 duplicate key error collection: face_database.users index: name_1 dup key: { name: "administrador" }  👽🔥 ⚠️❗ 
+2021-12-27 18:10:41  [[31merror[39m]: ❗⚠️🔥 Express:  {"status":500,"name":"InternalServerError","message":"Internal Server Error"} 🔥⚠️❗ 
+2021-12-27 18:11:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:11:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:11:08  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:11:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:11:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:11:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:11:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:11:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:11:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:11:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:11:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:11:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:11:41  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:11:41  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:11:41  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: MongoServerError: E11000 duplicate key error collection: face_database.users index: name_1 dup key: { name: "administrador" }  👽🔥 ⚠️❗ 
+2021-12-27 18:11:41  [[31merror[39m]: ❗⚠️🔥 Express:  {"status":500,"name":"InternalServerError","message":"Internal Server Error"} 🔥⚠️❗ 
+2021-12-27 18:12:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:12:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:12:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:12:09  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:12:09  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:12:09  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: undefined  👽🔥 ⚠️❗ 
+2021-12-27 18:12:09  [[31merror[39m]: ❗⚠️🔥 Express:  {"status":500,"name":"InternalServerError","message":"Internal Server Error"} 🔥⚠️❗ 
+2021-12-27 18:17:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:17:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:17:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:17:42  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:17:42  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:17:42  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:17:42  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:17:42  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:17:42  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: undefined  👽🔥 ⚠️❗ 
+2021-12-27 18:17:42  [[31merror[39m]: ❗⚠️🔥 Express:  {"status":500,"name":"InternalServerError","message":"Internal Server Error"} 🔥⚠️❗ 
+2021-12-27 18:19:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:19:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:19:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:20:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:20:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:20:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:20:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:20:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:20:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:22:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:22:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:22:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:23:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:23:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:23:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:23:09  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:23:09  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:23:09  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: undefined  👽🔥 ⚠️❗ 
+2021-12-27 18:23:09  [[31merror[39m]: ❗⚠️🔥 Express:  {"status":500,"name":"InternalServerError","message":"Internal Server Error"} 🔥⚠️❗ 
+2021-12-27 18:23:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:23:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:23:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:23:37  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:23:37  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:23:37  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: undefined  👽🔥 ⚠️❗ 
+2021-12-27 18:23:37  [[31merror[39m]: ❗⚠️🔥 Express:  {"status":500,"name":"InternalServerError","message":"Internal Server Error"} 🔥⚠️❗ 
+2021-12-27 18:23:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:23:48  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:23:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:24:00  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:24:00  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:24:00  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:24:04  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:24:04  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:24:04  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:24:05  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:24:05  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:24:05  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: MongoServerError: E11000 duplicate key error collection: face_database.users index: name_1 dup key: { name: "administrador" }  👽🔥 ⚠️❗ 
+2021-12-27 18:24:05  [[31merror[39m]: ❗⚠️🔥 Express:  {"status":500,"name":"InternalServerError","message":"Internal Server Error"} 🔥⚠️❗ 
+2021-12-27 18:25:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:25:31  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:25:31  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:25:32  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:25:32  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:25:32  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: MongoServerError: E11000 duplicate key error collection: face_database.users index: name_1 dup key: { name: "administrador" }  👽🔥 ⚠️❗ 
+2021-12-27 18:25:32  [[31merror[39m]: ❗⚠️🔥 Express:  {"status":500,"name":"InternalServerError","message":"Internal Server Error"} 🔥⚠️❗ 
+2021-12-27 18:26:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:26:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:26:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:27:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:27:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:27:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:27:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:27:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:27:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:27:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:27:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:27:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:28:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:28:26  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:28:26  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:29:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:29:31  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:29:31  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:29:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:29:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:29:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:29:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:29:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:29:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:30:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:30:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:30:08  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:30:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:30:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:30:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:30:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:30:41  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:30:41  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:30:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:30:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:30:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:31:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:31:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:31:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:32:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:32:09  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:32:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:32:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:32:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:32:47  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:33:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:33:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:33:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:33:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:33:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:33:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:33:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:33:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:33:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:34:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:34:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:34:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:34:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:34:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:34:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:34:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:34:31  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:34:31  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:34:34  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:34:34  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:34:34  [[31merror[39m]: ❗⚠️🔥 Express:  {"name":"DUPLICATE USER","status":400} 🔥⚠️❗ 
+2021-12-27 18:37:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:37:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:37:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:38:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:38:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:38:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:40:04  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:40:04  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:40:04  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:40:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:40:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:40:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:40:21  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:40:21  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:40:21  [[31merror[39m]: ❗⚠️🔥 Express:  {"name":"DUPLICATE USER","status":400} 🔥⚠️❗ 
+2021-12-27 18:45:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:45:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:45:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:45:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:45:55  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:45:55  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:46:01  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:46:01  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:46:01  [[31merror[39m]: ❗⚠️🔥 Express:  {"message":"Email/Name Duplicado","name":"DUPLICATE USER","status":400} 🔥⚠️❗ 
+2021-12-27 18:46:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:46:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:46:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:46:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:46:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:46:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:46:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:46:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:46:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:46:24  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:46:24  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:46:24  [[31merror[39m]: ❗⚠️🔥 Express:  {"message":"Email / Name Duplicado","name":"DUPLICATE USER","status":400} 🔥⚠️❗ 
+2021-12-27 18:47:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:47:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:47:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:47:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:47:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:47:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:47:38  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 18:47:38  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 18:47:38  [[31merror[39m]: ❗⚠️🔥 MiddlewareError:  {"message":"Email / Name Duplicado","name":"DUPLICATE USER","status":400} 🔥⚠️❗ 
+2021-12-27 18:48:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:48:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:48:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:50:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:50:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:50:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:53:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:53:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:53:47  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:54:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:54:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:54:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:54:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:54:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:54:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:54:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:54:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:54:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:56:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:56:26  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:56:26  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:56:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:56:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:56:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:57:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:57:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:57:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:57:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:57:52  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:57:52  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:58:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:58:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:58:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 18:58:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 18:58:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 18:58:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:01:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:01:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:01:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:01:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:01:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:01:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:02:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:02:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:02:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:02:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:02:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:02:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:02:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:02:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:02:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:03:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:03:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:03:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:03:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:03:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:03:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:04:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:04:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:04:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:05:00  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:05:00  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:05:00  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:05:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:05:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:05:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:05:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:05:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:05:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:05:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:05:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:05:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:05:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:05:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:05:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:05:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:05:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:05:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:06:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:06:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:06:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:06:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:06:28  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:06:28  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:06:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:06:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:06:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:06:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:06:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:06:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:07:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:07:52  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:07:52  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:07:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:07:58  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:07:58  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:08:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:08:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:08:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:08:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:08:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:08:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:08:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:08:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:08:47  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:09:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:09:24  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:09:24  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:09:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:09:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:09:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:09:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:09:48  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:09:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:09:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:09:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:09:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:10:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:10:28  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:10:28  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:10:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:10:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:10:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:11:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:11:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:11:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:11:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:11:22  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:11:22  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:11:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:11:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:11:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:11:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:11:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:11:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:12:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:12:02  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:12:02  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:12:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:12:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:12:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:12:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:12:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:12:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:12:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:12:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:12:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:14:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:14:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:14:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:16:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:16:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:16:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:19:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:19:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:19:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:19:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:19:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:19:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:20:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:20:01  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:20:01  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:20:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:20:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:20:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:20:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:20:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:20:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:21:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:21:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:21:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:21:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:21:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:21:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:22:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:22:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:22:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:22:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:22:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:22:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:22:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:22:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:22:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:23:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:23:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:23:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:24:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:24:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:24:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:24:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:24:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:24:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:24:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:24:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:24:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:33:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:33:01  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:33:01  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:33:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:33:31  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:33:31  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:34:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:34:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:34:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:34:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:34:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:34:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:34:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:34:56  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:34:56  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:35:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:35:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:35:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:35:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:35:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:35:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:35:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:35:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:35:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:35:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:35:41  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:35:41  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:36:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:36:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:36:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:36:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:36:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:36:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:36:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:36:52  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:36:52  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:36:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:36:56  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:36:56  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:37:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:37:28  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:37:28  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:37:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:37:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:37:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:38:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:38:01  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:38:01  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:38:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:38:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:38:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:38:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:38:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:38:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:38:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:38:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:38:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:39:07  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:39:07  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:39:07  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:39:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:39:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:39:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:39:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:39:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:39:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:40:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:40:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:40:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:40:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:40:25  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:40:25  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:40:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 19:40:31  [[32minfo[39m]: Express Inicialized 
+2021-12-27 19:40:31  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 19:40:47  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 19:40:47  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 19:40:47  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 19:40:47  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 19:40:55  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 19:40:55  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 19:40:55  [[31merror[39m]: ❗⚠️🔥 MiddlewareError:  {"status":500,"name":"InternalServerError","message":"Internal Server Error"} 🔥⚠️❗ 
+2021-12-27 20:02:07  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:02:07  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:02:07  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:02:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:02:41  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:02:41  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:02:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:02:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:02:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:02:51  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 20:02:51  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 20:02:51  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: AuthenticateError: La contraseña proporcionada no es correcta.  👽🔥 ⚠️❗ 
+2021-12-27 20:02:51  [[31merror[39m]: ❗⚠️🔥 MiddlewareError:  {"status":500,"name":"InternalServerError","message":"Internal Server Error"} 🔥⚠️❗ 
+2021-12-27 20:04:04  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:04:04  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:04:04  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:04:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:04:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:04:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:04:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:04:41  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:04:41  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:04:51  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 20:04:51  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 20:04:51  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: AuthenticateError: La contraseña proporcionada no es correcta.  👽🔥 ⚠️❗ 
+2021-12-27 20:04:51  [[31merror[39m]: ❗⚠️🔥 MiddlewareError:  undefined 🔥⚠️❗ 
+2021-12-27 20:05:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:05:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:05:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:05:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:05:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:05:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:05:18  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 20:05:18  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 20:05:18  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: AuthenticateError: La contraseña proporcionada no es correcta.  👽🔥 ⚠️❗ 
+2021-12-27 20:05:18  [[31merror[39m]: ❗⚠️🔥 MiddlewareError:  {"name":"AuthenticateError","message":"La contraseña proporcionada no es correcta.","status":400,"code":"INVALID_PASSWORD"} 🔥⚠️❗ 
+2021-12-27 20:22:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:22:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:22:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:22:28  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 20:22:28  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 20:22:28  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: AuthenticateError: La contraseña proporcionada no es correcta.  👽🔥 ⚠️❗ 
+2021-12-27 20:22:28  [[31merror[39m]: ❗⚠️🔥 MiddlewareError:  AuthenticateError: La contraseña proporcionada no es correcta. 🔥⚠️❗ 
+2021-12-27 20:23:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:23:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:23:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:23:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:23:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:23:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:23:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:23:39  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:23:39  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:24:04  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:24:04  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:24:04  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:24:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:24:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:24:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:24:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:24:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:24:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:24:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:24:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:24:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:24:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:24:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:24:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:32:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:32:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:32:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:32:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:32:24  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:32:24  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:33:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:33:24  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:33:24  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:33:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:33:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:33:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:34:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:34:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:34:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:35:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:35:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:35:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:36:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:36:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:36:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:36:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:36:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:36:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:36:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:36:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:36:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:37:00  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:37:00  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:37:00  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:37:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:37:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:37:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:37:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:37:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:37:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:37:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:37:35  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:37:35  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:40:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:40:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:40:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:40:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:40:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:40:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:41:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:41:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:41:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:43:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:43:26  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:43:26  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:44:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:44:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:44:08  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:44:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:44:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:44:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:45:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:45:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:45:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:45:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:45:24  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:45:24  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:45:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:45:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:45:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:45:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:45:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:45:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:45:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:45:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:45:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:46:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:46:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:46:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:46:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:46:27  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:46:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:46:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:46:48  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:46:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:46:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:46:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:46:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:47:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:47:02  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:47:02  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:47:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:47:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:47:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:47:18  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 20:47:18  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 20:47:18  [[31merror[39m]: ❗⚠️ 🔥👽  AuthService: AuthenticateError: La contraseña proporcionada no es correcta.  👽🔥 ⚠️❗ 
+2021-12-27 20:47:25  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 20:47:25  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 20:47:25  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 20:47:25  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 20:47:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:47:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:47:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:57:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:57:09  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:57:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:57:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:57:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:57:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:57:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:57:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:57:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:57:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:57:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:57:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:58:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:58:01  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:58:01  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:58:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:58:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:58:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:58:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:58:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:58:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:58:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:58:41  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:58:41  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:59:42  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:59:42  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:59:42  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:59:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:59:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:59:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 20:59:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 20:59:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 20:59:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:00:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:00:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:00:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:00:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:00:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:00:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:00:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:00:27  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:00:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:00:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:00:58  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:00:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:01:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:01:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:01:06  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:01:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:01:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:01:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:01:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:01:25  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:01:25  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:01:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:01:48  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:01:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:01:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:01:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:01:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:02:42  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:02:42  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:02:42  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:03:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:03:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:03:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:04:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:04:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:04:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:04:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:04:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:04:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:04:24  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:04:24  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:04:24  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:05:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:05:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:05:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:05:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:05:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:05:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:06:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:06:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:06:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:06:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:06:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:06:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:07:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:07:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:07:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:07:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:07:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:07:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:07:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:07:35  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:07:35  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:08:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:08:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:08:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:08:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:08:31  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:08:31  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:08:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:08:52  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:08:52  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:08:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:08:56  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:08:56  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:09:04  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:09:04  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:09:04  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:09:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:09:22  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:09:22  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:09:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:09:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:09:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:09:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:09:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:09:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:09:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:09:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:09:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:10:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:10:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:10:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:10:17  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:10:17  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:10:17  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:10:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:10:58  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:10:58  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:11:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:11:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:11:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:11:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:11:26  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:11:26  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:11:36  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:11:36  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:11:36  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:11:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:11:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:11:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:11:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:11:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:11:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:13:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:13:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:13:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:13:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:13:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:13:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:13:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:13:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:13:47  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:13:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:13:56  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:13:56  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:14:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:14:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:14:08  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:14:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:14:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:14:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:14:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:14:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:14:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:14:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:14:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:14:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:15:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:15:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:15:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:16:00  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:16:00  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:16:00  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:16:07  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:16:07  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:16:07  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:16:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:16:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:16:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:16:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:16:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:16:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:16:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:16:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:16:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:16:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:16:56  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:16:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:19:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:19:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:19:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:20:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:20:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:20:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:21:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:21:27  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:21:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:22:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:22:01  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:22:01  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:22:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:22:32  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:22:32  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:22:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:22:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:22:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:23:04  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 21:23:04  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 21:23:04  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 21:23:04  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: ${{ user, token, msg }}  🚦⚠️🔍 
+2021-12-27 21:23:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:23:32  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:23:32  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:23:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:23:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:23:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:24:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:24:01  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:24:01  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:24:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:24:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:24:08  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:24:32  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:24:32  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:24:32  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:25:28  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 21:25:28  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 21:25:28  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 21:25:28  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: [object Object]  🚦⚠️🔍 
+2021-12-27 21:26:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:26:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:26:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:26:15  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 21:26:15  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 21:26:15  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 21:26:15  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: {[object Object], eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWNhNTYzZTEwODIyNmRhMjkxM2FkMGEiLCJyb2xlIjoiYWRtaW4iLCJuYW1lIjoiYWRtaW5pc3RyYWRvciIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNjQwNjY1NTc1LCJleHAiOjE2NDM4MTkxNzV9.EPoz1YFXuQWJolJPaJUbBkhBWNhuGSnwL8JbBZ7qq5A, Inicio de Sesión Exitoso}  🚦⚠️🔍 
+2021-12-27 21:27:04  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:27:04  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:27:04  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:27:11  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 21:27:11  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 21:27:11  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 21:27:11  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: {"user":{"_id":"61ca563e108226da2913ad0a","role":"admin","name":"administrador","email":"admin@admin.com"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWNhNTYzZTEwODIyNmRhMjkxM2FkMGEiLCJyb2xlIjoiYWRtaW4iLCJuYW1lIjoiYWRtaW5pc3RyYWRvciIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNjQwNjY1NjMxLCJleHAiOjE2NDM4MTkyMzF9.RfUqRxiQ4qRG-rD01NoI2GqzLPzmxv9nqQWsLRo1uZ0","msg":"Inicio de Sesión Exitoso"}  🚦⚠️🔍 
+2021-12-27 21:27:15  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 21:27:15  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 21:27:15  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 21:27:15  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: {"user":{"_id":"61ca563e108226da2913ad0a","role":"admin","name":"administrador","email":"admin@admin.com"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWNhNTYzZTEwODIyNmRhMjkxM2FkMGEiLCJyb2xlIjoiYWRtaW4iLCJuYW1lIjoiYWRtaW5pc3RyYWRvciIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNjQwNjY1NjM1LCJleHAiOjE2NDM4MTkyMzV9.TFDNlT0EJWKIdI10PKoZWNTToe9iZ5cTjMTFadE1QWw","msg":"Inicio de Sesión Exitoso"}  🚦⚠️🔍 
+2021-12-27 21:27:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:27:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:27:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:27:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:27:55  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:27:55  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:28:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:28:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:28:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:28:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:28:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:28:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:28:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:28:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:28:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:28:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:28:58  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:28:58  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:29:06  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:29:06  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:29:07  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:30:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:30:52  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:30:52  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:31:48  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:31:48  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:31:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:32:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:32:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:32:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:32:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:32:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:32:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:33:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:33:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:33:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:33:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:33:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:33:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:33:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:33:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:33:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:33:34  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:33:34  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:33:34  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:33:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:33:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:33:47  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:33:52  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:33:52  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:33:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:34:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:34:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:34:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:34:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:34:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:34:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:34:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:34:25  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:34:25  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:34:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:34:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:34:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:35:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:35:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:35:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:36:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:36:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:36:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:36:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:36:22  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:36:22  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:36:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:36:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:36:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:36:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:36:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:36:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:36:44  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:36:44  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:36:44  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:36:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:36:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:36:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:37:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:37:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:37:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:37:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:37:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:37:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:37:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:37:31  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:37:31  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:37:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:37:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:37:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 21:38:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 21:38:09  [[32minfo[39m]: Express Inicialized 
+2021-12-27 21:38:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:12:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:12:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:12:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:12:52  [[32minfo[39m]: ⚠️🌐💻  SINGIN--> '../admin'  💻🌐⚠️ 
+2021-12-27 22:12:52  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 22:12:52  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 22:12:52  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 22:12:52  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: {"user":{"_id":"61ca9cd428d8aa28d136caba","role":"admin","name":"administrador","email":"admin@admin.com"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWNhOWNkNDI4ZDhhYTI4ZDEzNmNhYmEiLCJyb2xlIjoiYWRtaW4iLCJuYW1lIjoiYWRtaW5pc3RyYWRvciIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNjQwNjY4MzcyLCJleHAiOjE2NDM4MjE5NzJ9.B0hZmdZiw4xTCMGuDb3f-1sRvtr5mLt5bwQx-xeqZCI","msg":"Usuario admin@admin.com Registrado"}  🚦⚠️🔍 
+2021-12-27 22:12:58  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 22:12:58  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 22:12:58  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 22:12:58  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: {"user":{"_id":"61ca9cd428d8aa28d136caba","role":"admin","name":"administrador","email":"admin@admin.com"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWNhOWNkNDI4ZDhhYTI4ZDEzNmNhYmEiLCJyb2xlIjoiYWRtaW4iLCJuYW1lIjoiYWRtaW5pc3RyYWRvciIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNjQwNjY4Mzc4LCJleHAiOjE2NDM4MjE5Nzh9.K4Az9BV2oGyVPEz5MHkDF0DgOrH1ebFzhSi1I5HM4F8","msg":"Inicio de Sesión Exitoso"}  🚦⚠️🔍 
+2021-12-27 22:13:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:13:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:13:47  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:14:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:14:26  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:14:26  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:14:36  [[32minfo[39m]: ⚠️🌐💻  AuthRoute: Request--> '../user-credentials'  💻🌐⚠️ 
+2021-12-27 22:14:36  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Checking password  🚦⚠️🔍 
+2021-12-27 22:14:36  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 22:14:36  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: {"user":{"_id":"61ca9cd428d8aa28d136caba","role":"admin","name":"administrador","email":"admin@admin.com"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWNhOWNkNDI4ZDhhYTI4ZDEzNmNhYmEiLCJyb2xlIjoiYWRtaW4iLCJuYW1lIjoiYWRtaW5pc3RyYWRvciIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNjQwNjY4NDc2LCJleHAiOjE2NDM4MjIwNzZ9.g5el4NrucPMZMqvF5Uoh0Flfdg0N4t11IvCfNDmtPdg","msg":"Inicio de Sesión Exitoso"}  🚦⚠️🔍 
+2021-12-27 22:14:47  [[32minfo[39m]: ⚠️🌐💻  SINGIN--> '../user'  💻🌐⚠️ 
+2021-12-27 22:14:47  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 22:14:47  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 22:14:47  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 22:14:47  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: {"user":{"_id":"61ca9d47fb32ec953f1941aa","role":"user","name":"Geronimo Montes","email":"geronimomontes@gmail.com"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWNhOWQ0N2ZiMzJlYzk1M2YxOTQxYWEiLCJyb2xlIjoidXNlciIsIm5hbWUiOiJHZXJvbmltbyBNb250ZXMiLCJlbWFpbCI6Imdlcm9uaW1vbW9udGVzQGdtYWlsLmNvbSIsImlhdCI6MTY0MDY2ODQ4NywiZXhwIjoxNjQzODIyMDg3fQ.ewJSS_z--KOUncvkFSj2Apg7u0feWc0_ZcJsmFlbvyE","msg":"Usuario geronimomontes@gmail.com Registrado"}  🚦⚠️🔍 
+2021-12-27 22:15:58  [[32minfo[39m]: ⚠️🌐💻  SINGIN--> '../user'  💻🌐⚠️ 
+2021-12-27 22:15:58  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Hashing password  🚦⚠️🔍 
+2021-12-27 22:15:58  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Creating user db record  🚦⚠️🔍 
+2021-12-27 22:15:58  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: Generating JWT  🚦⚠️🔍 
+2021-12-27 22:15:58  [[34mdebug[39m]: 🔍🚦⚠️  AuthService: {"user":{"_id":"61ca9d8efb32ec953f1941ac","role":"user","name":"_Geronimo Montes","email":"_geronimomontes@gmail.com"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWNhOWQ4ZWZiMzJlYzk1M2YxOTQxYWMiLCJyb2xlIjoidXNlciIsIm5hbWUiOiJfR2Vyb25pbW8gTW9udGVzIiwiZW1haWwiOiJfZ2Vyb25pbW9tb250ZXNAZ21haWwuY29tIiwiaWF0IjoxNjQwNjY4NTU4LCJleHAiOjE2NDM4MjIxNTh9.CxSUYG6wmOIaZJ6-4ET-QeWUAUkLVbPyYef1ZfDqkfA","msg":"Usuario _geronimomontes@gmail.com Registrado"}  🚦⚠️🔍 
+2021-12-27 22:16:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:16:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:17:00  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:17:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:17:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:17:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:17:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:17:55  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:17:55  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:18:00  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:18:00  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:18:00  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:18:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:18:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:18:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:18:15  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:18:15  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:18:15  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:19:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:19:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:19:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:21:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:21:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:21:08  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:21:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:21:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:21:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:21:46  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:21:46  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:21:46  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:22:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:22:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:22:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:22:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:22:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:22:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:22:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:22:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:22:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:22:33  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:22:33  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:22:33  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:22:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:22:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:22:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:23:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:23:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:23:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:23:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:23:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:23:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:23:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:23:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:23:47  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:23:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:23:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:23:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:24:41  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:24:41  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:24:41  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:27:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:27:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:27:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:28:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:28:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:28:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:28:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:28:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:28:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:28:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:28:28  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:28:28  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:28:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:28:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:28:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:28:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:28:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:28:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:28:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:28:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:28:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:29:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:29:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:29:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:29:58  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:29:58  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:29:58  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:30:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:30:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:30:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:30:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:30:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:30:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:31:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:31:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:31:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:31:43  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:31:43  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:31:43  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:31:49  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:31:49  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:31:49  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:32:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:32:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:32:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:32:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:32:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:32:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:32:54  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:32:54  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:32:54  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:34:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:34:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:34:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:34:08  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:34:08  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:34:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:34:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:34:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:34:24  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:36:01  [[32minfo[39m]: ⚠️🌐💻  USER--> '../all'  💻🌐⚠️ 
+2021-12-27 22:36:35  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:36:35  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:36:35  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:36:36  [[32minfo[39m]: ⚠️🌐💻  USER--> '../all'  💻🌐⚠️ 
+2021-12-27 22:36:36  [[34mdebug[39m]: 🔍🚦⚠️  User: Find User By Id  🚦⚠️🔍 
+2021-12-27 22:37:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:37:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:37:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:37:13  [[32minfo[39m]: ⚠️🌐💻  USER--> '../all'  💻🌐⚠️ 
+2021-12-27 22:37:13  [[34mdebug[39m]: 🔍🚦⚠️  User: Find User By Id  🚦⚠️🔍 
+2021-12-27 22:38:07  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:38:07  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:38:07  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:38:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:38:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:38:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:38:16  [[32minfo[39m]: ⚠️🌐💻  USER--> '../all'  💻🌐⚠️ 
+2021-12-27 22:38:16  [[34mdebug[39m]: 🔍🚦⚠️  User: Find User By Id  🚦⚠️🔍 
+2021-12-27 22:38:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:38:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:38:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:39:01  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:39:01  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:39:01  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:39:11  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:39:11  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:39:11  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:39:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:39:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:39:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:39:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:39:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:39:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:39:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:39:27  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:39:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:39:27  [[32minfo[39m]: ⚠️🌐💻  USER--> '../all'  💻🌐⚠️ 
+2021-12-27 22:39:27  [[34mdebug[39m]: 🔍🚦⚠️  User: Find User By Id  🚦⚠️🔍 
+2021-12-27 22:39:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:39:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:39:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:40:20  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:40:20  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:40:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:40:29  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:40:29  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:40:29  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:40:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:40:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:40:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:40:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:40:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:40:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:40:55  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:40:55  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:40:55  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:41:14  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:41:14  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:41:14  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:41:26  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:41:26  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:41:26  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:42:18  [[32minfo[39m]: ⚠️🌐💻  USER--> '../61ca9d47fb32ec953f1941aa'  💻🌐⚠️ 
+2021-12-27 22:42:18  [[34mdebug[39m]: 🔍🚦⚠️  User: Find User By Id  🚦⚠️🔍 
+2021-12-27 22:44:31  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:44:31  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:44:31  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:44:37  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:44:37  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:44:37  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:45:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:45:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:45:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:45:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:45:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:45:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:46:02  [[32minfo[39m]: ⚠️🌐💻  USER--> '../61ca9d47fb32ec953f1941aa'  💻🌐⚠️ 
+2021-12-27 22:46:02  [[34mdebug[39m]: 🔍🚦⚠️  User: Find User By Id  🚦⚠️🔍 
+2021-12-27 22:47:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:47:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:47:19  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:47:45  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:47:45  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:47:45  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:47:53  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:47:53  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:47:53  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:48:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:48:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:48:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:48:27  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:48:27  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:48:27  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:48:50  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:48:50  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:48:50  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:49:05  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:49:05  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:49:05  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:49:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:49:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:49:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:49:19  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:49:19  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:49:20  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:49:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:49:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:49:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:49:56  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:49:56  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:49:56  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:50:03  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:50:03  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:50:03  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:50:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:50:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:50:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:50:18  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:50:18  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:50:18  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:50:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:50:22  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:50:22  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:50:30  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:50:30  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:50:30  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:50:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:50:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:50:48  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:50:57  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:50:57  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:50:57  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:51:02  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:51:02  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:51:02  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:51:12  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:51:12  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:51:12  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:51:23  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:51:23  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:51:23  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:51:28  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:51:28  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:51:28  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:51:40  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:51:40  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:51:40  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:51:47  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:51:47  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:51:47  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:51:51  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:51:51  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:51:51  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:52:30  [[32minfo[39m]: ⚠️🌐💻  USER--> '../61ca9d47fb32ec953f1941aa'  💻🌐⚠️ 
+2021-12-27 22:52:30  [[34mdebug[39m]: 🔍🚦⚠️  User: Find User By Id  🚦⚠️🔍 
+2021-12-27 22:52:58  [[32minfo[39m]: ⚠️🌐💻  USER--> '../61ca9d47fb32ec953f1941aa'  💻🌐⚠️ 
+2021-12-27 22:52:58  [[34mdebug[39m]: 🔍🚦⚠️  User: Update One User  🚦⚠️🔍 
+2021-12-27 22:53:21  [[32minfo[39m]: ⚠️🌐💻  USER--> '../61ca9d47fb32ec953f1941aa'  💻🌐⚠️ 
+2021-12-27 22:53:21  [[34mdebug[39m]: 🔍🚦⚠️  User: Update One User  🚦⚠️🔍 
+2021-12-27 22:54:10  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:54:10  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:54:10  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:54:39  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:54:39  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:54:39  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:54:59  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:54:59  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:54:59  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:55:09  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:55:09  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:55:09  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:56:13  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:56:13  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:56:13  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:58:16  [[32minfo[39m]: ⚠️🌐💻  SIGNUP--> '../face-id/images/61c8eb0c8acae9b0750db101'  💻🌐⚠️ 
+2021-12-27 22:58:16  [[34mdebug[39m]: 🔍🚦⚠️  Recognice Face: Find User Data  🚦⚠️🔍 
+2021-12-27 22:58:16  [[31merror[39m]: ❗⚠️ 🔥👽  Recognice Face: UserError: El usuario no se encuentra registrado  👽🔥 ⚠️❗ 
+2021-12-27 22:58:38  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:58:38  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:58:38  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:59:22  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:59:22  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:59:22  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 22:59:25  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 22:59:25  [[32minfo[39m]: Express Inicialized 
+2021-12-27 22:59:25  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 23:00:16  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 23:00:16  [[32minfo[39m]: Express Inicialized 
+2021-12-27 23:00:16  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
+2021-12-27 23:01:21  [[32minfo[39m]: MongoDB Inicialized 
+2021-12-27 23:01:21  [[32minfo[39m]: Express Inicialized 
+2021-12-27 23:01:21  [[32minfo[39m]: 🌐💻 Server running: http://localhost:3000/api/ 🌐💻 
