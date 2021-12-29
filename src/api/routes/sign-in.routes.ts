@@ -4,6 +4,7 @@ import { checkSchema } from 'express-validator';
 import Schemas from "@validator";
 import middlewares from "@api/middlewares";
 import controller from '@api/controller';
+import ServerError from '@errors/server.error';
 
 
 const route = Router();
@@ -20,15 +21,9 @@ export default (app: Router) => {
     )
     /******/
     .post(
-      '/face-id/images',
-      middlewares.multer.images.array('images', 20),
-      controller.signIn.FaceId_Imgs,
-    )
-    /******/
-    .post(
-      '/face-id/video',
-      middlewares.multer.video.single('video'),
-      controller.signIn.FaceId_Video,
+      '/face-id',
+      middlewares.uploadFiles.array('files', 20),
+      controller.signIn.FaceId,
     )
     /******/
     .post(
@@ -36,4 +31,7 @@ export default (app: Router) => {
       middlewares.validator(checkSchema({})),
       controller.signIn.Pin,
     )
+    .get('', () => { throw new ServerError('METHOD_NOT_ALLOWED') })
+    .put('', () => { throw new ServerError('METHOD_NOT_ALLOWED') })
+    .delete('', () => { throw new ServerError('METHOD_NOT_ALLOWED') })
 }

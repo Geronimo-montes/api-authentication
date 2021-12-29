@@ -11,21 +11,24 @@ const User = new mongoose.Schema(
       unique: true,
     },
 
-    email: {
-      type: String,
-      required: [true, 'Proporcione un email'],
-      lowercase: true,
-      unique: true,
-    },
-
-    password: String,
-
-    salt: String,
-
     role: {
       type: String,
       enum: ['admin', 'user'],
       default: 'user',
+    },
+
+    _id_face_id: {
+      type: mongoose.Types.ObjectId,
+      ref: "FaceId",
+      required: false,
+      default: null,
+    },
+
+    _id_credentials: {
+      type: mongoose.Types.ObjectId,
+      ref: "UserCredentials",
+      required: false,
+      default: null,
     },
   }
 );

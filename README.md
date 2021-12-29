@@ -1,4 +1,3 @@
-# gestor-doc-api
 
 # Instalacion de dependencias
 npm install

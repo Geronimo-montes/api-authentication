@@ -5,7 +5,6 @@ import { HttpCode } from "@interfaces/codes.interface";
  * Obj accesible con el objeto literal AuthErrorCode
  */
 const errorMessages = {
-  INVALID_PASSWORD: "La contraseña proporcionada no es correcta.",
   UNAUTHORIZED: "No se cuenta con los privilegios necesarios para completar la petición",
 };
 
@@ -13,7 +12,6 @@ const errorMessages = {
  * Obj accesible con el objeto literal AuthErrorCode
  */
 const errorCodeHttp = {
-  INVALID_PASSWORD: HttpCode.C4XX.Bad_Request,
   UNAUTHORIZED: HttpCode.C4XX.Unauthorized,
 }
 

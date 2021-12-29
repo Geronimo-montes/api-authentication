@@ -1,5 +1,5 @@
 {
-  "name": "api-biometric-recognition",
+  "name": "api-user-authentication",
   "version": "3.0.0",
   "description": "API",
   "main": "src/app.ts",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Geronimo-montes/api-biometric-recognition.git"
+    "url": "git+https://github.com/Geronimo-montes/api-user authentication.git"
   },
   "keywords": [
     "boilerplay",

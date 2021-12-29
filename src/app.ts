@@ -11,9 +11,9 @@ async function startServer() {
     await require('./helpers').default({ expressApp: app });
     const Log = <Logger>Container.get('logger');
 
-    app.listen(config.PORT,
+    app.listen(config.API.PORT,
         () =>
-            Log.info(`🌐💻 Server running: ${config.ROOT.URL} 🌐💻`))
+            Log.info(`🌐💻 Server running: ${config.API.URL} 🌐💻`))
         .on('error',
             err => {
                 Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);

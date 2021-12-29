@@ -3,12 +3,32 @@ import { Request } from 'express';
 import { Response } from 'express';
 import { Container } from 'typedi';
 import { NextFunction } from 'express';
-// SERVICES
-import AuthService from '@services/auth.service';
 
-import { HttpCode } from '@interfaces/codes.interface';
-import UserService from '@services/user.service';
+import { ERol } from '@interfaces/IRol.interface';
 import { IUser } from '@interfaces/IUser.interface';
+import { HttpCode } from '@interfaces/codes.interface';
+
+import UserService from '@services/user.service';
+
+/**
+ * 
+ */
+const Add = async (req: Request, res: Response, next: NextFunction) => {
+  const
+    Log: Logger = Container.get('logger'),
+    InstanceUserService = Container.get(UserService),
+    _id_admin = req.token._id,
+    role = ERol.USER,
+    { name } = req.body;
+
+  console.log();
+  Log.info(`⚠️🌐💻  USER--> '..${req.url}'  💻🌐⚠️`);
+
+  InstanceUserService.Add({ _id_admin, name, role })
+    .then(({ data, msg }: { data: IUser, msg: string }) =>
+      res.status(HttpCode.C2XX.OK).json({ user: data, msg }))
+    .catch((err) => next(err));
+}
 
 /**
  * 
@@ -24,7 +44,7 @@ const All = async (req: Request, res: Response, next: NextFunction) => {
 
   InstanceUserService.All(_id_admin)
     .then((users: IUser[]) =>
-      res.status(HttpCode.C2XX.OK).json(users))
+      res.status(HttpCode.C2XX.OK).json({ users: users }))
     .catch((err) => next(err));
 }
 
@@ -84,6 +104,10 @@ const DeleteOne = async (req: Request, res: Response, next: NextFunction) => {
 }
 
 export default {
+  /**
+   * Registra un nuevo usuario
+   */
+  Add,
   /**
    * Get data by user.id
    */

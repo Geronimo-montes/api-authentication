@@ -7,70 +7,75 @@ const envFound = dotenv.config();
 if (envFound.error)
   throw new Error("⚠️  Couldn't find .env file  ⚠️");
 
-const ROOT_PATH = path.join(__dirname, '..');
+const ROOT = path.join(__dirname, '..');
 const PYTHON_PATH = path.join(__dirname, '..', '..', '..', 'biometric_recognition');
 
 export default {
-  /**
-   * 
-   */
-  ROOT: {
-    PATH: ROOT_PATH,
-    URL: process.env.ROOTURL || 'http://localhost:3000/api/',
+  PATH: {
+    /**
+     * `PATH.ROOT`: Path que apunta a la carpeta `API.src`
+     */
+    ROOT: ROOT,
+    PYTHON: {
+      /**
+       * `PATH.PYTHON.EXE`: Path del executable del lunguaje `Python` 
+       */
+      EXE: path.join(PYTHON_PATH, '.venv', 'Scripts', 'python.exe'),
+      /**
+       * `PATH.PYTHON.MODEL`: Path del archivo `main.py`  
+       */
+      MODEL: path.join(PYTHON_PATH, 'src', 'main.py'),
+      /**
+       * `PATH.PYTHON.DATA`: Path del directorio que comunica a `Python` y `API`  
+       */
+      DATA: path.join(ROOT, '..', '..', 'data'),
+      // DATA: path.join(PYTHON_PATH, 'data', 'data'),
+    },
   },
-  /**
-   * 
-   */
-  PYTHON: {
-    EXE: path.join(PYTHON_PATH, '.venv', 'Scripts', 'python.exe'),
-    MODEL: path.join(PYTHON_PATH, 'src', 'main.py'),
-    DATA: path.join(PYTHON_PATH, 'data', 'temp'),
-  },
-  /**
-   * 
-   */
-  PORT: process.env.PORT || 3000,
-  /**
-   * 
-   */
   API: {
+    /**
+     * `API.URI`: URI base para las rutas de la api
+     */
+    URL: process.env.ROOTURL || 'http://localhost:3000/api/',
+    /**
+     * `API.PREFIX`: Prefijo que se utiliza para referirse a la `URI.API`
+     */
     PREFIX: '/api',
+    /**
+     * `API.PORT`: Puerto por el que la api se ejecuta
+     */
+    PORT: process.env.PORT || 3000,
   },
-  /**
-   * 
-   */
-  FILES: {
-    PUBLIC: path.join(ROOT_PATH, 'assets', 'public'),
-  },
-  /**
-   * 
-   */
   JWT: {
+    /**
+     * `JWT:SECRET`: Token secreto para generacion de Tokens de acceso
+     */
     SECRET: process.env.JWT_SECRET,
-    // SECRET: process.env.JWT_SECRET || 'somesecrettoken',
+    /**
+     * `JWT:ALGORITHM`: Algoritmo de encriptación utilizado
+     */
     ALGORITHM: process.env.JWT_ALGORITMO,
-    // ALGORITHM: process.env.JWT_ALGORITMO || 'RS256',
   },
   /**
-   * 
+   * `URI.DATABASE`: Cadena de conexion con la base de datos
    */
   DATABASEURI: process.env.MONGODB_URI,
-  /**
-   * 
-   */
   LOGS: {
+    /**
+     * `LOG.LEVER`: Nivel de detalle del log
+     */
     level: process.env.LOG_LEVEL || 'silly',
   },
-  /**
-   * 
-   */
+  FILES: {
+    /**
+     * `PATH.FILES`: Path del directorio de archivos Publicos/Privados
+     */
+    PUBLIC: path.join(ROOT, 'assets', 'public'),
+  },
   AGENDA: {
     DBCOLLECTION: process.env.AGENDA_DB_COLLECTION,
     POOLTIME: process.env.AGENDA_POOL_TIME,
     CONCURRENCY: parseInt(process.env.AGENDA_CONCURRENCY, 10),
   },
-  /**
-   * 
-   */
   CLOUDINARY_URL: process.env.CLOUDINARY_URL,
 };

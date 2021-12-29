@@ -6,7 +6,8 @@ import { HttpCode } from "@interfaces/codes.interface";
  */
 const errorMessages = {
   USER_NOT_FOUND: "El usuario no se encuentra registrado",
-  USER_DUPLICATE: "El usuario ya esta registado en el sistema"
+  USER_DUPLICATE: "El usuario ya encuentra registado en el sistema",
+  USER_DATA_NOT_UPDATE: "No fue posible actualizar los datos del usuario",
 
 };
 
@@ -16,6 +17,7 @@ const errorMessages = {
 const errorCodeHttp = {
   USER_NOT_FOUND: HttpCode.C4XX.Bad_Request,
   USER_DUPLICATE: HttpCode.C4XX.Bad_Request,
+  USER_DATA_NOT_UPDATE: HttpCode.C5XX.Internal_Server_Error,
 }
 
 /**

@@ -22,28 +22,18 @@ export default async ({ expressApp }) => {
     /**
      * 
      */
-    const userModel = {
-        name: 'userModel',
-        model: require('../models/user.model').default,
-    };
-
-    /**
-     * 
-     */
-    const dataFaceModel = {
-        name: 'dataFaceModel',
-        model: require('../models/data_face.model').default,
-    };
-
-    /**
-     * 
-     */
     const { agenda } = await injectorLoader({
         mongoConnection,
-        models: [
-            userModel,
-            dataFaceModel,
-        ],
+        models: [{
+            name: 'userModel',
+            model: require('../models/user.model').default,
+        }, {
+            name: 'userCredentialsModel',
+            model: require('../models/user-credentials.model').default,
+        }, {
+            name: 'faceIdModel',
+            model: require('../models/face-id.model').default,
+        }],
     });
 
     /**

@@ -14,11 +14,12 @@ export default abstract class ServiceBase {
  * @param {IUserInputDTO} user Datos de usuarios a registrar.
  * @returns {Promise<INewUser>} Usuario y token de acceso
  */
-  protected generateToken({ _id, role, name, email, password, salt }: IUser) {
+  protected generateToken(user: IUser) {
+    const { _id_admin, _id, name, role } = user;
     return {
-      user: { _id, role, name, email },
+      user: { _id_admin, _id, name, role },
       token: jwt.sign(
-        { _id, role, name, email },
+        { _id_admin, _id, name, role },
         config.JWT.SECRET,
         // { expiresIn: 86400 }, //24 horas
         { expiresIn: 3153600 },   //1 año

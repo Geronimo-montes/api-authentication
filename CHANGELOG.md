@@ -1,4 +1,4 @@
-# api-biometric-recognition changelog
+# api-user-authentication changelog
 
 ## 0.3.0
 

@@ -3,7 +3,7 @@ import { checkSchema } from 'express-validator';
 // MIDDLEWARES
 import Schemas from "@validator";
 import middlewares from "@api/middlewares";
-import controller from '@api/controller';
+import ctrl from '@api/controller';
 
 
 const route = Router();
@@ -13,12 +13,20 @@ export default (app: Router) => {
 
   route
     /******/
+    .post(
+      '',
+      middlewares.isAuth,
+      middlewares.isAdmin,
+      middlewares.validator(checkSchema({})),
+      ctrl.user.Add,
+    )
+    /******/
     .get(
       '/all',
       middlewares.isAuth,
       middlewares.isAdmin,
       middlewares.validator(checkSchema({})),
-      controller.user.All,
+      ctrl.user.All,
     )
     /******/
     .get(
@@ -26,7 +34,7 @@ export default (app: Router) => {
       middlewares.isAuth,
       middlewares.isAdmin,
       middlewares.validator(checkSchema({})),
-      controller.user.FindOne,
+      ctrl.user.FindOne,
     )
     /******/
     .put(
@@ -34,7 +42,7 @@ export default (app: Router) => {
       middlewares.isAuth,
       middlewares.isAdmin,
       middlewares.validator(checkSchema({})),
-      controller.user.UpdeteOne,
+      ctrl.user.UpdeteOne,
     )
     /******/
     .delete(
@@ -42,6 +50,6 @@ export default (app: Router) => {
       middlewares.isAuth,
       middlewares.isAdmin,
       middlewares.validator(checkSchema({})),
-      controller.user.DeleteOne,
+      ctrl.user.DeleteOne,
     )
 }

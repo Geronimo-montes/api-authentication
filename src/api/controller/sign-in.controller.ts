@@ -3,11 +3,13 @@ import { Request } from 'express';
 import { Response } from 'express';
 import { Container } from 'typedi';
 import { NextFunction } from 'express';
-// SERVICES
-import AuthService from '@services/auth.service';
-import RecogniceFaceService from '@services/recognice_face.service';
 
 import { HttpCode } from '@interfaces/codes.interface';
+
+import ServerError from '@errors/server.error';
+
+import FaceIdService from '@services/face-id.service';
+import UserCredentialsService from '@services/user-credentials.service';
 
 /**
  * 
@@ -15,13 +17,13 @@ import { HttpCode } from '@interfaces/codes.interface';
 const UserCredentials = async (req: Request, res: Response, next: NextFunction) => {
   const
     Log: Logger = Container.get('logger'),
-    InstanceAuthService = Container.get(AuthService),
+    InstanceUserCredentialsService = Container.get(UserCredentialsService),
     { email, password } = req.body;
 
   console.log();
-  Log.info(`⚠️🌐💻  AuthRoute: Request--> '..${req.url}'  💻🌐⚠️`);
+  Log.info(`⚠️🌐💻  SINGIN--> '..${req.url}'  💻🌐⚠️`);
 
-  InstanceAuthService.SignIn(email, password)
+  InstanceUserCredentialsService.SignIn(email, password)
     .then(({ user, token, msg }) =>
       res.status(HttpCode.C2XX.Created).json({ user, token, msg }))
     .catch((err) => next(err));
@@ -30,32 +32,14 @@ const UserCredentials = async (req: Request, res: Response, next: NextFunction) 
 /**
  * 
  */
-const FaceId_Imgs = async (req: Request, res: Response, next: NextFunction) => {
+const FaceId = async (req: Request, res: Response, next: NextFunction) => {
   const
     Log: Logger = Container.get('logger'),
-    InstanceRecogniceFace = Container.get(RecogniceFaceService),
+    InstanceRecogniceFace = Container.get(FaceIdService),
     files = req.files; // IS REQUIRED
 
   console.log();
-  Log.info(`⚠️🌐💻  AuthRoute: Request--> '..${req.url}'  💻🌐⚠️`);
-
-  return InstanceRecogniceFace.SignIn()
-    .then(({ user, token, msg }) =>
-      res.status(HttpCode.C2XX.Created).json({ user, token, msg }))
-    .catch((err) => next(err));
-}
-
-/**
- * 
- */
-const FaceId_Video = async (req: Request, res: Response, next: NextFunction) => {
-  const
-    Log: Logger = Container.get('logger'),
-    InstanceRecogniceFace = Container.get(RecogniceFaceService),
-    files = req.files; // IS REQUIRED
-
-  console.log();
-  Log.info(`⚠️🌐💻  AuthRoute: Request--> '..${req.url}'  💻🌐⚠️`);
+  Log.info(`⚠️🌐💻  SINGIN--> '..${req.url}'  💻🌐⚠️`);
 
   return InstanceRecogniceFace.SignIn()
     .then(({ user, token, msg }) =>
@@ -67,6 +51,13 @@ const FaceId_Video = async (req: Request, res: Response, next: NextFunction) => 
  * 
  */
 const Pin = async (req: Request, res: Response, next: NextFunction) => {
+  const
+    Log: Logger = Container.get('logger');
+
+  console.log();
+  Log.info(`⚠️🌐💻  SINGIN--> '..${req.url}'  💻🌐⚠️`);
+
+  return new ServerError('METOD_NOT_IMPLEMENT');
 }
 
 
@@ -79,8 +70,7 @@ export default {
   /**
    * Facial recognition 
    */
-  FaceId_Imgs,
-  FaceId_Video,
+  FaceId,
   /**
    * Pin numeric
    */

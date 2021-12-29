@@ -5,49 +5,88 @@ import { Container } from 'typedi';
 import { NextFunction } from 'express';
 
 // SERVICES
-import AuthService from '@services/auth.service';
 import { HttpCode } from '@interfaces/codes.interface';
 import { ERol } from '@interfaces/IRol.interface';
+import FaceIdService from '@services/face-id.service';
+import ServerError from '@errors/server.error';
+import UserCredentialsService from '@services/user-credentials.service';
+import { IUserCredentials } from '@interfaces/IUserCredentials.interface';
+import UserService from '@services/user.service';
+import { IUser } from '@interfaces/IUser.interface';
 
 /**
- * 
+ * TODO: TU no eres de aqui
  */
 const Admin = async (req: Request, res: Response, next: NextFunction) => {
   const
     Log: Logger = Container.get('logger'),
-    AuthServiceInstance = Container.get(AuthService),
+    UserCredentialsInstance = Container.get(UserCredentialsService),
+    InstanceUserService = Container.get(UserService),
     { name, email, password } = req.body,
-    role = ERol.ADMIN;
+    role = ERol.ADMIN,
+    _id_admin = '0';
 
   console.log();
-  Log.info(`⚠️🌐💻  SINGIN--> '..${req.url}'  💻🌐⚠️`);
+  Log.info(`⚠️🌐💻  SINGUP--> '..${req.url}'  💻🌐⚠️`);
 
-  AuthServiceInstance.SignUp({ name, email, password, role })
-    .then(({ user, token, msg }) =>
-      res.status(HttpCode.C2XX.Created).json({ user, token, msg }))
+  InstanceUserService.Add({ _id_admin, name, role })
+    .then(({ data }: { data: IUser, msg: string }) =>
+      UserCredentialsInstance.Add({ _id_user: data._id, email, password }))
+    .then(({ data, msg }: { data: IUserCredentials, msg: string }) =>
+      res.status(HttpCode.C2XX.Created).json({ data, msg }))
     .catch((err) => next(err));
 }
 
 /**
  * 
  */
-const User = async (req: Request, res: Response, next: NextFunction) => {
+const UserCredentials = async (req: Request, res: Response, next: NextFunction) => {
   const
     Log: Logger = Container.get('logger'),
-    AuthServiceInstance = Container.get(AuthService),
-    { name, email, password } = req.body,
-    _id_admin = req.token._id,
-    role = ERol.USER;
+    UserCredentialsInstance = Container.get(UserCredentialsService),
+    { email, password } = req.body,
+    _id_user = <string>req.query.id;
+
+  console.log();
+  Log.info(`⚠️🌐💻  SINGUP--> '..${req.url}'  💻🌐⚠️`);
+
+  UserCredentialsInstance.Add({ _id_user, email, password })
+    .then(({ data, msg }: { data: IUserCredentials, msg: string }) =>
+      res.status(HttpCode.C2XX.Created).json({ user_credentials: data, msg }))
+    .catch((err) => next(err));
+}
+
+/**
+ * 
+ */
+const FaceId = async (req: Request, res: Response, next: NextFunction) => {
+  const
+    Log: Logger = Container.get('logger'),
+    InstanceFaceId = Container.get(FaceIdService),
+    _id = String(req.query.id),
+    direct_to_db = Boolean(req.query.direct_to_db);
+
+  console.log({ direct_to_db });
+  Log.info(`⚠️🌐💻  SIGNUP--> '..${req.url}'  💻🌐⚠️`);
+
+  InstanceFaceId.Add(_id, req.files, direct_to_db)
+    .then(({ data, msg }) =>
+      res.status(HttpCode.C2XX.Created).json({ data, msg }))
+    .catch((err) => next(err));
+}
+
+/**
+ * 
+ */
+const Pin = async (req: Request, res: Response, next: NextFunction) => {
+  const
+    Log: Logger = Container.get('logger');
 
   console.log();
   Log.info(`⚠️🌐💻  SINGIN--> '..${req.url}'  💻🌐⚠️`);
 
-  AuthServiceInstance.SignUp({ name, email, password, role }, _id_admin)
-    .then(({ user, token, msg }) =>
-      res.status(HttpCode.C2XX.Created).json({ user, token, msg }))
-    .catch((err) => next(err));
+  return new ServerError('METOD_NOT_IMPLEMENT');
 }
-
 
 export default {
   /**
@@ -56,7 +95,15 @@ export default {
    */
   Admin,
   /**
-   * Registro para usuarios
+   * Registra el metodo user credentials
    */
-  User,
+  UserCredentials,
+  /**
+   * Registra el metodo Face-Id al usuario y lo agrega al modelo
+   */
+  FaceId,
+  /**
+   * 
+   */
+  Pin,
 }

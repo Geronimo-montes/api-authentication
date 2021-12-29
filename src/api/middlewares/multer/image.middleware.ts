@@ -12,7 +12,7 @@ import Container from 'typedi';
  */
 const storage = multer.diskStorage({
   destination:
-    config.PYTHON.DATA,
+    config.PATH.PYTHON.DATA,
 
   filename:
     async (req, file, cb) => {
@@ -55,7 +55,7 @@ const fileFilter = (
   req: Request, file: Express.Multer.File, cb: multer.FileFilterCallback
 ) => {
   const Log = <Logger>Container.get('logger');
-  const mimetype = ['image/png', 'image/jpg', 'image/jpeg'];
+  const mimetype = ['image/png', 'image/jpg', 'image/jpeg', 'video/mp4', 'video/webm'];
   Log.info(`⚠️🌐 🌐💻  Info: ${file.mimetype}  💻🌐 🌐⚠️`);
 
   if (!mimetype.includes(file.mimetype)) {
