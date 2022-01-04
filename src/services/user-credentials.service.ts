@@ -58,8 +58,10 @@ export default class UserCredentialsService extends ServiceBase {
       })
       .then((password) => {
         this.Log.debug(`🔍🚦⚠️  User Credentials: Create Row In Mongosee  🚦⚠️🔍`);
-        return this.UserCredentialsModel
-          .create({ _id_user, email, password, salt });
+        const date = new Date();
+
+        return this.UserCredentialsModel.create(
+          { _id_user, email, password, salt });
       })
       .then((userCredentials: IUserCredentials) => {
         const
@@ -93,7 +95,7 @@ export default class UserCredentialsService extends ServiceBase {
           );
       })
       .then((data) => {
-        this.Log.debug(`🔍🚦⚠️  User Credentials: {\nuser-credentials: ${data}\n msg: ${msg}}  🚦⚠️🔍`);
+        console.log({ data });
         return Promise.resolve({ data, msg });
       })
       .catch((err) => {
@@ -147,7 +149,7 @@ export default class UserCredentialsService extends ServiceBase {
         return this.generateToken(userRecord);
       })
       .then(({ user, token }) => {
-        this.Log.debug(`🔍🚦⚠️  User Credentials: { user: ${user}, \ntoken: ${token}, \n msg: ${msg}}  🚦⚠️🔍`);
+        console.log({ data: { user, token } });
         return Promise.resolve({ user, token, msg });
       })
       .catch((err) => {

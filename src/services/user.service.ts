@@ -6,6 +6,7 @@ import { EventDispatcherInterface } from '@decorators/eventDispatcher';
 import { IUser } from '@interfaces/IUser.interface';
 import UserError from '@errors/user.error';
 import ServerError from '@errors/server.error';
+import { LiteralUnion } from 'express-jwt';
 
 /**
  * 
@@ -32,18 +33,17 @@ export default class UserService {
       msg = `User ${name} Registrado con Exito`;
 
     this.Log.debug(`🔍🚦⚠️  User: Valid Exists User  🚦⚠️🔍`);
-    return this.UserModel
-      .exists({ name })
+    return this.UserModel.exists({ name })
       .then((exists: boolean) => {
         if (exists)
           throw new UserError('USER_DUPLICATE');
+        const date = new Date();
 
         this.Log.debug(`🔍🚦⚠️  User: Create Row In Mongosee  🚦⚠️🔍`);
-        return this.UserModel
-          .create({ _id_admin, name, role });
+        return this.UserModel.create({ _id_admin, name, role });
       })
       .then((user: IUser) => {
-        this.Log.debug(`🔍🚦⚠️  User: {user: ${user},\nmsg: ${msg}}  🚦⚠️🔍`);
+        console.log({ user });
         return Promise.resolve({ data: user, msg });
       })
       .catch((err) => {
@@ -60,40 +60,20 @@ export default class UserService {
    */
   public async FindOne(_id_admin: string, _id: string): Promise<any> {
     this.Log.debug(`🔍🚦⚠️  User: Find User By Id  🚦⚠️🔍`);
-    return this.UserModel
-      .findOne({ _id_admin, _id })
+    return this.UserModel.findOne({ _id_admin, _id })
       .then((userRecord: IUser) => {
         if (!userRecord)
           throw new UserError('USER_NOT_FOUND');
 
         this.Log.debug(`🔍🚦⚠️  User: Find Data Face_Id  🚦⚠️🔍`);
-        return this.FaceIdModel
-          .populate(
-            userRecord,
-            {
-              path: "_id_face_id",
-              select: {
-                '_id': 1,
-                'number_files': 1,
-              },
-            }
-          );
+        return this.FaceIdModel.populate(userRecord, this.SELECT_FACE_ID);
       })
       .then((data) => {
         this.Log.debug(`🔍🚦⚠️  User: Find Data User_Credentials  🚦⚠️🔍`);
-        return this.UserCredentialsModel
-          .populate(
-            data,
-            {
-              path: "_id_credentials",
-              select: {
-                '_id': 1,
-                'email': 1,
-              },
-            })
+        return this.UserCredentialsModel.populate(data, this.SELECT_CREDENTIALS)
       })
       .then((data) => {
-        this.Log.debug(`🔍🚦⚠️  User: {user: ${data}}  🚦⚠️🔍`);
+        console.log({ data })
         return Promise.resolve(data);
       })
       .catch((err) => {
@@ -109,37 +89,17 @@ export default class UserService {
    */
   public async All(_id_admin: string): Promise<any[]> {
     this.Log.debug(`🔍🚦⚠️  User: Find User By Id  🚦⚠️🔍`);
-    return this.UserModel
-      .find({ _id_admin })
+    return this.UserModel.find({ _id_admin })
       .then((usersRecord: IUser[]) => {
         this.Log.debug(`🔍🚦⚠️  User: Find Data Face_Id  🚦⚠️🔍`);
-        return this.FaceIdModel
-          .populate(
-            usersRecord,
-            {
-              path: "_id_face_id",
-              select: {
-                '_id': 1,
-                'number_files': 1,
-              },
-            }
-          );
+        return this.FaceIdModel.populate(usersRecord, this.SELECT_FACE_ID);
       })
       .then((data) => {
         this.Log.debug(`🔍🚦⚠️  User: Find Data User_Credentials  🚦⚠️🔍`);
-        return this.UserCredentialsModel
-          .populate(
-            data,
-            {
-              path: "_id_credentials",
-              select: {
-                '_id': 1,
-                'email': 1,
-              },
-            })
+        return this.UserCredentialsModel.populate(data, this.SELECT_CREDENTIALS)
       })
       .then((data) => {
-        this.Log.debug(`🔍🚦⚠️  User: {users: ${data}}  🚦⚠️🔍`);
+        console.log({ data });
         return Promise.resolve(data);
       })
       .catch((err) => {
@@ -153,8 +113,58 @@ export default class UserService {
     return Promise.reject(new ServerError('METOD_NOT_IMPLEMENT'));
   }
 
-  public async DeleteOne(_id_admin): Promise<IUser> {
-    this.Log.debug(`🔍🚦⚠️  User: Delete One User  🚦⚠️🔍`);
-    return Promise.reject(new ServerError('METOD_NOT_IMPLEMENT'));
+  public async AltaBaja(
+    _id_admin: string, _id: string, estatus: LiteralUnion<'a' | 'b'>
+  ): Promise<any> {
+
+    this.Log.debug(`🔍🚦⚠️  User: Valid Exists User  🚦⚠️🔍`);
+    return this.UserModel.exists({ _id })
+      .then((exists: boolean) => {
+        if (!exists)
+          throw new UserError('USER_NOT_FOUND');
+
+        const
+          query = { _id: _id },
+          update = { $set: { estatus: estatus } },
+          options = { upsert: false };
+
+        this.Log.debug(`🔍🚦⚠️  User: Update Estatus In Mongosee  🚦⚠️🔍`);
+        return this.UserModel.updateOne(query, update, options);
+      })
+      .then((data) => {
+        console.log({ data });
+        return Promise.resolve({ data });
+      })
+      .catch((err) => {
+        this.Log.error(`❗⚠️🔥  User Credentials: ${err}  🔥⚠️❗`);
+        throw err;
+      });
+  }
+
+  /**
+   * Schema select para el modelo face id
+   */
+  private SELECT_FACE_ID = {
+    path: "_id_face_id",
+    select: {
+      '_id': 1,
+      'number_files': 1,
+      'index': 1,
+      'create_date': 1,
+      'update_date': 1,
+    },
+  }
+
+  /**
+   * Schema select para el modelo user-credentials
+   */
+  private SELECT_CREDENTIALS = {
+    path: "_id_credentials",
+    select: {
+      '_id': 1,
+      'email': 1,
+      'create_date': 1,
+      'update_date': 1,
+    },
   }
 }

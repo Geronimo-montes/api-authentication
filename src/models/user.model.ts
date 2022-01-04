@@ -4,7 +4,11 @@ import mongoose, { Document } from "mongoose";
 const User = new mongoose.Schema(
   {
     _id_admin: String,
-
+    perfil: {
+      type: String,
+      required: false,
+      default: 'static/user.png',
+    },
     name: {
       type: String,
       required: [true, 'Please enter a full name'],
@@ -30,6 +34,25 @@ const User = new mongoose.Schema(
       required: false,
       default: null,
     },
+
+    create_date: {
+      type: Date,
+      required: false,
+      default: new Date(),
+    },
+
+    update_date: {
+      type: Date,
+      required: false,
+      default: new Date(),
+    },
+
+    estatus: {
+      type: String,
+      enum: ['a', 'b'],
+      required: false,
+      default: 'a',
+    }
   }
 );
 

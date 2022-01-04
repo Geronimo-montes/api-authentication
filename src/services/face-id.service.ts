@@ -13,6 +13,8 @@ import UserError from '@errors/user.error';
 import FaceIdError from '@errors/face_id.error';
 import ServerError from '@errors/server.error';
 
+import fs from 'fs';
+
 /**
  * 
  */
@@ -37,21 +39,16 @@ export default class FaceIdService extends ServiceBase {
     Promise<{ data: any, msg: string }> {
     const
       msg = `Face Id registrado.`,
-      number_files = files.length,
-      args = (direct_to_db)
-        ? [EArgs.ADDG_DB, EArgs.NAME, _id]
-        : [EArgs.ADDG, EArgs.NAME, _id];
+      args = [(direct_to_db) ? EArgs.ADDG_DB : EArgs.ADDG, EArgs.NAME, _id];
 
     this.Log.debug(`🔍🚦⚠️  Recognice Face: Valid Exists User  🚦⚠️🔍`);
-    return this.UserModel
-      .exists({ _id })
+    return this.UserModel.exists({ _id })
       .then((exists: boolean) => {
         if (!exists)
           throw new UserError('USER_NOT_FOUND');
 
         this.Log.debug(`🔍🚦⚠️  Recognice Face: Valid Exists Face Id  🚦⚠️🔍`);
-        return this.FaceIdModel
-          .exists({ _id_user: _id });
+        return this.FaceIdModel.exists({ _id_user: _id });
       })
       .then((exists: boolean) => {
         if (exists)
@@ -62,8 +59,16 @@ export default class FaceIdService extends ServiceBase {
       })
       .then((face_id) => {
         this.Log.debug(`🔍🚦⚠️  Recognice Face: Create Row In Mongosee  🚦⚠️🔍`);
+
+        if (!fs.existsSync('resultado.json'))
+          throw new ServerError('FAIL_EXECUTE_SCRIPT');
+
+        const json = JSON.parse(fs.readFileSync('resultado.json', 'utf8'));
+        fs.unlinkSync('resultado.json');
+
         return this.FaceIdModel
-          .create({ _id_user: _id, number_files });
+          .create({ _id_user: _id, number_files: json.num_files, index: json.index });
+
       })
       .then((face_id: IFaceId) => {
         const
@@ -72,32 +77,20 @@ export default class FaceIdService extends ServiceBase {
           options = { upsert: true };
 
         this.Log.debug(`🔍🚦⚠️  Recognice Face: Update UserModel Add FaceId  🚦⚠️🔍`);
-        return this.UserModel
-          .updateOne(query, update, options);
+        return this.UserModel.updateOne(query, update, options);
       })
       .then(({ modifiedCount }) => {
         if (modifiedCount < 1)
           throw new UserError('USER_DATA_NOT_UPDATE');
 
-        return this.UserModel
-          .findOne({ _id });
+        return this.UserModel.findOne({ _id });
       })
       .then((userRecord) => {
         this.Log.debug(`🔍🚦⚠️  User: Find Data Face_Id  🚦⚠️🔍`);
-        return this.FaceIdModel
-          .populate(
-            userRecord,
-            {
-              path: "_id_face_id",
-              select: {
-                '_id': 1,
-                'number_files': 1,
-              },
-            }
-          );
+        return this.FaceIdModel.populate(userRecord, this.SELECT_FACE_ID);
       })
       .then((data) => {
-        this.Log.debug(`🔍🚦⚠️  Recognice Face:{\ndata: ${data}',\nmsg: ${msg}}  🚦⚠️🔍`);
+        console.log({ data });
         return Promise.resolve({ data, msg });
       })
       .catch((err) => {
@@ -110,12 +103,10 @@ export default class FaceIdService extends ServiceBase {
    * Metodo de autenticacion Face-id
    * @returns {Promise<{ user: IUser, token: string, msg: string }>}
    */
-  public async SignIn():
-    Promise<{ user: IUser, token: string, msg: string }> {
+  public async SignIn(): Promise<{ user: IUser, token: string, msg: string }> {
     const
       msg = `Inicio de Sesión Exitoso`,
       args = [EArgs.RECOGNIZEG];
-
 
     this.Log.debug(`🔍🚦⚠️  Recognice Face: Exec Script  🚦⚠️🔍`);
     return this.executeScript(args)
@@ -124,8 +115,7 @@ export default class FaceIdService extends ServiceBase {
           throw new FaceIdError('FACE_NOT_FOUND');
 
         this.Log.debug(`🔍🚦⚠️  Recognice Face: Find Data User  🚦⚠️🔍`);
-        return this.UserModel
-          .findOne({ _id })
+        return this.UserModel.findOne({ _id });
       })
       .then((userRecord: IUser) => {
         if (!userRecord)
@@ -135,7 +125,7 @@ export default class FaceIdService extends ServiceBase {
         return this.generateToken(userRecord);
       })
       .then(({ user, token }) => {
-        this.Log.debug(`🔍🚦⚠️  Recognice Face: { user: ${user},\ntoken: ${token},\n msg: ${msg}}  🚦⚠️🔍`);
+        console.log({ data: { user, token } });
         return Promise.resolve({ user, token, msg });
       })
       .catch((err) => {
@@ -179,4 +169,17 @@ export default class FaceIdService extends ServiceBase {
     });
   }
 
+  /**
+   * Schema select para el modelo face id
+   */
+  private SELECT_FACE_ID = {
+    path: "_id_face_id",
+    select: {
+      '_id': 1,
+      'number_files': 1,
+      'index': 1,
+      'create_date': 1,
+      'update_date': 1,
+    },
+  }
 }

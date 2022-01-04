@@ -5,4 +5,6 @@ export interface IUserCredentials {
   email: string;
   password: string;
   salt?: string;
+  create_date: string,
+  update_date: string,
 }

@@ -2,6 +2,9 @@ export interface IFaceId {
   _id?: string;
   _id_user: string;
   number_files: number;
+  index: number,
+  create_date: string,
+  update_date: string,
 }
 
 export enum EArgs {

@@ -88,18 +88,21 @@ const UpdeteOne = async (req: Request, res: Response, next: NextFunction) => {
 /**
  * 
  */
-const DeleteOne = async (req: Request, res: Response, next: NextFunction) => {
+const AltaBaja = async (req: Request, res: Response, next: NextFunction) => {
   const
     Log: Logger = Container.get('logger'),
     InstanceUserService = Container.get(UserService),
-    _id_admin = req.token._id;
+    _id_admin = req.token._id,
+    _id = req.params.id,
+    { estatus } = req.body;
+
 
   console.log();
   Log.info(`⚠️🌐💻  USER--> '..${req.url}'  💻🌐⚠️`);
 
-  InstanceUserService.UpdateOne(_id_admin)
-    .then((user: IUser) =>
-      res.status(HttpCode.C2XX.OK).json(user))
+  InstanceUserService.AltaBaja(_id_admin, _id, estatus)
+    .then((data) =>
+      res.status(HttpCode.C2XX.OK).json(data))
     .catch((err) => next(err));
 }
 
@@ -123,6 +126,6 @@ export default {
   /**
   * Delete
   */
-  DeleteOne,
+  AltaBaja,
 
 }

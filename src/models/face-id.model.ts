@@ -8,9 +8,24 @@ const FaceId = new mongoose.Schema(
       type: mongoose.Types.ObjectId,
       ref: "User",
     },
+
     number_files: {
       type: Number,
-    }
+    },
+
+    index: Number,
+
+    create_date: {
+      type: Date,
+      required: false,
+      default: new Date(),
+    },
+
+    update_date: {
+      type: Date,
+      required: false,
+      default: new Date(),
+    },
   }
 );
 

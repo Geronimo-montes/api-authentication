@@ -1,9 +1,9 @@
 {
   "recommendations": [
     "mikestead.dotenv",
-    "ms-vscode.vscode-typescript-next",
     "christian-kohler.npm-intellisense",
     "thomascsd.vscode-readme-pattern",
-    "wayou.vscode-todo-highlight"
+    "wayou.vscode-todo-highlight",
+    "ms-vscode.vscode-typescript-next"
   ]
 }

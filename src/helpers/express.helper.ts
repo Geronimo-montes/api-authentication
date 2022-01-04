@@ -17,7 +17,7 @@ export default ({ app }: { app: express.Application }) => {
 	/**
 	 * PUERTO, HEADERS, FORMATO DE RESPUESTA
 	 */
-	app.set('port', process.env.PORT || config.PORT);
+	app.set('port', process.env.PORT || config.API.PORT);
 	app.use(cors());
 	app.use(express.json());
 	app.use(express.urlencoded({ extended: false }));

@@ -42,14 +42,14 @@ export default (app: Router) => {
       middlewares.isAuth,
       middlewares.isAdmin,
       middlewares.validator(checkSchema({})),
-      ctrl.user.UpdeteOne,
+      ctrl.user.AltaBaja,
     )
     /******/
-    .delete(
+    .put(
       '/:id',
       middlewares.isAuth,
       middlewares.isAdmin,
       middlewares.validator(checkSchema({})),
-      ctrl.user.DeleteOne,
+      ctrl.user.UpdeteOne,
     )
 }

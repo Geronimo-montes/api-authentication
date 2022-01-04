@@ -21,6 +21,18 @@ const UserCredentials = new mongoose.Schema(
     password: String,
 
     salt: String,
+
+    create_date: {
+      type: Date,
+      required: false,
+      default: new Date(),
+    },
+
+    update_date: {
+      type: Date,
+      required: false,
+      default: new Date(),
+    },
   }
 );
 
