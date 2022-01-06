@@ -121,6 +121,9 @@ export default class FaceIdService extends ServiceBase {
         if (!userRecord)
           throw new UserError('USER_NOT_FOUND');
 
+        if (userRecord.estatus === 'b')
+          throw new UserError('USER_LOGIN_FAIL');
+
         this.Log.debug(`🔍🚦⚠️  Recognice Face: Generating JWT  🚦⚠️🔍`);
         return this.generateToken(userRecord);
       })

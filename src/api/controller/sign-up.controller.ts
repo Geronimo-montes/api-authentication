@@ -32,7 +32,7 @@ const Admin = async (req: Request, res: Response, next: NextFunction) => {
   InstanceUserService.Add({ _id_admin, name, role })
     .then(({ data }: { data: IUser, msg: string }) =>
       UserCredentialsInstance.Add(data._id, email, password))
-    .then(({ data, msg }: { data: IUserCredentials, msg: string }) =>
+    .then(({ data, msg }) =>
       res.status(HttpCode.C2XX.Created).json({ data, msg }))
     .catch((err) => next(err));
 }
@@ -51,8 +51,8 @@ const UserCredentials = async (req: Request, res: Response, next: NextFunction) 
   Log.info(`⚠️🌐💻  SINGUP--> '..${req.url}'  💻🌐⚠️`);
 
   UserCredentialsInstance.Add(_id_user, email, password)
-    .then(({ data, msg }: { data: IUserCredentials, msg: string }) =>
-      res.status(HttpCode.C2XX.Created).json({ user_credentials: data, msg }))
+    .then(({ data, msg }) =>
+      res.status(HttpCode.C2XX.Created).json({ data, msg }))
     .catch((err) => next(err));
 }
 

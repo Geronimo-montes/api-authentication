@@ -83,16 +83,7 @@ export default class UserCredentialsService extends ServiceBase {
       .then((userRecord) => {
         this.Log.debug(`🔍🚦⚠️  User: Find Data Face_Id  🚦⚠️🔍`);
         return this.UserCredentialsModel
-          .populate(
-            userRecord,
-            {
-              path: "_id_face_id",
-              select: {
-                '_id': 1,
-                'email': 1,
-              },
-            }
-          );
+          .populate(userRecord, this.SELECT_USER_CREDENTIALS);
       })
       .then((data) => {
         console.log({ data });
@@ -145,6 +136,9 @@ export default class UserCredentialsService extends ServiceBase {
           .findOne({ _id });
       })
       .then((userRecord: IUser) => {
+        if (userRecord.estatus === 'b')
+          throw new UserError('USER_LOGIN_FAIL');
+
         this.Log.debug(`🔍🚦⚠️  User Credentials: Generating JWT  🚦⚠️🔍`);
         return this.generateToken(userRecord);
       })
@@ -156,5 +150,19 @@ export default class UserCredentialsService extends ServiceBase {
         this.Log.error(`❗⚠️ 🔥👽  User Credentials: ${err}  👽🔥 ⚠️❗`);
         throw err;
       });
+  }
+
+  /**
+   * Schema select para el modelo user-credentials
+   */
+  private SELECT_USER_CREDENTIALS = {
+    path: "_id_credentials",
+    select: {
+      '_id_user': 1,
+      '_id': 1,
+      'email': 1,
+      'create_date': 1,
+      'update_date': 1,
+    },
   }
 }

@@ -1,3 +1,4 @@
+import config from "@config";
 import { IUser } from "@interfaces/IUser.interface";
 import mongoose, { Document } from "mongoose";
 
@@ -7,7 +8,7 @@ const User = new mongoose.Schema(
     perfil: {
       type: String,
       required: false,
-      default: 'static/user.png',
+      default: `${config.API.URL}static/user.png`,
     },
     name: {
       type: String,

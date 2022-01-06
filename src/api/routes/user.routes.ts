@@ -32,26 +32,32 @@ export default (app: Router) => {
     )
     /******/
     .get(
-      '/:id',
+      '',
       middlewares.isAuth,
       middlewares.isAdmin,
-      middlewares.validator(checkSchema({})),
+      middlewares.validator(checkSchema({
+        // req.query.id
+      })),
       ctrl.user.FindOne,
     )
     /******/
     .put(
-      '/:id',
+      '',
       middlewares.isAuth,
       middlewares.isAdmin,
-      middlewares.validator(checkSchema({})),
+      middlewares.validator(checkSchema({
+        // req.query.id
+      })),
       ctrl.user.AltaBaja,
     )
     /******/
     .put(
-      '/:id',
+      '',
       middlewares.isAuth,
       middlewares.isAdmin,
-      middlewares.validator(checkSchema({})),
+      middlewares.validator(checkSchema({
+        // req.query.id
+      })),
       ctrl.user.UpdeteOne,
     )
 }

@@ -43,7 +43,6 @@ export default class UserService {
         return this.UserModel.create({ _id_admin, name, role });
       })
       .then((user: IUser) => {
-        console.log({ user });
         return Promise.resolve({ data: user, msg });
       })
       .catch((err) => {
