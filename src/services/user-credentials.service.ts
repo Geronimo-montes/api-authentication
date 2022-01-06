@@ -30,7 +30,7 @@ export default class UserCredentialsService extends ServiceBase {
    * @param {IUserCredentials} user_credentials 
    * @returns {Promise<{ data: IUserCredentials, msg: string }>} 
    */
-  public async Add({ _id_user, email, password }: IUserCredentials):
+  public async Add(_id_user, email, password):
     Promise<{ data: IUserCredentials, msg: string }> {
 
     const

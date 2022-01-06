@@ -31,18 +31,21 @@ export default (app: Router) => {
     .post(
       '/user-credentials',
       middlewares.isAuth,
-      middlewares.validator(checkSchema({})),
+      middlewares.validator(checkSchema({
+        // req.query.id ---> _id_user <Reference>
+        // req.body.email
+        // req.body.password
+      })),
       ctlr.signUp.UserCredentials,
     )
     /******/
-    /**
-     * qry  ---> id
-     * files---> files
-     */
     .post(
       '/face-id',
       middlewares.isAuth,
       middlewares.uploadFiles.array('files', 20),
+      middlewares.validator(checkSchema({
+        // req.query.id ---> _id_user <Reference>
+      })),
       ctlr.signUp.FaceId,
     )
     .get('', () => { throw new ServerError('METHOD_NOT_ALLOWED') })

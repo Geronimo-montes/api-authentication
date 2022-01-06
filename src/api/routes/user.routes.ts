@@ -17,7 +17,9 @@ export default (app: Router) => {
       '',
       middlewares.isAuth,
       middlewares.isAdmin,
-      middlewares.validator(checkSchema({})),
+      middlewares.validator(checkSchema({
+        // req.body.name
+      })),
       ctrl.user.Add,
     )
     /******/
