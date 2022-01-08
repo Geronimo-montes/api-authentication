@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="" rel="noopener">
- <img src="./docs/banner.png" alt="Project logo"></a>
+  <a href="https://github.com/Geronimo-montes/api-authentication" rel="noopener">
+  <img src="./docs/banner.png" alt="Project logo"></a>
 </p>
 
 # Autentiticación y gestion de usuarios
@@ -24,8 +24,8 @@ Sistema de autenticación y gestión de ususario.
 
 ### Prerequisites
 
-- Install NPM
-- MongoDB
+- [NPM](https://www.npmjs.com/)
+- [MongoDB](https://www.mongodb.com/)
 
 ### Installing
 
@@ -43,7 +43,7 @@ $ npm install --dev
 # INSTALL REQUIREMENTS
 $ pip install -r requirements.txt
 ```
-## Usage <a name = "usage"></a>
+## Run <a name = "usage"></a>
 
 Correr el proyecto
 ``` bash
