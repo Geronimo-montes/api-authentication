@@ -13,12 +13,12 @@ import Container from 'typedi';
 const storage = multer.diskStorage({
   destination: async (req, file, cb) => {
     try {
-      if (fs.existsSync(config.PATH.PYTHON.DATA))
-        fs.rmSync(config.PATH.PYTHON.DATA, { recursive: true, force: true });
+      if (fs.existsSync(config.PATH.FACEID.DATA))
+        fs.rmSync(config.PATH.FACEID.DATA, { recursive: true, force: true });
 
-      fs.mkdirSync(config.PATH.PYTHON.DATA, { recursive: true });
+      fs.mkdirSync(config.PATH.FACEID.DATA, { recursive: true });
 
-      cb(null, config.PATH.PYTHON.DATA);
+      cb(null, config.PATH.FACEID.DATA);
     } catch (err) {
       cb(err, null);
     } finally {

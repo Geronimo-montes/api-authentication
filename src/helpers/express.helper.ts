@@ -9,12 +9,6 @@ import middlewares from '@api/middlewares';
 
 export default ({ app }: { app: express.Application }) => {
 	/**
-	 * Rutas para verificar el estado del servidor
-	 */
-	app.get(`${config.API.PREFIX}/status`, (req, res) => res.status(200).end());
-	app.head(`${config.API.PREFIX}/status`, (req, res) => res.status(200).end());
-
-	/**
 	 * PUERTO, HEADERS, FORMATO DE RESPUESTA
 	 */
 	app.set('port', process.env.PORT || config.API.PORT);

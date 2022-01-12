@@ -146,7 +146,7 @@ export default class FaceIdService extends ServiceBase {
   private async executeScript(args: string[] | EArgs[]):
     Promise<{ _id: any }> {
     const
-      cmd = spawn(config.PATH.PYTHON.EXE, [config.PATH.PYTHON.MODEL, ...args]);
+      cmd = spawn(config.PATH.FACEID.EXE, [config.PATH.FACEID.MODEL, ...args]);
 
     return new Promise((resolve, reject) => {
       var _data = null;

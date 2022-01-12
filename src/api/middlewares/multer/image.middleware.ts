@@ -12,7 +12,7 @@ import Container from 'typedi';
  */
 const storage = multer.diskStorage({
   destination:
-    config.PATH.PYTHON.DATA,
+    config.PATH.FACEID.DATA,
 
   filename:
     async (req, file, cb) => {

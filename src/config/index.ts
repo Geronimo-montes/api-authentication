@@ -8,29 +8,33 @@ if (envFound.error)
   throw new Error("⚠️  Couldn't find .env file  ⚠️");
 
 const ROOT = path.join(__dirname, '..');
-const PYTHON_PATH = path.join(__dirname, '..', '..', '..', 'biometric_recognition');
-
+const PATH_MODEL_FACEID = path.join(__dirname, '..', '..', '..', 'biometric_recognition');
+const PATH_PROJECT_ARDUINO = path.join(__dirname, '..', '..', '..', 'arduino');
 export default {
   PATH: {
     /**
      * `PATH.ROOT`: Path que apunta a la carpeta `API.src`
      */
     ROOT: ROOT,
-    PYTHON: {
+    FACEID: {
       /**
        * `PATH.PYTHON.EXE`: Path del executable del lunguaje `Python` 
        */
-      EXE: path.join(PYTHON_PATH, '.venv', 'Scripts', 'python.exe'),
+      EXE: path.join(PATH_MODEL_FACEID, '.venv', 'Scripts', 'python.exe'),
       /**
        * `PATH.PYTHON.MODEL`: Path del archivo `main.py`  
        */
-      MODEL: path.join(PYTHON_PATH, 'src', 'main.py'),
+      MODEL: path.join(PATH_MODEL_FACEID, 'src', 'main.py'),
       /**
        * `PATH.PYTHON.DATA`: Path del directorio que comunica a `Python` y `API`  
        */
       DATA: path.join(ROOT, '..', '..', 'data'),
       // DATA: path.join(PYTHON_PATH, 'data', 'data'),
     },
+    ARDUINO: {
+      EXE: path.join(PATH_PROJECT_ARDUINO, '.venv', 'Scripts', 'python.exe'),
+      FILE: path.join(PATH_PROJECT_ARDUINO, 'huella.py'),
+    }
   },
   API: {
     /**

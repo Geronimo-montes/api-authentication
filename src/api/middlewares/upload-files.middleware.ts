@@ -13,7 +13,7 @@ import ServerError from '@errors/server.error';
  */
 const storage = multer.diskStorage({
   destination:
-    config.PATH.PYTHON.DATA,
+    config.PATH.FACEID.DATA,
 
   filename:
     async (req, file, cb) => {
