@@ -9,7 +9,7 @@ if (envFound.error)
 
 const ROOT = path.join(__dirname, '..');
 const PATH_MODEL_FACEID = path.join(__dirname, '..', '..', '..', 'biometric-recognition');
-const PATH_PROJECT_ARDUINO = path.join(__dirname, '..', '..', '..', 'arduino_final');
+const PATH_PROJECT_ARDUINO = path.join(__dirname, '..', '..', '..', 'arduino');
 
 export default {
   PATH: {
