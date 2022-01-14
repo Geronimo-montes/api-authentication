@@ -68,16 +68,13 @@ const fileFilter = (
   req: Request, file: Express.Multer.File, cb: multer.FileFilterCallback
 ) => {
   const Log = <Logger>Container.get('logger');
-  // const mimetype = ['image/png', 'image/jpg'];
-  // 
-  // if (!mimetype.includes(file.mimetype)) {
-  //   /**
-  //    * TODO: Implementes Error: TYPE_FILE_NOT_SUPORTED
-  //    */
-  //   const err = new Error('TYPE_FILE_NOT_SUPORTED');
-  //   Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
-  //   return cb(err);
-  // }
+  const mimetype = ['image/png', 'image/jpg'];
+
+  if (!mimetype.includes(file.mimetype)) {
+    const err = new Error('TYPE_FILE_NOT_SUPORTED');
+    Log.error(`❗⚠️ 🔥👽  Error: ${err}  👽🔥 ⚠️❗`);
+    return cb(err);
+  }
   cb(null, true);
 };
 

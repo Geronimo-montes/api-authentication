@@ -26,6 +26,7 @@ export default ({ app }: { app: express.Application }) => {
 	 * API ROUTES
 	 */
 	app.use(config.API.PREFIX, routes());
+	// FAVICON
 	app.get(`${config.API.PREFIX}/favicon.ico`, (req, res) =>
 		res.status(HttpCode.C2XX.No_Content));
 

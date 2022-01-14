@@ -3,12 +3,11 @@ import { checkSchema } from 'express-validator';
 // MIDDLEWARES
 import Schemas from "@validator";
 import middlewares from "@api/middlewares";
-import controller from '@api/controller';
-import ServerError from '@errors/server.error';
 import { Logger } from 'winston';
 import Container from 'typedi';
 import ArduinoService from '@services/arduino.service';
 import { HttpCode } from '@interfaces/codes.interface';
+import FaceIdService from '@services/face-id.service';
 
 
 const route = Router();
@@ -42,9 +41,12 @@ export default (app: Router) => {
       async (req, res, next) => {
         const
           Log: Logger = Container.get('logger'),
-          InstanceArduinoService = Container.get(ArduinoService);
+          InstanceRecogniceFace = Container.get(FaceIdService),
+          InstanceArduinoService = Container.get(ArduinoService),
+          files = req.files; // IS REQUIRED
 
-        InstanceArduinoService.faceID()
+        InstanceRecogniceFace.SignIn()
+          .then(({ user }) => InstanceArduinoService.faceID(user.name))
           .then((response) =>
             res.status(HttpCode.C2XX.Created).json(response))
           .catch((err) => next(err));
@@ -60,7 +62,7 @@ export default (app: Router) => {
 
         InstanceArduinoService.huella()
           .then((response) =>
-            res.status(HttpCode.C2XX.Created).json(response))
+            res.status(HttpCode.C2XX.Created).json({ "valor": response }))
           .catch((err) => next(err));
       }
     )

@@ -9,8 +9,6 @@ import { IUser } from '@interfaces/IUser.interface';
 import { HttpCode } from '@interfaces/codes.interface';
 
 import UserService from '@services/user.service';
-import UserError from '@errors/user.error';
-import config from '@config';
 
 /**
  * 

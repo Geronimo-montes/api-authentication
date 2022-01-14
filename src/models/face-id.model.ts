@@ -1,4 +1,3 @@
-
 import { IFaceId } from "@interfaces/IFaceId.interface";
 import mongoose, { Document } from "mongoose";
 

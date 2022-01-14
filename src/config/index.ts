@@ -8,8 +8,9 @@ if (envFound.error)
   throw new Error("⚠️  Couldn't find .env file  ⚠️");
 
 const ROOT = path.join(__dirname, '..');
-const PATH_MODEL_FACEID = path.join(__dirname, '..', '..', '..', 'biometric_recognition');
-const PATH_PROJECT_ARDUINO = path.join(__dirname, '..', '..', '..', 'arduino');
+const PATH_MODEL_FACEID = path.join(__dirname, '..', '..', '..', 'biometric-recognition');
+const PATH_PROJECT_ARDUINO = path.join(__dirname, '..', '..', '..', 'arduino_final');
+
 export default {
   PATH: {
     /**
